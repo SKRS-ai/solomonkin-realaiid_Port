@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIS Intelligence Integration | Bureau of Digital Identity</title>
+    <style>
+        :root { --navy: #002366; --light-blue: #00a8e8; --white: #ffffff; --bg-gray: #f4f7f6; --text-dark: #2d3436; --accent: #2d3436; }
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.7; color: var(--text-dark); margin: 0; background-color: var(--bg-gray); }
+        
+        /* Header */
+        header { background: var(--navy); color: var(--white); padding: 1.5rem 5%; position: sticky; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid var(--light-blue); }
+        nav a { color: var(--white); text-decoration: none; margin-left: 20px; font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* Content */
+        .container { width: 85%; margin: 50px auto; background: var(--white); padding: 60px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+        h1 { color: var(--navy); font-size: 2.5rem; border-bottom: 3px solid var(--light-blue); padding-bottom: 10px; display: inline-block; }
+        .tech-box { background: #f0f7ff; border-left: 5px solid var(--light-blue); padding: 30px; margin: 30px 0; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px; }
+        .card { padding: 30px; background: #f8f9fa; border-left: 5px solid #bdc3c7; }
+
+        /* Footer */
+        footer { background: var(--navy); color: var(--white); padding: 60px 5%; margin-top: 80px; border-top: 5px solid var(--light-blue); }
+        .footer-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; font-size: 0.75rem; }
+        .footer-grid h4 { color: var(--light-blue); text-transform: uppercase; margin-bottom: 15px; }
+        .footer-grid ul { list-style: none; padding: 0; }
+        .footer-grid li { margin-bottom: 5px; }
+        .footer-grid a { color: #ccc; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div style="font-size: 1.5rem; font-weight: bold; letter-spacing: -1px;">HARBORLINK PARTNERS</div>
+    <nav>
+        <a href="index.html">Home</a><a href="iam.html">IAM</a><a href="ais.html" style="color: var(--light-blue);">AIS Integration</a>
+        <a href="transit.html">Transit</a><a href="contact.html">Procurement</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>AIS Domain Awareness Protocol</h1>
+    <p>The Automatic Identification System (AIS) is the heartbeat of maritime positioning. At the Bureau of Digital Identity, we treat AIS data not as mere telemetry, but as a critical security input. By fusing AIS signals with the <strong>REALAiiD ecosystem</strong>, we turn real-time vessel movement into actionable security triggers.</p>
+
+    <div class="tech-box">
+        <h3>REALAiiD Wallet: The AIS Logic Node</h3>
+        <p>When vessel manifests are synchronized with REALAiiD, the Wallet performs real-time verification against global AIS feeds:</p>
+        <ul>
+            <li><strong>Automated Anomaly Detection:</strong> The system automatically flags "Dark Ships" (vessels that disable their AIS transponders) and cross-references them against your secure facility's pre-approved movement list.</li>
+            <li><strong>Geo-Fencing & Gate Automation:</strong> Your REALAiiD Wallet triggers automated gate opening sequences only when a vessel’s AIS position is verified within the designated arrival window, ensuring seamless, hands-free terminal ingress.</li>
+            <li><strong>Forensic Tracking:</strong> Historical AIS data is archived within the Bureau’s immutable ledger, providing a forensically covert audit trail of vessel arrival, berthing, and cargo discharge patterns.</li>
+        </ul>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Enhanced Maritime Domain Awareness</h3>
+            <p>We fuse AIS telemetry with biometric handler data. This ensures that the vessel identified by AIS matches the crew manifesting through your gates, effectively closing the gap between digital ship positioning and physical human verification.</p>
+        </div>
+        <div class="card">
+            <h3>Compliance & Sanctions Enforcement</h3>
+            <p>Our platform instantly alerts security teams if a vessel identified in the AIS feed has recent call-port history linked to sanctioned or high-risk territories, automating compliance verification before the vessel even arrives at the berth.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-grid">
+        <div><h4>Identity Core</h4><ul><li><a href="iam.html">Identity</a></li><li><a href="wallet.html">Wallet</a></li><li><a href="bureau.html">Bureau</a></li><li><a href="vault.html">Vault</a></li></ul></div>
+        <div><h4>Logistics</h4><ul><li><a href="manifest.html">Manifest</a></li><li><a href="transit.html">Transit</a></li><li><a href="cargo-bound.html">Cargo-Bound</a></li><li><a href="ais.html">AIS Data</a></li></ul></div>
+        <div><h4>Security</h4><ul><li><a href="threat.html">Threat Intel</a></li><li><a href="marsec.html">MARSEC</a></li><li><a href="perimeter.html">Perimeter</a></li><li><a href="access.html">Access</a></li></ul></div>
+        <div><h4>Operational</h4><ul><li><a href="safety.html">Safety</a></li><li><a href="forensics.html">Auditing</a></li><li><a href="logs.html">Immutable Logs</a></li><li><a href="compliance.html">Compliance</a></li></ul></div>
+        <div><h4>Corporate</h4><ul><li><a href="about.html">About</a></li><li><a href="contact.html">Procurement</a></li><li><a href="terms.html">Legal</a></li><li><a href="support.html">Tech Support</a></li><li><a href="sitemap.html">Sitemap</a></li></ul></div>
+    </div>
+</footer>
+
+</body>
+</html>
