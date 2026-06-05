@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IAM | Bureau of Digital Identity | HarborLink Partners</title>
+    <style>
+        :root {
+            --navy: #002366;
+            --light-blue: #00a8e8;
+            --white: #ffffff;
+            --bg-gray: #f4f7f6;
+            --text-dark: #2d3436;
+        }
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.7; color: var(--text-dark); margin: 0; background-color: var(--bg-gray); }
+        
+        /* Header/Nav */
+        header { background: var(--navy); color: var(--white); padding: 1.5rem 5%; position: sticky; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid var(--light-blue); }
+        nav a { color: var(--white); text-decoration: none; margin-left: 25px; font-weight: 500; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
+        
+        /* Main Content */
+        .container { width: 85%; margin: 50px auto; background: var(--white); padding: 60px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-radius: 4px; }
+        h1 { color: var(--navy); font-size: 2.5rem; border-bottom: 2px solid var(--light-blue); display: inline-block; padding-bottom: 10px; }
+        .tech-box { background: #f8f9fa; border-left: 5px solid var(--light-blue); padding: 30px; margin: 30px 0; }
+        
+        /* Footer */
+        footer { background: var(--navy); color: var(--white); padding: 60px 5% 30px; margin-top: 80px; border-top: 5px solid var(--light-blue); }
+        .footer-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; font-size: 0.85rem; }
+        .footer-grid h4 { color: var(--light-blue); text-transform: uppercase; margin-bottom: 15px; }
+        .footer-grid ul { list-style: none; padding: 0; }
+        .footer-grid li { margin-bottom: 8px; }
+        .footer-grid a { color: #ccc; text-decoration: none; }
+        .footer-grid a:hover { color: var(--white); }
+    </style>
+</head>
+<body>
+
+<header>
+    <div style="font-size: 1.5rem; font-weight: bold; letter-spacing: -1px;">HARBORLINK PARTNERS</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="capabilities.html">Capabilities</a>
+        <a href="iam.html" style="color: var(--light-blue);">IAM</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Identity & Access Management (IAM)</h1>
+    <p>The Bureau of Digital Identity provides a high-assurance, cryptographic environment where identity is no longer a static document, but a dynamic, verifiable asset. By utilizing the <strong>REALAiiD Wallet</strong>, users maintain absolute data sovereignty while engaging with port infrastructures.</p>
+
+    <div class="tech-box">
+        <h2>The Bridge Architecture: What the Wallet Can Do</h2>
+        <p>When a user loads "Bridges" into their REALAiiD Wallet, they are not merely carrying credentials; they are deploying authorized agents for secure interaction:</p>
+        <ul>
+            <li><strong>Biometric Synchronization:</strong> Instantly verify identity across port terminals without physical tokens, using encrypted, time-locked biometric handshake protocols.</li>
+            <li><strong>Automated Compliance:</strong> Automatically transmit specific, redacted certifications (e.g., TWIC, HAZMAT, or site-safety training) to facility readers, granting or denying entry based on real-time eligibility.</li>
+            <li><strong>Forensic Tracking:</strong> Generate an immutable, timestamped audit trail of every access interaction, stored within the REALAiiD ecosystem for post-event forensic analysis.</li>
+            <li><strong>Dynamic Access Bridging:</strong> Securely grant temporary facility access to contractors by "bridging" permissions directly from the central Bureau to their unique hardware device.</li>
+        </ul>
+    </div>
+
+    <h2>Forensic Integrity & Ecosystem Security</h2>
+    <p>Our ecosystem is engineered to prevent unauthorized access at the kernel level. By utilizing air-gapped cryptographic signing and decentralized verification, we ensure that the identity of the person interacting with the facility is indisputable and cryptographically bound to the transaction.</p>
+</div>
+
+<footer>
+    <div class="footer-grid">
+        <div><h4>Platforms</h4><ul><li><a href="iam.html">Identity Core</a></li><li><a href="wallet.html">REALAiiD Wallet</a></li><li><a href="bureau.html">Bureau Auth</a></li><li><a href="bridge-vault.html">Bridge Vault</a></li><li><a href="protocol.html">Security Protocol</a></li></ul></div>
+        <div><h4>Maritime</h4><ul><li><a href="philaport.html">PhilaPort Strategy</a></li><li><a href="terminal.html">Terminal Sync</a></li><li><a href="marsec.html">MARSEC Hardening</a></li><li><a href="vessel.html">Vessel Manifests</a></li><li><a href="logistics.html">Flow Analytics</a></li></ul></div>
+        <div><h4>Services</h4><ul><li><a href="biometrics.html">Biometric Gateways</a></li><li><a href="encryption.html">Cryptographic Keys</a></li><li><a href="forensics.html">Forensic Auditing</a></li><li><a href="iot.html">Edge Device Sync</a></li><li><a href="auth.html">Multi-Factor Auth</a></li></ul></div>
+        <div><h4>Governance</h4><ul><li><a href="compliance.html">Federal Mandates</a></li><li><a href="sovereignty.html">Data Sovereignty</a></li><li><a href="audit.html">Immutable Logs</a></li><li><a href="standards.html">ISO/IEC Standards</a></li><li><a href="policy.html">Operational Policy</a></li></ul></div>
+        <div><h4>Support</h4><ul><li><a href="contact.html">Procurement</a></li><li><a href="about.html">Executive Overview</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Legal</a></li><li><a href="sitemap.html">Sitemap</a></li></ul></div>
+    </div>
+    <div style="text-align: center; margin-top: 40px; font-size: 0.75rem; color: #666;">
+        &copy; 2026 HarborLink Partners - Solomon Kin LLC & REALAiiD, Inc. All rights reserved. Secure Digital Infrastructure.
+    </div>
+</footer>
+
+</body>
+</html>
