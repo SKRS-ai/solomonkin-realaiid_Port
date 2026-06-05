@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Critical Infrastructure | HarborLink Partners</title>
+    <style>
+        :root {
+            --navy: #002366;
+            --light-blue: #00a8e8;
+            --white: #ffffff;
+            --bg-gray: #f4f7f6;
+            --text-dark: #2d3436;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.7; color: var(--text-dark); margin: 0; background-color: var(--bg-gray); }
+        
+        /* Header/Nav */
+        header { background: var(--navy); color: var(--white); padding: 1.5rem 5%; position: sticky; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid var(--light-blue); }
+        nav a { color: var(--white); text-decoration: none; margin-left: 25px; font-weight: 500; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
+        
+        /* Main Content */
+        .container { width: 85%; margin: 50px auto; background: var(--white); padding: 60px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-radius: 4px; }
+        h1 { color: var(--navy); font-size: 2.5rem; border-bottom: 2px solid var(--light-blue); display: inline-block; padding-bottom: 10px; }
+        .tech-feature { border-left: 5px solid var(--light-blue); padding: 20px; background: #f9f9f9; margin-bottom: 30px; }
+        .grid-tech { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+        
+        /* Footer */
+        footer { background: var(--navy); color: var(--white); padding: 60px 5% 30px; margin-top: 80px; border-top: 5px solid var(--light-blue); }
+        .footer-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; font-size: 0.85rem; }
+        .footer-grid h4 { color: var(--light-blue); text-transform: uppercase; margin-bottom: 15px; }
+        .footer-grid ul { list-style: none; padding: 0; }
+        .footer-grid li { margin-bottom: 8px; }
+        .footer-grid a { color: #ccc; text-decoration: none; }
+        .footer-grid a:hover { color: var(--white); }
+    </style>
+</head>
+<body>
+
+<header>
+    <div style="font-size: 1.5rem; font-weight: bold; letter-spacing: -1px;">HARBORLINK PARTNERS</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="capabilities.html">Capabilities</a>
+        <a href="infrastructure.html" style="color: var(--light-blue);">Infrastructure</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Critical Infrastructure Resilience</h1>
+    <p>HarborLink Partners integrates the physical landscape of port operations with the digital precision of the Bureau of Digital Identity. Our infrastructure philosophy is centered on <strong>high-availability, edge-computing resilience</strong> designed to function in the most demanding maritime environments.</p>
+
+    <div class="tech-feature">
+        <h3>The Bridge-to-Infrastructure Interface</h3>
+        <p>When an operator utilizes a REALAiiD Wallet "Bridge," the infrastructure responds in real-time. This is not passive credentialing; it is an active handshake. Bridges allow authorized wallets to: </p>
+        <ul>
+            <li><strong>Automate Terminal Flow:</strong> Trigger gate and crane logic gates instantly upon biometric identity verification.</li>
+            <li><strong>Sensor-to-Identity Mapping:</strong> Link specific physical assets (machinery, vessels, cargo sensors) to the individual identity "Bridge" currently operating them, creating a forensic record of intent and action.</li>
+            <li><strong>Fail-Safe Redundancy:</strong> Our edge-deployed nodes ensure that even during wide-area network outages, the identity verification and terminal operations remain fully functional via local air-gapped cryptographic validation.</li>
+        </ul>
+    </div>
+
+    <div class="grid-tech">
+        <div>
+            <h2>Architectural Integrity</h2>
+            <p>Our backend integrates with existing Port Operating Systems (POS) via secure, encrypted middleware. This ensures that the Bureau’s identity data is never "trapped" in legacy silos, but instead acts as a unified master-key across the entire facility.</p>
+        </div>
+        <div>
+            <h2>Forensic Visibility</h2>
+            <p>Every structural interaction—from door locks to terminal loading protocols—is logged into an immutable forensic data-vault. This provides facility management with high-fidelity, actionable data for compliance auditing and operational optimization.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-grid">
+        <div><h4>Identity Core</h4><ul><li><a href="iam.html">IAM Protocol</a></li><li><a href="bureau.html">Bureau Authority</a></li><li><a href="wallet.html">REALAiiD Wallet</a></li><li><a href="bridge-vault.html">Bridge Vault Node</a></li><li><a href="auth-engine.html">Auth Engine</a></li></ul></div>
+        <div><h4>Infrastructure</h4><ul><li><a href="facility.html">Facility Edge</a></li><li><a href="iot.html">IoT Sensors</a></li><li><a href="gate.html">Smart Gate Logic</a></li><li><a href="network.html">Network Hardening</a></li><li><a href="power.html">Resilient Power</a></li></ul></div>
+        <div><h4>Operations</h4><ul><li><a href="logistics.html">Logistics Flow</a></li><li><a href="cargo.html">Cargo Integrity</a></li><li><a href="vessel.html">Vessel Manifest</a></li><li><a href="crane.html">Automated Crane</a></li><li><a href="towing.html">Towing Data</a></li></ul></div>
+        <div><h4>Forensics</h4><ul><li><a href="audit.html">Immutable Logs</a></li><li><a href="compliance.html">Compliance Reporting</a></li><li><a href="threat.html">Anomaly Detection</a></li><li><a href="incident.html">Incident Analysis</a></li><li><a href="archive.html">Forensic Vault</a></li></ul></div>
+        <div><h4>Governance</h4><ul><li><a href="security.html">MARSEC Security</a></li><li><a href="privacy.html">Privacy Sovereignty</a></li><li><a href="terms.html">Legal Framework</a></li><li><a href="about.html">About Company</a></li><li><a href="contact.html">Procurement</a></li></ul></div>
+    </div>
+    <div style="text-align: center; margin-top: 40px; font-size: 0.75rem; color: #666;">
+        &copy; 2026 HarborLink Partners - Solomon Kin LLC & REALAiiD, Inc. Secure Maritime Infrastructure.
+    </div>
+</footer>
+
+</body>
+</html>
