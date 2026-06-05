@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security & Forensic Resilience | HarborLink Partners</title>
+    <style>
+        :root {
+            --navy: #002366;
+            --light-blue: #00a8e8;
+            --white: #ffffff;
+            --bg-gray: #f4f7f6;
+            --text-dark: #2d3436;
+        }
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.7; color: var(--text-dark); margin: 0; background-color: var(--bg-gray); }
+        
+        /* Header/Nav */
+        header { background: var(--navy); color: var(--white); padding: 1.5rem 5%; position: sticky; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid var(--light-blue); }
+        nav a { color: var(--white); text-decoration: none; margin-left: 25px; font-weight: 500; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
+        
+        /* Main Content */
+        .container { width: 85%; margin: 50px auto; background: var(--white); padding: 60px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-radius: 4px; }
+        h1 { color: var(--navy); font-size: 2.5rem; border-bottom: 2px solid var(--light-blue); display: inline-block; padding-bottom: 10px; }
+        .tech-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px; }
+        .highlight { border-left: 5px solid var(--light-blue); padding-left: 20px; background: #f9f9f9; padding: 20px; }
+        
+        /* Footer */
+        footer { background: var(--navy); color: var(--white); padding: 60px 5% 30px; margin-top: 80px; border-top: 5px solid var(--light-blue); }
+        .footer-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; font-size: 0.85rem; }
+        .footer-grid h4 { color: var(--light-blue); text-transform: uppercase; margin-bottom: 15px; }
+        .footer-grid ul { list-style: none; padding: 0; }
+        .footer-grid li { margin-bottom: 8px; }
+        .footer-grid a { color: #ccc; text-decoration: none; }
+        .footer-grid a:hover { color: var(--white); }
+    </style>
+</head>
+<body>
+
+<header>
+    <div style="font-size: 1.5rem; font-weight: bold; letter-spacing: -1px;">HARBORLINK PARTNERS</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="capabilities.html">Capabilities</a>
+        <a href="iam.html">IAM</a>
+        <a href="security.html" style="color: var(--light-blue);">Security</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Security & Forensic Resilience</h1>
+    <p>At HarborLink Partners, security is defined by the Bureau of Digital Identity's "Zero-Trust" mandate. Our infrastructure ensures that every interaction—whether personnel access or logistics data transit—is cryptographically verified, audited, and logged within our forensic-grade ecosystem.</p>
+
+    <div class="tech-grid">
+        <div class="highlight">
+            <h3>Forensic Auditing & Immutability</h3>
+            <p>Every REALAiiD Wallet "Bridge" transaction creates an immutable entry in our distributed ledger. This provides security teams with a clear, indisputable forensic trail of every access event, preventing tampering and ensuring historical accountability for all maritime facility operations.</p>
+        </div>
+        <div class="highlight">
+            <h3>Hardware-Bound Identity</h3>
+            <p>Credentials are not stored in the cloud; they are bound to the hardware of the REALAiiD Wallet. By utilizing air-gapped signing protocols, we ensure that even in the event of a network-level breach, individual identity "Bridges" remain cryptographically isolated and physically secure.</p>
+        </div>
+    </div>
+
+    <h2>Defense-in-Depth Ecosystem</h2>
+    <p>By leveraging the REALAiiD Wallet, facilities move beyond traditional perimeter defense into an intelligent, identity-centric security model:</p>
+    <ul>
+        <li><strong>Dynamic Perimeter Hardening:</strong> Access points automatically recalibrate security levels based on real-time threat intelligence and individual "Bridge" clearance levels.</li>
+        <li><strong>Cryptographic Handshake:</strong> Biometric verification occurs locally on the wallet device, ensuring biometric data is never transmitted across the network, preserving user privacy while maximizing authentication accuracy.</li>
+        <li><strong>Automated Threat Response:</strong> Should unauthorized behavior be detected, the Bureau of Digital Identity can instantly revoke or suspend "Bridge" access globally, effectively isolating threats before they move laterally within the port environment.</li>
+    </ul>
+</div>
+
+<footer>
+    <div class="footer-grid">
+        <div><h4>Identity Core</h4><ul><li><a href="iam.html">IAM Protocol</a></li><li><a href="bureau.html">Bureau Authority</a></li><li><a href="wallet.html">REALAiiD Wallet</a></li><li><a href="encryption.html">Cryptographic Key-Set</a></li><li><a href="biometrics.html">Biometric Binding</a></li></ul></div>
+        <div><h4>Maritime Defense</h4><ul><li><a href="philaport.html">PhilaPort Perimeter</a></li><li><a href="marsec.html">MARSEC Compliance</a></li><li><a href="infrastructure.html">Hardened Ops</a></li><li><a href="transit.html">Secure Transit</a></li><li><a href="vessel.html">Vessel Manifest Sync</a></li></ul></div>
+        <div><h4>Forensics</h4><ul><li><a href="audit.html">Immutable Logs</a></li><li><a href="threat.html">Threat Analytics</a></li><li><a href="anomaly.html">Anomaly Detection</a></li><li><a href="incident.html">Incident Response</a></li><li><a href="forensic.html">Forensic Data-Vault</a></li></ul></div>
+        <div><h4>Integration</h4><ul><li><a href="iot.html">Edge IoT Security</a></li><li><a href="cloud.html">Cloud-Hybrid Sec</a></li><li><a href="api.html">Secure API Gateway</a></li><li><a href="bridge.html">Bridge Vault Node</a></li><li><a href="network.html">Network Isolation</a></li></ul></div>
+        <div><h4>Compliance</h4><ul><li><a href="federal.html">FedRAMP Alignment</a></li><li><a href="privacy.html">Data Sovereignty</a></li><li><a href="policy.html">Security Governance</a></li><li><a href="terms.html">Legal Framework</a></li><li><a href="contact.html">Procurement</a></li></ul></div>
+    </div>
+    <div style="text-align: center; margin-top: 40px; font-size: 0.75rem; color: #666;">
+        &copy; 2026 HarborLink Partners - Solomon Kin LLC & REALAiiD, Inc. | High-Assurance Infrastructure.
+    </div>
+</footer>
+
+</body>
+</html>
