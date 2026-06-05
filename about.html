@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us — HarborLink Partners</title>
+    <style>
+        :root {
+            --navy: #0a3d62;
+            --blue: #1e90ff;
+            --light: #f8f9fa;
+        }
+        body { 
+            font-family: 'Segoe UI', system-ui, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            color: #333; 
+            line-height: 1.7;
+        }
+        header { 
+            background: linear-gradient(135deg, var(--navy), var(--blue)); 
+            color: white; 
+            padding: 1.5rem 0; 
+            text-align: center; 
+            position: sticky; 
+            top: 0; 
+            z-index: 100;
+        }
+        nav { 
+            background: #222; 
+            padding: 1rem; 
+            text-align: center;
+        }
+        nav a { 
+            color: white; 
+            margin: 0 1.2rem; 
+            text-decoration: none; 
+            font-weight: 500;
+        }
+        .hero { 
+            background: linear-gradient(rgba(10,61,98,0.85), rgba(30,144,255,0.75)), 
+                        url('https://via.placeholder.com/1920x600?text=HarborLink+Partners') center/cover;
+            color: white; 
+            padding: 5rem 2rem; 
+            text-align: center;
+        }
+        .section { 
+            padding: 5rem 2rem; 
+            max-width: 1200px; 
+            margin: auto;
+        }
+        .content { 
+            background: white; 
+            padding: 3rem; 
+            border-radius: 12px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 { color: var(--navy); }
+        .grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); 
+            gap: 2.5rem; 
+            margin-top: 3rem;
+        }
+        .card { 
+            background: var(--light); 
+            padding: 2rem; 
+            border-radius: 10px; 
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+        }
+        footer { 
+            background: #111; 
+            color: #ccc; 
+            padding: 4rem 2rem 2rem; 
+            text-align: center;
+        }
+        .footer-links { 
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: center; 
+            gap: 1.5rem; 
+            margin: 2rem 0;
+        }
+        .footer-links a { 
+            color: #ccc; 
+            text-decoration: none;
+        }
+        .btn { 
+            background: var(--blue); 
+            color: white; 
+            padding: 1rem 2rem; 
+            border-radius: 6px; 
+            text-decoration: none; 
+            display: inline-block;
+            margin: 1rem 0.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>HarborLink Partners</h1>
+        <p><strong>Port Solutions by Solomon Kin LLC &amp; REALAiiD, Inc.</strong></p>
+    </header>
+
+    <!-- NAV -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Solutions</a>
+        <a href="philaport.html">PhilaPort Project</a>
+        <a href="capabilities.html">Capabilities</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h2>Who We Are</h2>
+        <p style="font-size:1.4rem; max-width:900px; margin:2rem auto;">
+            Bridging Maritime Operations and Digital Identity Innovation
+        </p>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <section class="section">
+        <div class="content">
+            <h2>About HarborLink Partners</h2>
+            <p>
+                HarborLink Partners is the specialized Port Solutions division of <strong>Solomon Kin LLC</strong> and <strong>REALAiiD, Inc.</strong>. 
+                We combine deep maritime operational expertise with cutting-edge IT infrastructure and digital identity technologies to deliver secure, efficient, and future-ready solutions for modern cruise terminals and port facilities.
+            </p>
+
+            <h2>The REALAiiD Digital Identity Ecosystem</h2>
+            <p>
+                At the core of our innovation is the <strong>Bureau of Digital Identity</strong> — powered by REALAiiD, Inc. 
+                This secure, privacy-first digital wallet ecosystem allows individuals and organizations to manage verified digital credentials with military-grade security and seamless interoperability.
+            </p>
+
+            <div class="grid">
+                <div class="card">
+                    <h3>Bureau of Digital Identity</h3>
+                    <p>If you load your verified credentials (bridges) into your REALAiiD Wallet, you can:</p>
+                    <ul>
+                        <li>Instantly authenticate at port security checkpoints using biometric + digital credential verification</li>
+                        <li>Streamline crew and contractor access control with role-based permissions</li>
+                        <li>Enable contactless passenger embarkation and debarkation</li>
+                        <li>Securely share TWIC, passport, visa, and maritime certifications</li>
+                        <li>Receive real-time operational clearances and digital boarding passes</li>
+                        <li>Maintain a verifiable audit trail for compliance and incident response</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Our Maritime Focus</h3>
+                    <p>We specialize in helping ports like PhilaPort implement secure digital identity systems that reduce wait times, enhance security, and improve the overall passenger and crew experience while meeting strict maritime regulations.</p>
+                </div>
+            </div>
+
+            <h2>Our Combined Strengths</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Solomon Kin LLC</h3>
+                    <p>Brings extensive experience in travel, luxury services, media, and passenger experience design — ensuring our solutions are not only secure but also elegant and user-friendly.</p>
+                </div>
+                <div class="card">
+                    <h3>REALAiiD, Inc.</h3>
+                    <p>Delivers advanced IT infrastructure, cybersecurity, IoT, and digital identity platforms that power the technical backbone of modern port operations.</p>
+                </div>
+            </div>
+
+            <p style="margin-top:3rem; font-size:1.1rem;">
+                Together, we offer a rare blend of real-world cruise port operational knowledge and next-generation digital identity technology. 
+                This positions us uniquely to support the PhilaPort Cruise Terminal during its critical construction and ramp-up phase.
+            </p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Solutions</a>
+            <a href="philaport.html">PhilaPort Project</a>
+            <a href="capabilities.html">Capabilities Statement</a>
+            <a href="iam.html">Identity &amp; Access Management</a>
+            <a href="security.html">Security Systems</a>
+            <a href="infrastructure.html">IT Infrastructure</a>
+            <a href="passenger.html">Passenger Experience</a>
+            <a href="compliance.html">Compliance &amp; Certifications</a>
+            <a href="resources.html">Resources</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+        </div>
+        
+        <p>&copy; 2026 HarborLink Partners — Port Solutions by Solomon Kin LLC &amp; REALAiiD, Inc.</p>
+        <p>Philadelphia, Pennsylvania | Supporting the PhilaPort Cruise Terminal</p>
+        <p>
+            <a href="mailto:procurement@harborlinkpartners.com" style="color:#1e90ff;">procurement@harborlinkpartners.com</a>
+        </p>
+    </footer>
+
+</body>
+</html>
