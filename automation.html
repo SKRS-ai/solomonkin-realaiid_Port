@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autonomous Operations | Bureau of Digital Identity</title>
+    <style>
+        :root { --navy: #002366; --light-blue: #00a8e8; --white: #ffffff; --bg-gray: #f4f7f6; --text-dark: #2d3436; --gold: #c5a059; }
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.7; color: var(--text-dark); margin: 0; background-color: var(--bg-gray); }
+        
+        /* Header */
+        header { background: var(--navy); color: var(--white); padding: 1.5rem 5%; position: sticky; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid var(--gold); }
+        nav a { color: var(--white); text-decoration: none; margin-left: 20px; font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* Content */
+        .container { width: 85%; margin: 50px auto; background: var(--white); padding: 60px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-radius: 4px; }
+        h1 { color: var(--navy); font-size: 2.5rem; border-bottom: 3px solid var(--gold); padding-bottom: 10px; display: inline-block; }
+        .tech-box { background: #fdfbf7; border-left: 5px solid var(--gold); padding: 30px; margin: 30px 0; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px; }
+        .card { padding: 30px; background: #f8f9fa; border: 1px solid #e1e1e1; }
+
+        /* Footer */
+        footer { background: var(--navy); color: var(--white); padding: 60px 5%; margin-top: 80px; border-top: 5px solid var(--gold); }
+        .footer-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; font-size: 0.75rem; }
+        .footer-grid h4 { color: var(--gold); text-transform: uppercase; margin-bottom: 15px; }
+        .footer-grid ul { list-style: none; padding: 0; }
+        .footer-grid li { margin-bottom: 5px; }
+        .footer-grid a { color: #ccc; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div style="font-size: 1.5rem; font-weight: bold; letter-spacing: -1px;">HARBORLINK PARTNERS</div>
+    <nav>
+        <a href="index.html">Home</a><a href="iam.html">IAM</a><a href="automation.html" style="color: var(--gold);">Automation</a>
+        <a href="transit.html">Transit</a><a href="contact.html">Procurement</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Autonomous Logistics Infrastructure</h1>
+    <p>The Bureau of Digital Identity provides the foundational logic for fully autonomous maritime and industrial environments. By leveraging the <strong>REALAiiD Wallet</strong>, your facility transitions from manual human-gate monitoring to an algorithmic, self-executing operational state.</p>
+
+    <div class="tech-box">
+        <h3>REALAiiD Wallet: The Autonomous Engine</h3>
+        <p>When personnel and machinery are loaded with validated "Bridges," the REALAiiD Wallet acts as the handshake between digital identity and autonomous action:</p>
+        <ul>
+            <li><strong>Autonomous Gate Activation:</strong> Smart-gate arrays perform continuous, air-gapped cryptographic polls of arriving personnel and vehicle wallets, executing ingress/egress commands without human intervention.</li>
+            <li><strong>Validated Workflow Sequences:</strong> Machines only activate when the operator’s wallet broadcasts a "Ready State" Bridge, ensuring equipment is operated only by verified, safe, and certified hands.</li>
+            <li><strong>Algorithmic Resource Allocation:</strong> Automate port throughput based on real-time arrival data fused with identity-verified cargo manifests, optimizing loading and storage schedules dynamically.</li>
+        </ul>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Machine-to-Machine Trust</h3>
+            <p>We extend the Zero-Trust architecture to IoT and heavy machinery. Autonomous cranes, gates, and transport vehicles authenticate with the REALAiiD network before performing any physical movement, preventing unauthorized or spoofed commands.</p>
+        </div>
+        <div class="card">
+            <h3>Forensic Event Automation</h3>
+            <p>Every autonomous action is tied to an immutable identity. If a machine moves a container, the system logs the event, the authorizing ID, and the safety protocol status, providing a forensically perfect log for regulatory compliance.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-grid">
+        <div><h4>Identity & Access</h4><ul><li><a href="iam.html">IAM</a></li><li><a href="wallet.html">Wallet</a></li><li><a href="bureau.html">Bureau</a></li><li><a href="vault.html">Bridge Vault</a></li><li><a href="access.html">Access Logic</a></li></ul></div>
+        <div><h4>Logistics & Flow</h4><ul><li><a href="transit.html">Secure Transit</a></li><li><a href="manifest.html">Digital Manifest</a></li><li><a href="cargo-bound.html">Cargo-Bound</a></li><li><a href="velocity.html">Velocity</a></li><li><a href="ais.html">AIS Integration</a></li></ul></div>
+        <div><h4>Security & Intel</h4><ul><li><a href="threat.html">Threat Intel</a></li><li><a href="marsec.html">MARSEC</a></li><li><a href="perimeter.html">Perimeter</a></li><li><a href="automation.html">Autonomous Ops</a></li><li><a href="biometrics.html">Biometric Core</a></li></ul></div>
+        <div><h4>Safety & Audit</h4><ul><li><a href="safety.html">Safety Zones</a></li><li><a href="forensics.html">Forensic Auditing</a></li><li><a href="logs.html">Immutable Logs</a></li><li><a href="compliance.html">Fed Compliance</a></li><li><a href="audit.html">Full Audit Log</a></li></ul></div>
+        <div><h4>Corporate & Support</h4><ul><li><a href="about.html">About</a></li><li><a href="contact.html">Procurement</a></li><li><a href="support.html">Tech Support</a></li><li><a href="terms.html">Legal</a></li><li><a href="whitepapers.html">Whitepapers</a></li><li><a href="sitemap.html">Sitemap</a></li></ul></div>
+    </div>
+</footer>
+
+</body>
+</html>
