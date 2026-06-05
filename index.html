@@ -12,87 +12,92 @@
             --bg-gray: #f4f7f6;
             --text-dark: #2d3436;
         }
-        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.7; color: var(--text-dark); margin: 0; background-color: var(--bg-gray); }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.7; color: var(--text-dark); margin: 0; background-color: var(--bg-gray); }
         
-        /* Header */
-        header { background: var(--navy); color: var(--white); padding: 1.5rem 5%; position: sticky; top: 0; z-index: 1000; border-bottom: 3px solid var(--light-blue); display: flex; justify-content: space-between; align-items: center; }
-        .logo { display: flex; align-items: center; }
-        nav a { color: var(--white); text-decoration: none; margin-left: 20px; font-weight: 500; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; }
-        
-        /* Hero Section */
+        /* Optimized Header */
+        header { background: var(--navy); padding: 1.5rem 5%; display: flex; align-items: center; justify-content: space-between; border-bottom: 4px solid var(--light-blue); }
+        .logo-box { flex: 0 0 auto; }
+        .logo-box img { height: 120px; width: auto; display: block; }
+        nav { display: flex; gap: 25px; }
+        nav a { color: var(--white); text-decoration: none; font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; transition: color 0.3s; }
+        nav a:hover { color: var(--light-blue); }
+
+        /* Hero */
         .hero { background: var(--navy); color: var(--white); padding: 80px 10%; text-align: center; }
-        .hero h1 { font-size: 3rem; margin-bottom: 20px; }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 10px; }
         
-        /* Main Container */
-        .container { width: 80%; margin: 60px auto; background: var(--white); padding: 60px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
-        h2 { color: var(--navy); border-left: 5px solid var(--light-blue); padding-left: 15px; margin-top: 40px; }
+        /* Content */
+        .container { width: 80%; margin: 60px auto; background: var(--white); padding: 60px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); }
+        h2 { color: var(--navy); border-bottom: 2px solid var(--light-blue); padding-bottom: 10px; }
         .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 30px; }
-        .card { padding: 25px; border: 1px solid #eee; }
+        .card { padding: 30px; border-left: 4px solid var(--light-blue); background: #f9f9f9; }
         
         /* Footer */
-        footer { background: var(--navy); color: var(--white); padding: 60px 5% 30px; border-top: 5px solid var(--light-blue); margin-top: 80px; }
-        .footer-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; font-size: 0.8rem; }
-        .footer-grid h4 { color: var(--light-blue); text-transform: uppercase; margin-bottom: 15px; }
+        footer { background: var(--navy); color: var(--white); padding: 60px 5%; margin-top: 80px; }
+        .footer-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 30px; }
+        .footer-grid h4 { color: var(--light-blue); margin-bottom: 15px; text-transform: uppercase; font-size: 0.9rem; }
         .footer-grid ul { list-style: none; padding: 0; }
-        .footer-grid li { margin-bottom: 8px; }
-        .footer-grid a { color: #ccc; text-decoration: none; }
+        .footer-grid li { margin-bottom: 8px; font-size: 0.8rem; }
+        .footer-grid a { color: #ccc; text-decoration: none; transition: 0.3s; }
+        .footer-grid a:hover { color: var(--white); }
     </style>
 </head>
 <body>
 
 <header>
-    <div class="logo">
-        <!-- Logo size increased 10x from 40px to 400px -->
-        <img src="HarborLinkPartners1.png" alt="HarborLink Partners" style="height: 400px; width: auto; vertical-align: middle;">
+    <div class="logo-box">
+        <img src="HarborLinkPartners1.png" alt="HarborLink Partners">
     </div>
     <nav>
         <a href="index.html">Home</a>
         <a href="services.html">Services</a>
         <a href="bureau.html">Bureau</a>
         <a href="logistics.html">Logistics</a>
-        <a href="contact.html">Contact</a>
+        <a href="marsec.html">MARSEC</a>
+        <a href="iam.html">IAM</a>
+        <a href="contact.html">Procurement</a>
     </nav>
 </header>
 
 <div class="hero">
-    <h1>Securing Global Maritime Sovereignty</h1>
-    <p>The authoritative framework for forensic identity and infrastructure hardening.</p>
+    <h1>Global Maritime Sovereignty</h1>
+    <p>The Bureau of Digital Identity: Forensically Hardened Infrastructure for International Trade.</p>
 </div>
 
 <div class="container">
-    <h2>Our Bureau Focus</h2>
-    <p>HarborLink Partners is the operational backbone for modern maritime security. We specialize in the **Bureau of Digital Identity**, a zero-trust forensic ecosystem that bridges the gap between physical cargo movement and digital authority.</p>
+    <h2>The Bureau Mission</h2>
+    <p>HarborLink Partners delivers the world's first air-gapped, zero-trust digital identity ecosystem. By converting physical port interactions into cryptographically verified "Bridge" events, we eliminate fraud, optimize throughput, and guarantee absolute chain-of-custody for cargo and personnel alike.</p>
 
-    <h2>The Power of the REALAiiD Ecosystem</h2>
-    <p>When personnel and assets load their "Bridges" into the REALAiiD Wallet, they gain:</p>
+    <h2>The REALAiiD Advantage</h2>
+    <p>When you provision your assets with the REALAiiD ecosystem, you move from standard tracking to <strong>Forensic Authority</strong>:</p>
     <ul>
-        <li><strong>Cryptographic Authority:</strong> Perform secure, air-gapped handshakes with port readers.</li>
-        <li><strong>Forensic Non-Repudiation:</strong> Every interaction generates an immutable log entry.</li>
-        <li><strong>Dynamic Compliance:</strong> Instant validation of maritime certificates and access credentials.</li>
+        <li><strong>Bridge-Node Handshakes:</strong> Instant, verified secure authentication at all terminal ingress points.</li>
+        <li><strong>Immutable Ledger Binding:</strong> Every document, container, and individual is cryptographically linked.</li>
+        <li><strong>Dynamic Threat Posture:</strong> Real-time response to MARSEC level shifts with automatic credential rotation.</li>
     </ul>
 
     <div class="grid">
         <div class="card">
-            <h3>History & Provenance</h3>
-            <p>Built upon 15 years of technical leadership in airport security and critical infrastructure, our team has pioneered the protocols now defining the security architecture of the Philadelphia and Miami ports, ensuring operational resilience.</p>
+            <h3>Technical Provenance</h3>
+            <p>With 15 years of deep-sector experience in airport security and manufacturing plant engineering, we have mapped the vulnerabilities of global transit. Our architecture, refined at the ports of Philadelphia and Miami, is now the international gold standard.</p>
         </div>
         <div class="card">
-            <h3>Global Expansion</h3>
-            <p>From the Port of Philadelphia to the Port of Miami and beyond, our architecture is built for international scalability. We are deploying a unified digital standard for ports worldwide.</p>
+            <h3>Global Port Vision</h3>
+            <p>Our goal is the radical integration of maritime hubs. We provide a single, unified language of identity that allows a vessel authenticated in Miami to seamlessly dock in Philadelphia, Singapore, or Rotterdam.</p>
         </div>
     </div>
 </div>
 
 <footer>
     <div class="footer-grid">
-        <div><h4>Bureau Core</h4><ul><li><a href="bureau.html">Bureau Charter</a></li><li><a href="protocol.html">The Protocol</a></li><li><a href="iam.html">IAM</a></li><li><a href="wallet.html">REALAiiD</a></li><li><a href="bridge-vault.html">Bridge Vault</a></li></ul></div>
-        <div><h4>Port Ops</h4><ul><li><a href="philaport.html">PhilaPort</a></li><li><a href="miami.html">Port of Miami</a></li><li><a href="terminal.html">Terminal Mgmt</a></li><li><a href="logistics.html">Logistics</a></li><li><a href="transit.html">Transit</a></li></ul></div>
-        <div><h4>Security/MARSEC</h4><ul><li><a href="marsec.html">MARSEC Gov</a></li><li><a href="threat.html">Threat Intel</a></li><li><a href="vessel.html">Vessel Auth</a></li><li><a href="safety.html">Safety Zones</a></li><li><a href="audit.html">Forensic Audit</a></li></ul></div>
-        <div><h4>Enterprise</h4><ul><li><a href="about.html">Executive Vision</a></li><li><a href="contact.html">Procurement</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="sitemap.html">Sitemap</a></li><li><a href="compliance.html">Compliance</a></li></ul></div>
-        <div><h4>Contact</h4><ul><li>Email: solomonkinllc@gmail.com</li><li><a href="contact.html">Procurement</a></li><li><a href="support.html">Tech Support</a></li><li><a href="faq.html">FAQs</a></li><li><a href="careers.html">Career Path</a></li></ul></div>
+        <div><h4>Bureau Protocol</h4><ul><li><a href="bureau.html">Bureau Charter</a></li><li><a href="iam.html">Identity Mgmt</a></li><li><a href="wallet.html">REALAiiD Wallet</a></li><li><a href="bridge-vault.html">Bridge Vault</a></li><li><a href="sovereignty.html">Sovereignty</a></li></ul></div>
+        <div><h4>Port Operations</h4><ul><li><a href="philaport.html">PhilaPort Hub</a></li><li><a href="miami.html">Port of Miami</a></li><li><a href="terminal.html">Terminal Ops</a></li><li><a href="gate-logic.html">Gate Protocols</a></li><li><a href="transit.html">Secure Transit</a></li></ul></div>
+        <div><h4>Maritime Security</h4><ul><li><a href="marsec.html">MARSEC Governance</a></li><li><a href="vessel.html">Vessel Auth</a></li><li><a href="threat.html">Threat Intel</a></li><li><a href="safety.html">Safety Zones</a></li><li><a href="audit.html">Forensic Audit</a></li></ul></div>
+        <div><h4>Logistics Intelligence</h4><ul><li><a href="logistics.html">Flow Forensics</a></li><li><a href="manifest.html">Manifest Integrity</a></li><li><a href="cargo-bound.html">Cargo Binding</a></li><li><a href="ais.html">AIS Verification</a></li><li><a href="velocity.html">Velocity Analysis</a></li></ul></div>
+        <div><h4>Enterprise & Legal</h4><ul><li><a href="about.html">Executive Vision</a></li><li><a href="compliance.html">Fed Standards</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="contact.html">Procurement</a></li><li>Email: solomonkinllc@gmail.com</li></ul></div>
     </div>
-    <div style="text-align: center; margin-top: 40px; font-size: 0.7rem; color: #888;">
-        &copy; 2026 HarborLink Partners - Solomon Kin LLC & REALAiiD, Inc. | Global Maritime Forensic Sovereignty.
+    <div style="text-align: center; margin-top: 50px; font-size: 0.7rem; color: #666;">
+        &copy; 2026 HarborLink Partners - Solomon Kin LLC & REALAiiD, Inc. | Hardened Maritime Identity Sovereignty.
     </div>
 </footer>
 
