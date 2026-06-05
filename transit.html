@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Transit | Bureau of Digital Identity | HarborLink Partners</title>
+    <style>
+        :root { --navy: #002366; --light-blue: #00a8e8; --white: #ffffff; --bg-gray: #f4f7f6; --text-dark: #2d3436; }
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.7; color: var(--text-dark); margin: 0; background-color: var(--bg-gray); }
+        
+        /* Header */
+        header { background: var(--navy); color: var(--white); padding: 1.5rem 5%; position: sticky; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid var(--light-blue); }
+        nav a { color: var(--white); text-decoration: none; margin-left: 20px; font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* Content */
+        .container { width: 85%; margin: 50px auto; background: var(--white); padding: 60px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+        h1 { color: var(--navy); font-size: 2.5rem; border-bottom: 3px solid var(--light-blue); padding-bottom: 10px; display: inline-block; }
+        .feature-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px; }
+        .card { padding: 30px; background: #f8f9fa; border-left: 5px solid var(--light-blue); }
+
+        /* Footer */
+        footer { background: var(--navy); color: var(--white); padding: 60px 5%; margin-top: 80px; border-top: 5px solid var(--light-blue); }
+        .footer-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; font-size: 0.8rem; }
+        .footer-grid h4 { color: var(--light-blue); text-transform: uppercase; margin-bottom: 15px; }
+        .footer-grid ul { list-style: none; padding: 0; }
+        .footer-grid li { margin-bottom: 8px; }
+        .footer-grid a { color: #ccc; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div style="font-size: 1.5rem; font-weight: bold; letter-spacing: -1px;">HARBORLINK PARTNERS</div>
+    <nav>
+        <a href="index.html">Home</a><a href="services.html">Services</a><a href="iam.html">IAM</a>
+        <a href="transit.html" style="color: var(--light-blue);">Transit</a><a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Secure Transit Protocol</h1>
+    <p>Secure Transit is the lifeblood of global trade. HarborLink Partners optimizes this flow by replacing legacy, vulnerable checkpoints with the <strong>Bureau of Digital Identity’s</strong> unified verification framework. By moving data through the REALAiiD Wallet, we ensure that every transit event is cryptographically signed and forensically tracked.</p>
+
+    <div class="feature-grid">
+        <div class="card">
+            <h3>Unified Transit Authorization</h3>
+            <p>With their REALAiiD Wallet, operators carry a unified credential set (Bridges). These Bridges allow for seamless hand-offs between vessel operators, truck drivers, and terminal managers, ensuring the integrity of the manifest remains unbroken from origin to destination.</p>
+        </div>
+        <div class="card">
+            <h3>Forensic Event Signing</h3>
+            <p>Transit is not just movement; it is a series of verifiable data events. Our protocol signs every movement event to an immutable ledger, providing a forensically covert audit trail that identifies bottlenecks and prevents illicit cargo intrusion.</p>
+        </div>
+    </div>
+
+    <h2>Bridge Functionality for Transit</h2>
+    <ul>
+        <li><strong>Credential "Binding":</strong> Automatically bind high-value cargo manifests to the driver’s digital identity vault.</li>
+        <li><strong>Zero-Trust Ingress:</strong> Enable automated transit of goods through terminals using localized, air-gapped cryptographic handshakes.</li>
+        <li><strong>Real-time Compliance:</strong> Instantly update the shipping manifest’s status against international maritime security databases (MARSEC/AIS).</li>
+    </ul>
+</div>
+
+<footer>
+    <div class="footer-grid">
+        <div><h4>Platforms</h4><ul><li><a href="iam.html">Identity Core</a></li><li><a href="wallet.html">REALAiiD Wallet</a></li><li><a href="bureau.html">Bureau Auth</a></li><li><a href="bridge-vault.html">Bridge Vault</a></li></ul></div>
+        <div><h4>Maritime</h4><ul><li><a href="philaport.html">PhilaPort</a></li><li><a href="terminal.html">Terminal Sync</a></li><li><a href="marsec.html">MARSEC</a></li><li><a href="transit.html">Secure Transit</a></li></ul></div>
+        <div><h4>Operations</h4><ul><li><a href="biometrics.html">Biometrics</a></li><li><a href="encryption.html">Encryption</a></li><li><a href="forensics.html">Auditing</a></li><li><a href="iot.html">IoT Sync</a></li></ul></div>
+        <div><h4>Governance</h4><ul><li><a href="compliance.html">Standards</a></li><li><a href="sovereignty.html">Sovereignty</a></li><li><a href="audit.html">Logs</a></li><li><a href="policy.html">Policy</a></li></ul></div>
+        <div><h4>Corporate</h4><ul><li><a href="contact.html">Procurement</a></li><li><a href="about.html">About</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Legal</a></li></ul></div>
+    </div>
+</footer>
+
+</body>
+</html>
