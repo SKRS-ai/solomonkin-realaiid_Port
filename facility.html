@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facility Management | HarborLink Partners</title>
+    <style>
+        :root {
+            --navy: #002366;
+            --light-blue: #00a8e8;
+            --white: #ffffff;
+            --bg-gray: #f4f7f6;
+            --text-dark: #2d3436;
+        }
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.7; color: var(--text-dark); margin: 0; background-color: var(--bg-gray); }
+        
+        /* Header/Nav */
+        header { background: var(--navy); color: var(--white); padding: 1.5rem 5%; position: sticky; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid var(--light-blue); }
+        nav a { color: var(--white); text-decoration: none; margin-left: 25px; font-weight: 500; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
+        
+        /* Main Content */
+        .container { width: 85%; margin: 50px auto; background: var(--white); padding: 60px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-radius: 4px; }
+        h1 { color: var(--navy); font-size: 2.5rem; border-bottom: 2px solid var(--light-blue); display: inline-block; padding-bottom: 10px; }
+        .grid-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px; }
+        .card { padding: 30px; border: 1px solid #eee; background: #fafafa; }
+        .tech-highlight { border-left: 5px solid var(--light-blue); background: #f0f7fb; padding: 20px; margin-top: 30px; }
+        
+        /* Footer */
+        footer { background: var(--navy); color: var(--white); padding: 60px 5% 30px; margin-top: 80px; border-top: 5px solid var(--light-blue); }
+        .footer-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; font-size: 0.85rem; }
+        .footer-grid h4 { color: var(--light-blue); text-transform: uppercase; margin-bottom: 15px; }
+        .footer-grid ul { list-style: none; padding: 0; }
+        .footer-grid li { margin-bottom: 8px; }
+        .footer-grid a { color: #ccc; text-decoration: none; }
+        .footer-grid a:hover { color: var(--white); }
+    </style>
+</head>
+<body>
+
+<header>
+    <div style="font-size: 1.5rem; font-weight: bold; letter-spacing: -1px;">HARBORLINK PARTNERS</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="capabilities.html">Capabilities</a>
+        <a href="iam.html">IAM</a>
+        <a href="facility.html" style="color: var(--light-blue);">Facility</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Facility & Asset Oversight</h1>
+    <p>The HarborLink Partners infrastructure model transforms physical port facilities into intelligent, interconnected ecosystems. By integrating with the <strong>Bureau of Digital Identity</strong>, facility management gains granular control over who, what, and when—all managed through the REALAiiD Wallet framework.</p>
+
+    <div class="tech-highlight">
+        <h3>Asset Interaction via Wallet "Bridges"</h3>
+        <p>When personnel possess a REALAiiD Wallet with authorized "Bridges," they enable a new layer of facility interaction:</p>
+        <ul>
+            <li><strong>Biometric Asset Authorization:</strong> Machinery and sensitive site-rooms become active participants; they require a "Bridge" handshake before powering on, ensuring that only certified personnel can operate specific facility assets.</li>
+            <li><strong>Automated Facility Logs:</strong> Every time a user interacts with a physical gate, lock, or terminal point, the transaction is logged as an immutable entry in the forensic data-vault.</li>
+            <li><strong>Dynamic Zoning:</strong> Facility security zones are no longer static; they recalibrate in real-time based on the "Bridge" credentials carried by the individual, creating a flexible, secure operational environment.</li>
+        </ul>
+    </div>
+
+    <div class="grid-layout">
+        <div class="card">
+            <h3>Unified Management Engine</h3>
+            <p>Our dashboard provides a bird's-eye view of all facility access points. We bridge the gap between legacy hardware and modern security, providing a centralized control panel for monitoring traffic flow and hardware performance.</p>
+        </div>
+        <div class="card">
+            <h3>Forensic Security Standard</h3>
+            <p>The Bureau’s standard ensures that all facility data is treated as high-assurance, cryptographically signed, and tamper-proof. We eliminate the vulnerabilities of traditional key-card systems by moving toward hardware-bound, identity-centric access.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-grid">
+        <div><h4>Asset Core</h4><ul><li><a href="sensors.html">IoT Sensor Array</a></li><li><a href="automation.html">Automated Gates</a></li><li><a href="zoning.html">Dynamic Zoning</a></li><li><a href="power.html">Power Management</a></li><li><a href="HVAC.html">Climate Sync</a></li></ul></div>
+        <div><h4>Identity & Auth</h4><ul><li><a href="iam.html">IAM Bureau</a></li><li><a href="wallet.html">REALAiiD Wallet</a></li><li><a href="bridge-vault.html">Bridge Vault</a></li><li><a href="biometrics.html">Biometric Binding</a></li><li><a href="signing.html">Key-Set Signing</a></li></ul></div>
+        <div><h4>Facility Ops</h4><ul><li><a href="philaport.html">PhilaPort Strategy</a></li><li><a href="logistics.html">Asset Logistics</a></li><li><a href="maintenance.html">Predictive Main.</a></li><li><a href="safety.html">Safety Protocols</a></li><li><a href="response.html">Emergency Response</a></li></ul></div>
+        <div><h4>Forensic Vault</h4><ul><li><a href="audit.html">Immutable Logs</a></li><li><a href="threat.html">Threat Analytics</a></li><li><a href="anomaly.html">Anomaly Detection</a></li><li><a href="incident.html">Incident Archive</a></li><li><a href="forensic.html">Forensic Pathing</a></li></ul></div>
+        <div><h4>Corporate/Legal</h4><ul><li><a href="contact.html">Procurement</a></li><li><a href="privacy.html">Data Sovereignty</a></li><li><a href="terms.html">Legal Framework</a></li><li><a href="governance.html">Governance</a></li><li><a href="about.html">About Company</a></li></ul></div>
+    </div>
+    <div style="text-align: center; margin-top: 40px; font-size: 0.75rem; color: #666;">
+        &copy; 2026 HarborLink Partners - Solomon Kin LLC & REALAiiD, Inc. Secure Facility Infrastructure.
+    </div>
+</footer>
+
+</body>
+</html>
