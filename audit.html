@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forensic Audit & Immutable Logging | Bureau of Digital Identity</title>
+    <style>
+        :root { --navy: #002366; --light-blue: #00a8e8; --white: #ffffff; --bg-gray: #f4f7f6; --text-dark: #2d3436; --gold: #c5a059; }
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.7; color: var(--text-dark); margin: 0; background-color: var(--bg-gray); }
+        
+        /* Header */
+        header { background: var(--navy); color: var(--white); padding: 1.5rem 5%; position: sticky; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid var(--gold); }
+        nav a { color: var(--white); text-decoration: none; margin-left: 20px; font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* Content */
+        .container { width: 85%; margin: 50px auto; background: var(--white); padding: 60px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-radius: 4px; }
+        h1 { color: var(--navy); font-size: 2.5rem; border-bottom: 3px solid var(--gold); padding-bottom: 10px; display: inline-block; }
+        .tech-box { background: #fdfbf7; border-left: 5px solid var(--gold); padding: 30px; margin: 30px 0; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px; }
+        .card { padding: 30px; background: #f8f9fa; border: 1px solid #e1e1e1; transition: 0.3s; }
+
+        /* Footer */
+        footer { background: var(--navy); color: var(--white); padding: 60px 5%; margin-top: 80px; border-top: 5px solid var(--gold); }
+        .footer-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; font-size: 0.75rem; }
+        .footer-grid h4 { color: var(--gold); text-transform: uppercase; margin-bottom: 15px; }
+        .footer-grid ul { list-style: none; padding: 0; }
+        .footer-grid li { margin-bottom: 5px; }
+        .footer-grid a { color: #ccc; text-decoration: none; }
+        .footer-grid a:hover { color: var(--white); }
+    </style>
+</head>
+<body>
+
+<header>
+    <div style="font-size: 1.5rem; font-weight: bold; letter-spacing: -1px;">HARBORLINK PARTNERS</div>
+    <nav>
+        <a href="index.html">Home</a><a href="iam.html">IAM</a><a href="audit.html" style="color: var(--gold);">Audit</a>
+        <a href="transit.html">Transit</a><a href="contact.html">Procurement</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Immutable Forensic Audit Protocol</h1>
+    <p>In high-stakes maritime environments, accountability is the ultimate security metric. The Bureau of Digital Identity utilizes an immutable, cryptographic logging system that ensures every interaction—from a simple gate-swipe to a complex hazardous material manifest—is non-repudiable and forensically accessible.</p>
+
+    <div class="tech-box">
+        <h3>REALAiiD Wallet: The Audit Witness</h3>
+        <p>When Bridges (authorized credentials) are loaded into the REALAiiD Wallet, they function as independent logging nodes:</p>
+        <ul>
+            <li><strong>Cryptographic Witnessing:</strong> Every time a user interacts with a physical reader, their Wallet generates a signed, timestamped manifest of the interaction.</li>
+            <li><strong>Non-Repudiable Logs:</strong> Because these logs are cryptographically bound to the user's unique identity "Bridge," they cannot be altered or deleted, satisfying strict federal compliance mandates.</li>
+            <li><strong>Post-Event Forensic Reconstruction:</strong> In the event of a security inquiry, administrators can reconstruct the exact sequence of events, identifying unauthorized shifts or anomalous movement patterns with granular precision.</li>
+        </ul>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Compliance & Governance</h3>
+            <p>Our platform automates audit-readiness. By feeding real-time identity data into a secure, immutable ledger, we allow facility managers to produce compliance reports for internal security reviews or federal regulatory bodies on demand.</p>
+        </div>
+        <div class="card">
+            <h3>Forensically Covert Monitoring</h3>
+            <p>Our system logs metadata silently and securely at the edge. This provides complete visibility into port activity without interfering with the speed of logistics or the daily throughput of cargo operations.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-grid">
+        <div><h4>Identity Core</h4><ul><li><a href="iam.html">Management</a></li><li><a href="wallet.html">REALAiiD Wallet</a></li><li><a href="bureau.html">The Bureau</a></li><li><a href="bridge-vault.html">Bridge Vault</a></li><li><a href="protocol.html">Security Protocol</a></li></ul></div>
+        <div><h4>Operational Layers</h4><ul><li><a href="transit.html">Secure Transit</a></li><li><a href="safety.html">Safety Protocols</a></li><li><a href="threat.html">Threat Intelligence</a></li><li><a href="marsec.html">MARSEC Compliance</a></li><li><a href="perimeter.html">Facility Perimeter</a></li></ul></div>
+        <div><h4>Technical Suite</h4><ul><li><a href="iot.html">IoT Synchronization</a></li><li><a href="forensics.html">Forensic Auditing</a></li><li><a href="data.html">Forensic Analytics</a></li><li><a href="edge.html">Edge Computing</a></li><li><a href="biometrics.html">Biometric Core</a></li></ul></div>
+        <div><h4>Fiscal & Legal</h4><ul><li><a href="compute.html">$AII Currency</a></li><li><a href="governance.html">Governance</a></li><li><a href="terms.html">Legal Terms</a></li><li><a href="privacy.html">Data Privacy</a></li><li><a href="compliance.html">Fed Standards</a></li></ul></div>
+        <div><h4>Outreach</h4><ul><li><a href="contact.html">Procurement</a></li><li><a href="about.html">About Us</a></li><li><a href="support.html">Tech Support</a></li><li><a href="whitepapers.html">Whitepapers</a></li><li><a href="sitemap.html">Sitemap</a></li></ul></div>
+    </div>
+</footer>
+
+</body>
+</html>
