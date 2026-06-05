@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passenger Services | HarborLink Partners</title>
+    <style>
+        :root {
+            --navy: #002366;
+            --light-blue: #00a8e8;
+            --white: #ffffff;
+            --bg-gray: #f4f7f6;
+            --text-dark: #2d3436;
+        }
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.7; color: var(--text-dark); margin: 0; background-color: var(--bg-gray); }
+        
+        /* Header/Nav */
+        header { background: var(--navy); color: var(--white); padding: 1.5rem 5%; position: sticky; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid var(--light-blue); }
+        nav a { color: var(--white); text-decoration: none; margin-left: 25px; font-weight: 500; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
+        
+        /* Main Content */
+        .container { width: 85%; margin: 50px auto; background: var(--white); padding: 60px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-radius: 4px; }
+        h1 { color: var(--navy); font-size: 2.5rem; border-bottom: 2px solid var(--light-blue); display: inline-block; padding-bottom: 10px; }
+        .feature-box { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px; }
+        .card { padding: 30px; background: #f9f9f9; border-left: 4px solid var(--light-blue); }
+        
+        /* Footer */
+        footer { background: var(--navy); color: var(--white); padding: 60px 5% 30px; margin-top: 80px; border-top: 5px solid var(--light-blue); }
+        .footer-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; font-size: 0.85rem; }
+        .footer-grid h4 { color: var(--light-blue); text-transform: uppercase; margin-bottom: 15px; }
+        .footer-grid ul { list-style: none; padding: 0; }
+        .footer-grid li { margin-bottom: 8px; }
+        .footer-grid a { color: #ccc; text-decoration: none; }
+        .footer-grid a:hover { color: var(--white); }
+    </style>
+</head>
+<body>
+
+<header>
+    <div style="font-size: 1.5rem; font-weight: bold; letter-spacing: -1px;">HARBORLINK PARTNERS</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="capabilities.html">Capabilities</a>
+        <a href="iam.html">IAM</a>
+        <a href="passenger.html" style="color: var(--light-blue);">Passenger</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Passenger Identity & Transit</h1>
+    <p>HarborLink Partners redefines the passenger experience by deploying the <strong>Bureau of Digital Identity</strong> to high-traffic maritime transit hubs. By utilizing REALAiiD Wallet "Bridges," we transform the passenger journey from a series of friction-heavy checkpoints into a seamless, biometric-validated flow.</p>
+
+    <div class="feature-box">
+        <div class="card">
+            <h3>Wallet "Bridge" Functionality</h3>
+            <p>Passengers carrying a REALAiiD Wallet with loaded "Bridges" gain instant, high-assurance mobility:</p>
+            <ul>
+                <li><strong>Cryptographic Boarding:</strong> Replace physical boarding passes with a time-locked, encrypted "Travel Bridge" that validates identity and ticket status in milliseconds.</li>
+                <li><strong>Biometric Expediting:</strong> Use local, on-device biometric handshakes to clear security perimeters without showing physical identification documents.</li>
+                <li><strong>Unified Experience:</strong> Access facility amenities (lounges, concessions, valet) by simply interacting with authorized Bridge-readers, linking digital identity to service provisioning.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Forensic Transit Integrity</h3>
+            <p>For terminal operators, our passenger protocols provide unmatched oversight:</p>
+            <ul>
+                <li><strong>Real-Time Manifest Sync:</strong> Immediate, accurate data on current passenger location and terminal occupancy.</li>
+                <li><strong>Forensic Audit Trail:</strong> Every passenger interaction is cryptographically logged in our forensic data-vault, ensuring absolute compliance with maritime safety and federal transit mandates.</li>
+                <li><strong>Anomaly Detection:</strong> Automated identification of irregular transit patterns or expired credentials, allowing for proactive intervention.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-grid">
+        <div><h4>Passenger Core</h4><ul><li><a href="boarding.html">Digital Boarding</a></li><li><a href="check-in.html">Fast Check-In</a></li><li><a href="manifest.html">Manifest Sync</a></li><li><a href="loyalty.html">Service Bridges</a></li><li><a href="amenity.html">Facility Access</a></li></ul></div>
+        <div><h4>Identity Protocols</h4><ul><li><a href="iam.html">Identity Core</a></li><li><a href="wallet.html">REALAiiD Wallet</a></li><li><a href="bureau.html">Bureau Auth</a></li><li><a href="bridge.html">Bridge Vault</a></li><li><a href="biometrics.html">Biometric Gate</a></li></ul></div>
+        <div><h4>Terminal Ops</h4><ul><li><a href="philaport.html">PhilaPort Terminal</a></li><li><a href="flow.html">Transit Flow</a></li><li><a href="safety.html">Passenger Safety</a></li><li><a href="incident.html">Incident Resp</a></li><li><a href="crowd.html">Crowd Analytics</a></li></ul></div>
+        <div><h4>Forensics</h4><ul><li><a href="audit.html">Immutable Logs</a></li><li><a href="compliance.html">Fed Compliance</a></li><li><a href="threat.html">Threat Detection</a></li><li><a href="tracking.html">Forensic Pathing</a></li><li><a href="data.html">Data Sovereignty</a></li></ul></div>
+        <div><h4>Corporate</h4><ul><li><a href="about.html">About Us</a></li><li><a href="security.html">Security Specs</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Legal Terms</a></li><li><a href="contact.html">Procurement</a></li></ul></div>
+    </div>
+    <div style="text-align: center; margin-top: 40px; font-size: 0.75rem; color: #666;">
+        &copy; 2026 HarborLink Partners - Solomon Kin LLC & REALAiiD, Inc. | Secure Passenger Infrastructure.
+    </div>
+</footer>
+
+</body>
+</html>
