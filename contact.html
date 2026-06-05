@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Procurement Outreach | HarborLink Partners</title>
+    <style>
+        :root {
+            --navy: #002366;
+            --light-blue: #00a8e8;
+            --white: #ffffff;
+            --bg-gray: #f4f7f6;
+            --text-dark: #2d3436;
+        }
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.7; color: var(--text-dark); margin: 0; background-color: var(--bg-gray); }
+        
+        /* Header/Nav - Persistent */
+        header { background: var(--navy); color: var(--white); padding: 1.5rem 5%; position: sticky; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid var(--light-blue); }
+        nav a { color: var(--white); text-decoration: none; margin-left: 25px; font-weight: 500; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
+        
+        /* Main Content */
+        .container { width: 85%; margin: 50px auto; background: var(--white); padding: 60px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-radius: 4px; }
+        h1 { color: var(--navy); font-size: 2.5rem; border-bottom: 2px solid var(--light-blue); display: inline-block; padding-bottom: 10px; }
+        .form-section { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; margin-top: 40px; }
+        input, textarea, select { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px; }
+        button { background: var(--navy); color: var(--white); padding: 15px 30px; border: none; cursor: pointer; font-weight: bold; text-transform: uppercase; }
+        
+        /* Footer - Persistent */
+        footer { background: var(--navy); color: var(--white); padding: 60px 5% 30px; margin-top: 80px; border-top: 5px solid var(--light-blue); }
+        .footer-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; font-size: 0.85rem; }
+        .footer-grid h4 { color: var(--light-blue); text-transform: uppercase; margin-bottom: 15px; }
+        .footer-grid ul { list-style: none; padding: 0; }
+        .footer-grid li { margin-bottom: 8px; }
+        .footer-grid a { color: #ccc; text-decoration: none; }
+        .footer-grid a:hover { color: var(--white); }
+    </style>
+</head>
+<body>
+
+<header>
+    <div style="font-size: 1.5rem; font-weight: bold; letter-spacing: -1px;">HARBORLINK PARTNERS</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="capabilities.html">Capabilities</a>
+        <a href="philaport.html">PhilaPort</a>
+        <a href="contact.html" style="color: var(--light-blue);">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Procurement & Partnership Outreach</h1>
+    <p>HarborLink Partners (Solomon Kin LLC & REALAiiD, Inc.) welcomes formal inquiries from municipal authorities, maritime logistics providers, and security procurement teams. Please utilize the channels below to request briefings, technical specifications, or vendor verification documentation.</p>
+
+    <div class="form-section">
+        <div>
+            <h2>Direct Outreach</h2>
+            <p><strong>Office of the CEO</strong><br>Solomon Kin LLC / REALAiiD, Inc.<br>Philadelphia, PA Operations Center</p>
+            <p>For urgent inquiries regarding Bureau of Digital Identity onboarding or Wallet Bridge integration, please specify your agency or organization clearly to ensure routing to the appropriate engineering lead.</p>
+        </div>
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Official Email Address" required>
+            <select>
+                <option>Procurement Inquiry</option>
+                <option>Technical Integration/Bridge Request</option>
+                <option>Security/Compliance Briefing</option>
+                <option>General Media Inquiry</option>
+            </select>
+            <textarea rows="6" placeholder="Project details or security requirements..."></textarea>
+            <button type="submit">Submit Secure Request</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-grid">
+        <div><h4>Platforms</h4><ul><li><a href="iam.html">Digital Identity</a></li><li><a href="wallet.html">REALAiiD Wallet</a></li><li><a href="bureau.html">The Bureau</a></li><li><a href="ecosystem.html">Ecosystem Core</a></li><li><a href="vault.html">Bridge Vault</a></li></ul></div>
+        <div><h4>Maritime</h4><ul><li><a href="philaport.html">PhilaPort Initiative</a></li><li><a href="infrastructure.html">Infrastructure</a></li><li><a href="security.html">MARSEC Compliance</a></li><li><a href="transit.html">Terminal Transit</a></li><li><a href="safety.html">Safety Protocols</a></li></ul></div>
+        <div><h4>Capabilities</h4><ul><li><a href="logistics.html">Logistics</a></li><li><a href="automation.html">Automation</a></li><li><a href="passenger.html">Passenger Services</a></li><li><a href="forensics.html">Forensic Analytics</a></li><li><a href="audit.html">Immutable Audit</a></li></ul></div>
+        <div><h4>Innovation</h4><ul><li><a href="iot.html">IoT Integration</a></li><li><a href="biometrics.html">Biometric Core</a></li><li><a href="edge.html">Edge Computing</a></li><li><a href="r-d.html">Research & Dev</a></li><li><a href="whitepapers.html">Whitepapers</a></li></ul></div>
+        <div><h4>Corporate</h4><ul><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Service</a></li><li><a href="governance.html">Governance</a></li></ul></div>
+    </div>
+    <div style="text-align: center; margin-top: 40px; font-size: 0.75rem; color: #666;">
+        &copy; 2026 HarborLink Partners - Solomon Kin LLC & REALAiiD, Inc. All rights reserved. Secure Digital Infrastructure.
+    </div>
+</footer>
+
+</body>
+</html>
