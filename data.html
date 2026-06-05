@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sovereign Data Architecture | Bureau of Digital Identity</title>
+    <style>
+        :root { --navy: #002366; --light-blue: #00a8e8; --white: #ffffff; --bg-gray: #f4f7f6; --text-dark: #2d3436; --gold: #c5a059; }
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.7; color: var(--text-dark); margin: 0; background-color: var(--bg-gray); }
+        
+        /* Header */
+        header { background: var(--navy); color: var(--white); padding: 1.5rem 5%; position: sticky; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid var(--gold); }
+        nav a { color: var(--white); text-decoration: none; margin-left: 20px; font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* Content */
+        .container { width: 85%; margin: 50px auto; background: var(--white); padding: 60px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-radius: 4px; }
+        h1 { color: var(--navy); font-size: 2.5rem; border-bottom: 3px solid var(--gold); padding-bottom: 10px; display: inline-block; }
+        .tech-box { background: #fdfbf7; border-left: 5px solid var(--gold); padding: 30px; margin: 30px 0; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px; }
+        .card { padding: 30px; background: #f8f9fa; border: 1px solid #e1e1e1; }
+
+        /* Footer */
+        footer { background: var(--navy); color: var(--white); padding: 60px 5%; margin-top: 80px; border-top: 5px solid var(--gold); }
+        .footer-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 15px; font-size: 0.75rem; }
+        .footer-grid h4 { color: var(--gold); text-transform: uppercase; margin-bottom: 10px; }
+        .footer-grid ul { list-style: none; padding: 0; }
+        .footer-grid li { margin-bottom: 3px; }
+        .footer-grid a { color: #ccc; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div style="font-size: 1.5rem; font-weight: bold; letter-spacing: -1px;">HARBORLINK PARTNERS</div>
+    <nav>
+        <a href="index.html">Home</a><a href="iam.html">IAM</a><a href="data.html" style="color: var(--gold);">Data Core</a>
+        <a href="transit.html">Transit</a><a href="contact.html">Procurement</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Sovereign Data & Forensic Governance</h1>
+    <p>Data Sovereignty is the foundation of our infrastructure. At the Bureau of Digital Identity, we ensure that every byte of information—whether logistical, personal, or industrial—is subject to the governing laws of the jurisdiction where it is generated, stored, and processed. By integrating REALAiiD technology, we provide an unprecedented level of <strong>Data Control</strong>, ensuring that your digital assets remain exclusively within your sovereign reach.</p>
+
+    <div class="tech-box">
+        <h3>REALAiiD Wallet: Your Data Sovereignty Anchor</h3>
+        <p>When you utilize the REALAiiD Wallet, you aren't just holding credentials; you are managing a sovereign data vault. Your Wallet enables:</p>
+        <ul>
+            <li><strong>Jurisdictional Hardening:</strong> Through geo-fenced routing and localized processing, the system ensures your data never crosses restricted jurisdictional boundaries, maintaining full legal compliance.</li>
+            <li><strong>Immutable Forensic Logging:</strong> Every data access event is recorded on a tamper-proof, time-stamped ledger, providing a forensically covert audit trail that is accessible only to the data owner.</li>
+            <li><strong>Encrypted Data Localization:</strong> All data at rest is protected by customer-managed keys, ensuring that even in a cloud-enabled environment, the Bureau cannot access your content without explicit, per-event authorization.</li>
+        </ul>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Zero-Trust Data Governance</h3>
+            <p>Our platform assumes that all networks are compromised. We implement data-level encryption and strict role-based access control (RBAC), ensuring that the principle of "least privilege" governs every interaction with your data assets.</p>
+        </div>
+        <div class="card">
+            <h3>Automated Compliance Reporting</h3>
+            <p>Sovereignty is verifiable. Our platform automates the audit-readiness process by generating non-repudiable logs that demonstrate adherence to local, national, and international data protection regulations, drastically reducing the burden of manual compliance reviews.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-grid">
+        <div><h4>Identity & Access</h4><ul><li><a href="iam.html">IAM</a></li><li><a href="wallet.html">Wallet</a></li><li><a href="bureau.html">Bureau</a></li><li><a href="vault.html">Bridge Vault</a></li><li><a href="access.html">Access Logic</a></li></ul></div>
+        <div><h4>Logistics</h4><ul><li><a href="transit.html">Transit</a></li><li><a href="manifest.html">Manifest</a></li><li><a href="cargo-bound.html">Cargo</a></li><li><a href="velocity.html">Velocity</a></li><li><a href="ais.html">AIS Data</a></li></ul></div>
+        <div><h4>Security Intel</h4><ul><li><a href="threat.html">Threats</a></li><li><a href="marsec.html">MARSEC</a></li><li><a href="perimeter.html">Perimeter</a></li><li><a href="automation.html">Automation</a></li><li><a href="biometrics.html">Biometrics</a></li></ul></div>
+        <div><h4>Forensics & Audit</h4><ul><li><a href="safety.html">Safety</a></li><li><a href="forensics.html">Auditing</a></li><li><a href="logs.html">Logs</a></li><li><a href="compliance.html">Compliance</a></li><li><a href="audit.html">Audit Log</a></li></ul></div>
+        <div><h4>Corporate</h4><ul><li><a href="about.html">About</a></li><li><a href="contact.html">Procurement</a></li><li><a href="support.html">Support</a></li><li><a href="whitepapers.html">Whitepapers</a></li><li><a href="sitemap.html">Sitemap</a></li><li><a href="terms.html">Legal</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="partners.html">Partners</a></li></ul></div>
+    </div>
+</footer>
+
+</body>
+</html>
