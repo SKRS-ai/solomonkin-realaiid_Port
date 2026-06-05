@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Threat Intelligence & Analysis | Bureau of Digital Identity</title>
+    <style>
+        :root { --navy: #002366; --light-blue: #00a8e8; --white: #ffffff; --bg-gray: #f4f7f6; --text-dark: #2d3436; --alert-red: #d63031; }
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.7; color: var(--text-dark); margin: 0; background-color: var(--bg-gray); }
+        
+        /* Header */
+        header { background: var(--navy); color: var(--white); padding: 1.5rem 5%; position: sticky; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid var(--light-blue); }
+        nav a { color: var(--white); text-decoration: none; margin-left: 20px; font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* Content */
+        .container { width: 85%; margin: 50px auto; background: var(--white); padding: 60px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+        h1 { color: var(--navy); font-size: 2.5rem; border-bottom: 3px solid var(--alert-red); padding-bottom: 10px; display: inline-block; }
+        .tech-box { background: #fff0f0; border-left: 5px solid var(--alert-red); padding: 30px; margin: 30px 0; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px; }
+        .card { padding: 30px; background: #f8f9fa; border-left: 5px solid var(--light-blue); }
+
+        /* Footer */
+        footer { background: var(--navy); color: var(--white); padding: 60px 5%; margin-top: 80px; border-top: 5px solid var(--light-blue); }
+        .footer-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; font-size: 0.8rem; }
+        .footer-grid h4 { color: var(--light-blue); text-transform: uppercase; margin-bottom: 15px; }
+        .footer-grid ul { list-style: none; padding: 0; }
+        .footer-grid li { margin-bottom: 8px; }
+        .footer-grid a { color: #ccc; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div style="font-size: 1.5rem; font-weight: bold; letter-spacing: -1px;">HARBORLINK PARTNERS</div>
+    <nav>
+        <a href="index.html">Home</a><a href="iam.html">IAM</a><a href="marsec.html">MARSEC</a>
+        <a href="threat.html" style="color: var(--light-blue);">Threat Intel</a><a href="contact.html">Procurement</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Forensic Threat Intelligence</h1>
+    <p>In the modern maritime landscape, information is the primary vector of both attack and defense. The Bureau of Digital Identity maintains a continuous **Threat Posture** that translates global signals into local facility-level actions.</p>
+
+    <div class="tech-box">
+        <h3>REALAiiD Wallet: The Defensive Edge</h3>
+        <p>When personnel and assets are integrated into the REALAiiD ecosystem, the Wallet acts as a real-time security node:</p>
+        <ul>
+            <li><strong>Automated MARSEC Rotation:</strong> As global threat levels shift, your Wallet Bridges automatically update credential requirements, enforcing new security hurdles without administrative downtime.</li>
+            <li><strong>Cryptographic Blacklisting:</strong> Revoke access across all facility gates instantly if an identity credential is flagged by Bureau intelligence.</li>
+            <li><strong>Anomaly Detection:</strong> Our "Forensic Covert" logging identifies irregular access patterns, such as off-peak ingress attempts, and elevates threat priority before a breach can escalate.</li>
+        </ul>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Immutable Forensic Audit</h3>
+            <p>Every threat detected—whether a spoofed credential or a unauthorized transit attempt—is recorded as an immutable ledger entry. This prevents "data-wiping" after an incident and provides forensic proof for federal investigators.</p>
+        </div>
+        <div class="card">
+            <h3>Dynamic Threat Response</h3>
+            <p>Our platform does not just log threats; it acts. The REALAiiD ecosystem facilitates dynamic "safety zoning," where access permissions are micro-segmented based on current threat intelligence feeds, shielding high-value cargo zones.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-grid">
+        <div><h4>Core Systems</h4><ul><li><a href="iam.html">Identity Mgmt</a></li><li><a href="wallet.html">Wallet</a></li><li><a href="bureau.html">Bureau</a></li><li><a href="bridge-vault.html">Vault</a></li></ul></div>
+        <div><h4>Nodes</h4><ul><li><a href="philaport.html">PhilaPort</a></li><li><a href="miami.html">Miami</a></li><li><a href="terminal.html">Terminal</a></li><li><a href="gate-logic.html">Gates</a></li></ul></div>
+        <div><h4>Intelligence</h4><ul><li><a href="marsec.html">Governance</a></li><li><a href="threat.html">Threats</a></li><li><a href="ais.html">AIS Data</a></li><li><a href="audit.html">Forensics</a></li></ul></div>
+        <div><h4>Compliance</h4><ul><li><a href="compliance.html">Fed Specs</a></li><li><a href="sovereignty.html">Sovereignty</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="safety.html">Safety</a></li></ul></div>
+        <div><h4>Enterprise</h4><ul><li><a href="about.html">About</a></li><li><a href="contact.html">Procurement</a></li><li><a href="terms.html">Legal</a></li><li><a href="support.html">Support</a></li></ul></div>
+    </div>
+</footer>
+
+</body>
+</html>
