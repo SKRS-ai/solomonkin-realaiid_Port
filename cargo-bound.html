@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargo-Bound Protocol | Bureau of Digital Identity</title>
+    <style>
+        :root { --navy: #002366; --light-blue: #00a8e8; --white: #ffffff; --bg-gray: #f4f7f6; --text-dark: #2d3436; --accent: #2d3436; }
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.7; color: var(--text-dark); margin: 0; background-color: var(--bg-gray); }
+        
+        /* Header */
+        header { background: var(--navy); color: var(--white); padding: 1.5rem 5%; position: sticky; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid var(--light-blue); }
+        nav a { color: var(--white); text-decoration: none; margin-left: 20px; font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* Content */
+        .container { width: 85%; margin: 50px auto; background: var(--white); padding: 60px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+        h1 { color: var(--navy); font-size: 2.5rem; border-bottom: 3px solid var(--light-blue); padding-bottom: 10px; display: inline-block; }
+        .tech-box { background: #f0f7ff; border-left: 5px solid var(--light-blue); padding: 30px; margin: 30px 0; }
+        .feature-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px; }
+        .card { padding: 30px; background: #f8f9fa; border-left: 5px solid #636e72; }
+
+        /* Footer */
+        footer { background: var(--navy); color: var(--white); padding: 60px 5%; margin-top: 80px; border-top: 5px solid var(--light-blue); }
+        .footer-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; font-size: 0.75rem; }
+        .footer-grid h4 { color: var(--light-blue); text-transform: uppercase; margin-bottom: 15px; }
+        .footer-grid ul { list-style: none; padding: 0; }
+        .footer-grid li { margin-bottom: 5px; }
+        .footer-grid a { color: #ccc; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div style="font-size: 1.5rem; font-weight: bold; letter-spacing: -1px;">HARBORLINK PARTNERS</div>
+    <nav>
+        <a href="index.html">Home</a><a href="iam.html">IAM</a><a href="cargo-bound.html" style="color: var(--light-blue);">Cargo-Bound</a>
+        <a href="transit.html">Transit</a><a href="contact.html">Procurement</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Cargo-Bound Protocol</h1>
+    <p>The <strong>Cargo-Bound Protocol</strong> represents the final evolution of logistics security. By replacing fragile, paper-based bills of lading with cryptographically signed "Bound-State" records, we ensure that cargo is inseparable from its authorized handler. When an identity bridge is loaded into the <strong>REALAiiD Wallet</strong>, it creates a secure, digital tether between the freight and the operator.</p>
+
+    <div class="tech-box">
+        <h3>Operational Capabilities of the Cargo-Bound Wallet</h3>
+        <p>When personnel load their Bridges into the REALAiiD Wallet, they gain the power to manage high-value freight with absolute integrity:</p>
+        <ul>
+            <li><strong>Atomic Binding:</strong> Cargo is digitally "chained" to the driver’s identity. The shipment physically cannot be released from a facility gate unless the REALAiiD Wallet broadcasts a valid, cryptographically signed "Release Bridge."</li>
+            <li><strong>Forensic Hand-offs:</strong> Every time cargo changes hands, the Wallet records the biometric signature of both parties, creating a non-repudiable ledger of the exchange.</li>
+            <li><strong>Localized Authentication:</strong> The wallet performs air-gapped cryptographic handshakes with terminal readers, ensuring that freight is only accessible to personnel with the requisite safety and security clearances.</li>
+        </ul>
+    </div>
+
+    <div class="feature-grid">
+        <div class="card">
+            <h3>Anti-Spoofing Architecture</h3>
+            <p>Our platform eliminates the "fictitious pickup" risk. Because the Cargo-Bound protocol validates the driver's identity in real-time against immutable Bureau records, impostors—no matter how convincing—cannot trigger the release of cargo.</p>
+        </div>
+        <div class="card">
+            <h3>Real-Time Forensic Audit</h3>
+            <p>The status of every piece of cargo is updated instantly as it moves through the supply chain. This provides shipping owners with a "forensically covert" view of their goods, detecting unauthorized deviations or terminal dwell-time anomalies before they become claims.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-grid">
+        <div><h4>Identity Core</h4><ul><li><a href="iam.html">IAM</a></li><li><a href="wallet.html">Wallet</a></li><li><a href="bureau.html">Bureau</a></li><li><a href="vault.html">Bridge Vault</a></li></ul></div>
+        <div><h4>Logistics</h4><ul><li><a href="manifest.html">Manifest</a></li><li><a href="cargo-bound.html">Cargo-Bound</a></li><li><a href="transit.html">Transit</a></li><li><a href="ais.html">AIS Data</a></li></ul></div>
+        <div><h4>Security</h4><ul><li><a href="threat.html">Threat Intel</a></li><li><a href="marsec.html">MARSEC</a></li><li><a href="perimeter.html">Perimeter</a></li><li><a href="access.html">Access</a></li></ul></div>
+        <div><h4>Operational</h4><ul><li><a href="safety.html">Safety</a></li><li><a href="forensics.html">Auditing</a></li><li><a href="logs.html">Immutable Logs</a></li><li><a href="compliance.html">Compliance</a></li></ul></div>
+        <div><h4>Corporate</h4><ul><li><a href="about.html">About</a></li><li><a href="contact.html">Procurement</a></li><li><a href="terms.html">Legal</a></li><li><a href="support.html">Support</a></li></ul></div>
+    </div>
+</footer>
+
+</body>
+</html>
