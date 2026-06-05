@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources & Technical Intelligence | HarborLink Partners</title>
+    <style>
+        :root {
+            --navy: #002366;
+            --light-blue: #00a8e8;
+            --white: #ffffff;
+            --bg-gray: #f4f7f6;
+            --text-dark: #2d3436;
+        }
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.7; color: var(--text-dark); margin: 0; background-color: var(--bg-gray); }
+        
+        /* Header/Nav */
+        header { background: var(--navy); color: var(--white); padding: 1.5rem 5%; position: sticky; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid var(--light-blue); }
+        nav a { color: var(--white); text-decoration: none; margin-left: 25px; font-weight: 500; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
+        
+        /* Main Content */
+        .container { width: 85%; margin: 50px auto; background: var(--white); padding: 60px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-radius: 4px; }
+        h1 { color: var(--navy); font-size: 2.5rem; border-bottom: 2px solid var(--light-blue); display: inline-block; padding-bottom: 10px; }
+        .grid-resources { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
+        .card { padding: 30px; background: #f9f9f9; border-left: 5px solid var(--light-blue); transition: 0.3s; }
+        .card:hover { box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .tech-box { margin-top: 40px; padding: 30px; background: var(--navy); color: var(--white); border-radius: 4px; }
+        
+        /* Footer */
+        footer { background: var(--navy); color: var(--white); padding: 60px 5% 30px; margin-top: 80px; border-top: 5px solid var(--light-blue); }
+        .footer-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; font-size: 0.85rem; }
+        .footer-grid h4 { color: var(--light-blue); text-transform: uppercase; margin-bottom: 15px; }
+        .footer-grid ul { list-style: none; padding: 0; }
+        .footer-grid li { margin-bottom: 8px; }
+        .footer-grid a { color: #ccc; text-decoration: none; }
+        .footer-grid a:hover { color: var(--white); }
+    </style>
+</head>
+<body>
+
+<header>
+    <div style="font-size: 1.5rem; font-weight: bold; letter-spacing: -1px;">HARBORLINK PARTNERS</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="capabilities.html">Capabilities</a>
+        <a href="iam.html">IAM</a>
+        <a href="resources.html" style="color: var(--light-blue);">Resources</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Resources & Technical Intelligence</h1>
+    <p>HarborLink Partners provides a robust repository of documentation designed for engineering leads, procurement officers, and forensic auditors. Our ecosystem is built on transparency and technical precision.</p>
+
+    <div class="tech-box">
+        <h3>REALAiiD Wallet: The Bridge Ecosystem</h3>
+        <p>This repository provides technical deep-dives into the REALAiiD Wallet. Once a user loads "Bridges" into their wallet, they are empowered to:</p>
+        <ul>
+            <li><strong>Cryptographic Authorization:</strong> Engage with infrastructure readers via encrypted local handshakes (no network latency).</li>
+            <li><strong>Identity Sovereignty:</strong> Control exactly what credential-data is transmitted to the reader, maintaining personal data privacy.</li>
+            <li><strong>Audit Logging:</strong> Maintain a local-transaction history of every gate, terminal, and access event for personal forensic validation.</li>
+        </ul>
+    </div>
+
+    <div class="grid-resources">
+        <div class="card">
+            <h3>Technical Whitepapers</h3>
+            <p>Access our architectural deep-dives on the Bureau of Digital Identity protocol, cryptographic signing methods, and our zero-trust infrastructure hardening model.</p>
+        </div>
+        <div class="card">
+            <h3>Procurement Briefings</h3>
+            <p>Download structured requirement lists, vendor verification documentation, and implementation timelines specifically for municipal and maritime infrastructure bids.</p>
+        </div>
+        <div class="card">
+            <h3>Forensic Case Studies</h3>
+            <p>Review redacted data-reports on how our system utilizes immutable ledger technology to detect anomalies and perform incident analysis in complex port environments.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-grid">
+        <div><h4>Intelligence</h4><ul><li><a href="whitepapers.html">Whitepapers</a></li><li><a href="case-studies.html">Forensic Studies</a></li><li><a href="specs.html">Tech Specs</a></li><li><a href="api-docs.html">API Documentation</a></li><li><a href="schemas.html">Schema Registry</a></li></ul></div>
+        <div><h4>Identity Vault</h4><ul><li><a href="iam.html">IAM Bureau</a></li><li><a href="wallet.html">REALAiiD Wallet</a></li><li><a href="bridge-vault.html">Bridge Vaulting</a></li><li><a href="biometrics.html">Biometric Binding</a></li><li><a href="signing.html">Cryptographic Keys</a></li></ul></div>
+        <div><h4>Maritime Ops</h4><ul><li><a href="philaport.html">PhilaPort Hub</a></li><li><a href="logistics.html">Flow Analysis</a></li><li><a href="infrastructure.html">Hardened Ops</a></li><li><a href="automation.html">Autonomous Logic</a></li><li><a href="marsec.html">MARSEC Governance</a></li></ul></div>
+        <div><h4>Audit/Compliance</h4><ul><li><a href="compliance.html">Fed Alignment</a></li><li><a href="audit.html">Immutable Logs</a></li><li><a href="anomaly.html">Anomaly Reports</a></li><li><a href="incident.html">Incident Analysis</a></li><li><a href="policy.html">Security Policy</a></li></ul></div>
+        <div><h4>Procurement</h4><ul><li><a href="contact.html">Outreach Center</a></li><li><a href="capabilities.html">Capabilities PDF</a></li><li><a href="terms.html">Legal Framework</a></li><li><a href="about.html">Company Vision</a></li><li><a href="sitemap.html">Ecosystem Map</a></li></ul></div>
+    </div>
+    <div style="text-align: center; margin-top: 40px; font-size: 0.75rem; color: #666;">
+        &copy; 2026 HarborLink Partners - Solomon Kin LLC & REALAiiD, Inc. | High-Assurance Information Archive.
+    </div>
+</footer>
+
+</body>
+</html>
