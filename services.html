@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services & Solutions — HarborLink Partners</title>
+    <style>
+        :root {
+            --navy: #0a3d62;
+            --blue: #1e90ff;
+            --light: #f8f9fa;
+        }
+        body { 
+            font-family: 'Segoe UI', system-ui, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            color: #333; 
+            line-height: 1.7;
+        }
+        header { 
+            background: linear-gradient(135deg, var(--navy), var(--blue)); 
+            color: white; 
+            padding: 1.5rem 0; 
+            text-align: center; 
+            position: sticky; 
+            top: 0; 
+            z-index: 100;
+        }
+        nav { 
+            background: #222; 
+            padding: 1rem; 
+            text-align: center;
+        }
+        nav a { 
+            color: white; 
+            margin: 0 1.2rem; 
+            text-decoration: none; 
+            font-weight: 500;
+        }
+        .hero { 
+            background: linear-gradient(rgba(10,61,98,0.9), rgba(30,144,255,0.8)), 
+                        url('https://via.placeholder.com/1920x650?text=Advanced+Port+Technology+Solutions') center/cover;
+            color: white; 
+            padding: 5rem 2rem; 
+            text-align: center;
+        }
+        .section { 
+            padding: 5rem 2rem; 
+            max-width: 1280px; 
+            margin: auto;
+        }
+        .content { 
+            background: white; 
+            padding: 3rem; 
+            border-radius: 12px; 
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 { color: var(--navy); }
+        .services-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); 
+            gap: 2.5rem; 
+            margin-top: 3rem;
+        }
+        .service-card { 
+            background: var(--light); 
+            padding: 2.5rem; 
+            border-radius: 12px; 
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .service-card:hover { transform: translateY(-10px); }
+        ul { padding-left: 1.3rem; }
+        footer { 
+            background: #111; 
+            color: #ccc; 
+            padding: 4rem 2rem 2rem; 
+            text-align: center;
+        }
+        .footer-links { 
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: center; 
+            gap: 1.4rem; 
+            margin: 2.5rem 0;
+            font-size: 0.95rem;
+        }
+        .footer-links a { 
+            color: #ccc; 
+            text-decoration: none;
+        }
+        .footer-links a:hover { color: var(--blue); }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>HarborLink Partners</h1>
+        <p><strong>Port Solutions by Solomon Kin LLC &amp; REALAiiD, Inc.</strong></p>
+    </header>
+
+    <!-- NAV -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Solutions</a>
+        <a href="philaport.html">PhilaPort Project</a>
+        <a href="capabilities.html">Capabilities</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h2>Our Services &amp; Solutions</h2>
+        <p style="font-size:1.35rem; max-width:1000px; margin:2rem auto;">
+            Secure • Intelligent • Maritime-Optimized Technology for Modern Cruise Terminals
+        </p>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <section class="section">
+        <div class="content">
+            <h2>Core Service Areas</h2>
+            <p>We deliver integrated technology solutions specifically engineered for the demanding environment of active cruise terminals like PhilaPort.</p>
+
+            <div class="services-grid">
+
+                <!-- Digital Identity & IAM -->
+                <div class="service-card">
+                    <h3>Bureau of Digital Identity &amp; IAM</h3>
+                    <p>Powered by REALAiiD’s secure digital wallet ecosystem.</p>
+                    <p><strong>If credentials (“bridges”) are loaded into a REALAiiD Wallet, users can:</strong></p>
+                    <ul>
+                        <li>Perform instant biometric + digital credential verification at security checkpoints</li>
+                        <li>Receive contactless, paperless boarding passes and operational clearances</li>
+                        <li>Securely share verified TWIC, passport, visas, and maritime certifications</li>
+                        <li>Enable role-based access control for crew, contractors, and vendors</li>
+                        <li>Maintain a forensically auditable, tamper-proof digital trail for compliance</li>
+                        <li>Streamline embarkation/debarkation with zero-contact processing</li>
+                        <li>Support real-time revocation and status updates from port authorities</li>
+                    </ul>
+                </div>
+
+                <!-- Security Systems -->
+                <div class="service-card">
+                    <h3>Security &amp; Surveillance</h3>
+                    <ul>
+                        <li>Advanced CCTV with AI video analytics</li>
+                        <li>Perimeter intrusion detection and smart fencing</li>
+                        <li>Integrated physical + cybersecurity platforms</li>
+                        <li>Full compliance with 33 CFR Part 105 and MTSA standards</li>
+                        <li>Incident response and forensic-ready logging systems</li>
+                    </ul>
+                </div>
+
+                <!-- Network & Infrastructure -->
+                <div class="service-card">
+                    <h3>IT Infrastructure &amp; Networking</h3>
+                    <ul>
+                        <li>Structured cabling and fiber optic backbone</li>
+                        <li>Enterprise-grade Wi-Fi 6/7 (guest, crew, operations)</li>
+                        <li>Temporary construction-site networks with seamless handover</li>
+                        <li>Building Management Systems (BMS) and IoT integration</li>
+                        <li>Redundant high-availability connectivity</li>
+                    </ul>
+                </div>
+
+                <!-- Passenger Experience -->
+                <div class="service-card">
+                    <h3>Passenger Processing &amp; Experience</h3>
+                    <ul>
+                        <li>Digital check-in kiosks and mobile applications</li>
+                        <li>Dynamic multi-language signage and queue management</li>
+                        <li>RFID baggage tracking and automated handling</li>
+                        <li>AI-powered crowd flow analytics and optimization</li>
+                        <li>Luxury guest experience enhancements</li>
+                    </ul>
+                </div>
+
+                <!-- Facility & Innovation -->
+                <div class="service-card">
+                    <h3>Facility Operations &amp; Innovation</h3>
+                    <ul>
+                        <li>Construction progress monitoring dashboards</li>
+                        <li>Predictive maintenance and asset management (CMMS)</li>
+                        <li>Energy efficiency and sustainability solutions</li>
+                        <li>Data analytics platforms and operational intelligence</li>
+                        <li>Disaster recovery and business continuity systems</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <h2 style="margin-top:4rem;">REALAiiD Digital Identity Ecosystem</h2>
+            <p>
+                Our partnership with REALAiiD brings the <strong>Bureau of Digital Identity</strong> — a privacy-first, standards-compliant platform that transforms how ports manage identity, access, and verification. 
+                All solutions meet stringent maritime security, data protection, and forensic audit requirements.
+            </p>
+
+            <p style="font-size:1.1rem; margin-top:2rem;">
+                Whether supporting temporary operations during construction or full-scale permanent deployment at the PhilaPort Cruise Terminal, our solutions are designed for minimal disruption, maximum security, and superior passenger experience.
+            </p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Solutions</a>
+            <a href="philaport.html">PhilaPort Project</a>
+            <a href="capabilities.html">Capabilities Statement</a>
+            <a href="iam.html">Digital Identity &amp; IAM</a>
+            <a href="security.html">Security &amp; Surveillance</a>
+            <a href="infrastructure.html">Network Infrastructure</a>
+            <a href="passenger.html">Passenger Processing</a>
+            <a href="facility.html">Facility Operations</a>
+            <a href="innovation.html">Innovation &amp; Analytics</a>
+            <a href="compliance.html">Compliance &amp; Certifications</a>
+            <a href="resources.html">Resources &amp; Whitepapers</a>
+            <a href="casestudies.html">Case Studies</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+        </div>
+        
+        <p>&copy; 2026 HarborLink Partners — Port Solutions by Solomon Kin LLC &amp; REALAiiD, Inc.</p>
+        <p>Philadelphia, Pennsylvania | Supporting the PhilaPort Cruise Terminal &amp; Norwegian Cruise Line</p>
+        <p>
+            <a href="mailto:procurement@harborlinkpartners.com" style="color:#1e90ff;">procurement@harborlinkpartners.com</a>
+        </p>
+    </footer>
+
+</body>
+</html>
