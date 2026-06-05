@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Capabilities | HarborLink Partners</title>
+    <style>
+        :root {
+            --navy: #002366;
+            --light-blue: #00a8e8;
+            --white: #ffffff;
+            --bg-gray: #f4f7f6;
+            --text-dark: #2d3436;
+        }
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.7; color: var(--text-dark); margin: 0; background-color: var(--bg-gray); }
+        
+        /* Header/Nav */
+        header { background: var(--navy); color: var(--white); padding: 1.5rem 5%; position: sticky; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid var(--light-blue); }
+        nav a { color: var(--white); text-decoration: none; margin-left: 25px; font-weight: 500; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
+        
+        /* Main Content */
+        .container { width: 85%; margin: 50px auto; background: var(--white); padding: 60px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-radius: 4px; }
+        h1 { color: var(--navy); font-size: 2.5rem; border-bottom: 2px solid var(--light-blue); display: inline-block; padding-bottom: 10px; }
+        h2 { color: var(--navy); margin-top: 40px; }
+        .intro { font-size: 1.2rem; color: #555; margin-bottom: 40px; }
+        
+        /* Features Grid */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; margin-top: 40px; }
+        .card { border: 1px solid #e1e1e1; padding: 30px; background: #fff; transition: transform 0.3s ease; }
+        .card:hover { transform: translateY(-5px); border-color: var(--light-blue); }
+        .card h3 { color: var(--navy); margin-top: 0; }
+        
+        /* Footer */
+        footer { background: var(--navy); color: var(--white); padding: 60px 5% 30px; margin-top: 80px; border-top: 5px solid var(--light-blue); }
+        .footer-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; font-size: 0.85rem; }
+        .footer-grid h4 { color: var(--light-blue); text-transform: uppercase; margin-bottom: 15px; }
+        .footer-grid ul { list-style: none; padding: 0; }
+        .footer-grid li { margin-bottom: 8px; }
+        .footer-grid a { color: #ccc; text-decoration: none; }
+        .footer-grid a:hover { color: var(--white); }
+    </style>
+</head>
+<body>
+
+<header>
+    <div style="font-size: 1.5rem; font-weight: bold; letter-spacing: -1px;">HARBORLINK PARTNERS</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="capabilities.html" style="color: var(--light-blue);">Capabilities</a>
+        <a href="philaport.html">PhilaPort</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Operational Capabilities Statement</h1>
+    <p class="intro">HarborLink Partners (Solomon Kin LLC & REALAiiD, Inc.) delivers a unified digital ecosystem for port authorities, focusing on secure access, infrastructure integrity, and optimized throughput.</p>
+
+    <h2>The Bureau of Digital Identity</h2>
+    <p>The Bureau acts as the central authority for our cryptographic identity framework. It provides the backbone for the <strong>REALAiiD Wallet</strong>, allowing personnel and logistics operators to carry verified digital "Bridges."</p>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Wallet "Bridges" in Action</h3>
+            <p>Once a user loads credentials (Bridges) into their REALAiiD Wallet, they gain instant, contactless capability to:</p>
+            <ul>
+                <li><strong>Secure Access:</strong> Pass through biometric-validated turnstiles and gates without manual badge verification.</li>
+                <li><strong>Dynamic Compliance:</strong> Transmit real-time health, safety, and certification data to port security systems.</li>
+                <li><strong>Asset Interaction:</strong> Authorize machinery operation or terminal entry by interacting with IoT-enabled "Bridge" readers.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Infrastructure & Security</h3>
+            <p>Our solutions integrate seamlessly with legacy terminal operating systems (TOS). We offer end-to-end encryption, multi-factor authorization, and immutable audit logs that meet federal cybersecurity standards for critical infrastructure.</p>
+        </div>
+    </div>
+
+    <h2>Strategic Procurement Commitment</h2>
+    <p>We are well-positioned to support PhilaPort’s modernization goals. Our framework ensures that operational security never hinders logistic flow. By utilizing our platform, port leadership gains forensic-level visibility into all human and vehicle movements across the facility.</p>
+</div>
+
+<footer>
+    <div class="footer-grid">
+        <div><h4>Platforms</h4><ul><li><a href="iam.html">Digital Identity</a></li><li><a href="wallet.html">REALAiiD Wallet</a></li><li><a href="bureau.html">The Bureau</a></li></ul></div>
+        <div><h4>Maritime</h4><ul><li><a href="philaport.html">PhilaPort Initiative</a></li><li><a href="infrastructure.html">Infrastructure</a></li><li><a href="security.html">MARSEC Compliance</a></li></ul></div>
+        <div><h4>Capabilities</h4><ul><li><a href="logistics.html">Logistics</a></li><li><a href="automation.html">Automation</a></li><li><a href="passenger.html">Passenger Services</a></li></ul></div>
+        <div><h4>Innovation</h4><ul><li><a href="iot.html">IoT Integration</a></li><li><a href="data.html">Forensic Analytics</a></li><li><a href="future.html">Future Tech</a></li></ul></div>
+        <div><h4>Corporate</h4><ul><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Service</a></li></ul></div>
+    </div>
+    <div style="text-align: center; margin-top: 40px; font-size: 0.75rem; color: #666;">
+        &copy; 2026 HarborLink Partners - Solomon Kin LLC & REALAiiD, Inc. All rights reserved.
+    </div>
+</footer>
+
+</body>
+</html>
