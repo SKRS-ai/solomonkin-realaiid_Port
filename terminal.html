@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal Operations | HarborLink Partners</title>
+    <style>
+        :root {
+            --navy: #002366;
+            --light-blue: #00a8e8;
+            --white: #ffffff;
+            --bg-gray: #f4f7f6;
+            --text-dark: #2d3436;
+        }
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.7; color: var(--text-dark); margin: 0; background-color: var(--bg-gray); }
+        
+        /* Header/Nav */
+        header { background: var(--navy); color: var(--white); padding: 1.5rem 5%; position: sticky; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid var(--light-blue); }
+        nav a { color: var(--white); text-decoration: none; margin-left: 25px; font-weight: 500; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
+        
+        /* Main Content */
+        .container { width: 85%; margin: 50px auto; background: var(--white); padding: 60px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-radius: 4px; }
+        h1 { color: var(--navy); font-size: 2.5rem; border-bottom: 2px solid var(--light-blue); display: inline-block; padding-bottom: 10px; }
+        .hero-tech { background: var(--navy); color: var(--white); padding: 40px; margin: 40px 0; border-radius: 4px; }
+        .grid-ops { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px; }
+        .card { padding: 30px; background: #f9f9f9; border-left: 5px solid var(--light-blue); }
+        
+        /* Footer */
+        footer { background: var(--navy); color: var(--white); padding: 60px 5% 30px; margin-top: 80px; border-top: 5px solid var(--light-blue); }
+        .footer-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; font-size: 0.85rem; }
+        .footer-grid h4 { color: var(--light-blue); text-transform: uppercase; margin-bottom: 15px; }
+        .footer-grid ul { list-style: none; padding: 0; }
+        .footer-grid li { margin-bottom: 8px; }
+        .footer-grid a { color: #ccc; text-decoration: none; }
+        .footer-grid a:hover { color: var(--white); }
+    </style>
+</head>
+<body>
+
+<header>
+    <div style="font-size: 1.5rem; font-weight: bold; letter-spacing: -1px;">HARBORLINK PARTNERS</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="capabilities.html">Capabilities</a>
+        <a href="iam.html">IAM</a>
+        <a href="terminal.html" style="color: var(--light-blue);">Terminal</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Terminal Operations & Management</h1>
+    <p>HarborLink Partners transforms terminal transit into a <strong>forensically hardened operation</strong>. By deploying the Bureau’s identity architecture at the gate level, we ensure that every movement within the terminal is authenticated, verified, and logged.</p>
+
+    <div class="hero-tech">
+        <h3>Bridge-Enabled Terminal Flow</h3>
+        <p>When personnel and freight assets have their "Bridges" loaded into the REALAiiD Wallet, they unlock real-time operational advantages:</p>
+        <ul>
+            <li><strong>Automated Ingress/Egress:</strong> Seamless verification at heavy-duty gates via encrypted NFC handshakes, eliminating queue-stagnation.</li>
+            <li><strong>Asset-Binding Logic:</strong> Freight containers and vehicles are cryptographically linked to the authorized operator's ID, ensuring chain-of-custody transparency.</li>
+            <li><strong>Dynamic Safety Zones:</strong> Automated geofencing within the terminal that restricts access based on real-time certification status.</li>
+            <li><strong>Incident Reconstruction:</strong> Access to an immutable ledger for every gate-pass event, allowing for instant forensic post-mortems of terminal activity.</li>
+        </ul>
+    </div>
+
+    <div class="grid-ops">
+        <div class="card">
+            <h3>Operational Fluidity</h3>
+            <p>Our goal is to remove the "friction" of compliance. By automating credential verification at the edge, terminal operators can focus on throughput, leaving security to the Bureau’s background protocol.</p>
+        </div>
+        <div class="card">
+            <h3>Forensic Asset Management</h3>
+            <p>The terminal environment becomes a living audit-trail. We don't just track location; we track authorization, intent, and accountability at every operational stage.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-grid">
+        <div><h4>Terminal Ops</h4><ul><li><a href="terminal.html">Ops Dashboard</a></li><li><a href="gate-logic.html">Gate Protocols</a></li><li><a href="container-sync.html">Container Bindings</a></li><li><a href="safety.html">Zone Geofencing</a></li><li><a href="throughput.html">Velocity Analysis</a></li></ul></div>
+        <div><h4>Bureau Identity</h4><ul><li><a href="bureau.html">Bureau Charter</a></li><li><a href="iam.html">IAM Protocol</a></li><li><a href="wallet.html">REALAiiD Wallet</a></li><li><a href="bridge-vault.html">Bridge Registry</a></li><li><a href="sovereignty.html">Sovereignty Logic</a></li></ul></div>
+        <div><h4>Maritime Intel</h4><ul><li><a href="philaport.html">PhilaPort Hub</a></li><li><a href="logistics.html">Flow Forensics</a></li><li><a href="infrastructure.html">Hardened Ops</a></li><li><a href="transit.html">Secure Transit</a></li><li><a href="marsec.html">MARSEC Governance</a></li></ul></div>
+        <div><h4>Forensic Audit</h4><ul><li><a href="audit.html">Immutable Ledger</a></li><li><a href="incident.html">Incident Archive</a></li><li><a href="threat.html">Threat Vectors</a></li><li><a href="anomaly.html">Anomaly Reports</a></li><li><a href="reporting.html">Audit Dashboards</a></li></ul></div>
+        <div><h4>Enterprise/Legal</h4><ul><li><a href="terms.html">Legal Framework</a></li><li><a href="compliance.html">Fed Standards</a></li><li><a href="contact.html">Procurement</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="resources.html">Knowledge Base</a></li></ul></div>
+    </div>
+    <div style="text-align: center; margin-top: 40px; font-size: 0.75rem; color: #666;">
+        &copy; 2026 HarborLink Partners - Solomon Kin LLC & REALAiiD, Inc. | Hardened Terminal Infrastructure.
+    </div>
+</footer>
+
+</body>
+</html>
