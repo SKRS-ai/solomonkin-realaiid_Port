@@ -15,8 +15,8 @@
         body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.7; color: var(--text-dark); margin: 0; background-color: var(--bg-gray); }
         
         /* Header */
-        header { background: var(--navy); color: var(--white); padding: 1.5rem 5%; position: sticky; top: 0; z-index: 1000; border-bottom: 3px solid var(--light-blue); display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-size: 1.8rem; font-weight: bold; letter-spacing: -1px; }
+        header { background: var(--navy); color: var(--white); padding: 1rem 5%; position: sticky; top: 0; z-index: 1000; border-bottom: 3px solid var(--light-blue); display: flex; justify-content: space-between; align-items: center; }
+        .logo-container { display: flex; align-items: center; }
         nav a { color: var(--white); text-decoration: none; margin-left: 20px; font-weight: 500; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; }
         
         /* Hero Section */
@@ -41,7 +41,10 @@
 <body>
 
 <header>
-    <div class="logo"><img src="HarborLinkPartners.png" alt="HarborLink Partners" style="height: 40px; vertical-align: middle;"></div>
+    <div class="logo-container">
+        <!-- Logo size increased from 40px to 240px -->
+        <img src="HarborLinkPartners.png" alt="HarborLink Partners" style="height: 240px; max-height: 120px; width: auto; vertical-align: middle;">
+    </div>
     <nav>
         <a href="index.html">Home</a>
         <a href="services.html">Services</a>
