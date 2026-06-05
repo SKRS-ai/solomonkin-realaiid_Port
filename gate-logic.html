@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gate Logic Protocols | Bureau of Digital Identity</title>
+    <style>
+        :root { --navy: #002366; --light-blue: #00a8e8; --white: #ffffff; --bg-gray: #f4f7f6; --text-dark: #2d3436; }
+        body { font-family: 'Segoe UI', sans-serif; line-height: 1.7; color: var(--text-dark); margin: 0; background-color: var(--bg-gray); }
+        
+        /* Shared Header */
+        header { background: var(--navy); padding: 0.5rem 5%; display: flex; align-items: center; justify-content: space-between; border-bottom: 4px solid var(--light-blue); }
+        .logo-box img { height: 240px; width: auto; display: block; }
+        nav { display: flex; gap: 20px; align-items: center; }
+        nav a { color: var(--white); text-decoration: none; font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* Content Area */
+        .container { width: 85%; margin: 60px auto; background: var(--white); padding: 80px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); }
+        h1 { color: var(--navy); font-size: 3rem; margin-bottom: 20px; border-bottom: 4px solid var(--light-blue); display: inline-block; }
+        .tech-box { background: #f0f4f8; padding: 40px; border-radius: 8px; border-left: 6px solid var(--light-blue); margin: 40px 0; }
+        .feature-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+        
+        /* Footer */
+        footer { background: var(--navy); color: var(--white); padding: 60px 5%; margin-top: 100px; }
+        .footer-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; }
+        .footer-grid h4 { color: var(--light-blue); font-size: 0.8rem; text-transform: uppercase; margin-bottom: 15px; }
+        .footer-grid ul { list-style: none; padding: 0; }
+        .footer-grid li { margin-bottom: 6px; font-size: 0.75rem; }
+        .footer-grid a { color: #ccc; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo-box"><img src="HarborLinkPartners1.png" alt="HarborLink"></div>
+    <nav>
+        <a href="index.html">Home</a><a href="bureau.html">Bureau</a><a href="gate-logic.html">Gate Logic</a>
+        <a href="wallet.html">Wallet</a><a href="sovereignty.html">Sovereignty</a><a href="contact.html">Procurement</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Gate Logic: Forensic Ingress</h1>
+    <p>The "Gate Logic" protocol is the active enforcement layer of the Bureau of Digital Identity. It transforms a standard transit point into a <strong>Zero-Trust Forensic Gateway</strong>, where every entity—vessel, cargo, or individual—must perform a cryptographic handshake before physical access is granted.</p>
+
+    <div class="tech-box">
+        <h3>How Bridges Activate Ingress</h3>
+        <p>When an identity-enabled asset approaches a gate, the <strong>REALAiiD Wallet</strong> initiates a secure, air-gapped exchange:</p>
+        <ul>
+            <li><strong>Challenge-Response Authentication:</strong> The Gate Node issues a temporal cryptographic challenge. The Wallet responds with a signed proof of authorization.</li>
+            <li><strong>Contextual Validation:</strong> The system verifies not just the identity, but current MARSEC compliance status, manifest integrity, and biometric verification tokens.</li>
+            <li><strong>Automated Clearing:</strong> Once validated, the gate grants instantaneous, non-repudiable access, logging the event as a permanent "Bridge" record.</li>
+        </ul>
+    </div>
+
+    <div class="feature-grid">
+        <div class="card">
+            <h3>Hardened Security Posture</h3>
+            <p>Our gate architecture eliminates "implied trust." Even if a gate is networked, the logic remains local and air-gapped from the broader administrative layer, preventing lateral movement and securing the perimeter against digital exploitation.</p>
+        </div>
+        <div class="card">
+            <h3>Data Sovereignty at the Edge</h3>
+            <p>By keeping the verification logic at the "edge" (the physical gate), we ensure that sensitive user data remains with the holder, verified by the system without the need for mass-database exposure.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-grid">
+        <div><h4>Bureau Operations</h4><ul><li><a href="bureau.html">Charter</a></li><li><a href="iam.html">IAM</a></li><li><a href="wallet.html">REALAiiD Wallet</a></li><li><a href="bridge-vault.html">Bridge Vault</a></li><li><a href="sovereignty.html">Sovereignty Logic</a></li></ul></div>
+        <div><h4>Physical Nodes</h4><ul><li><a href="philaport.html">PhilaPort Hub</a></li><li><a href="miami.html">Port of Miami</a></li><li><a href="terminal.html">Terminal Ops</a></li><li><a href="gate-logic.html">Gate Protocols</a></li><li><a href="transit.html">Secure Transit</a></li></ul></div>
+        <div><h4>Maritime Security</h4><ul><li><a href="marsec.html">MARSEC Governance</a></li><li><a href="vessel.html">Vessel Auth</a></li><li><a href="threat.html">Threat Intel</a></li><li><a href="safety.html">Safety Zones</a></li><li><a href="audit.html">Forensic Audit</a></li></ul></div>
+        <div><h4>Logistics Intelligence</h4><ul><li><a href="logistics.html">Flow Forensics</a></li><li><a href="manifest.html">Manifest Integrity</a></li><li><a href="cargo-bound.html">Cargo Binding</a></li><li><a href="ais.html">AIS Verification</a></li><li><a href="velocity.html">Velocity Analysis</a></li></ul></div>
+        <div><h4>Corporate/Legal</h4><ul><li><a href="about.html">Executive Vision</a></li><li><a href="compliance.html">Fed Standards</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="contact.html">Procurement</a></li><li><a href="support.html">Support Desk</a></li></ul></div>
+    </div>
+</footer>
+
+</body>
+</html>
