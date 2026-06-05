@@ -3,93 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HarborLink Partners — Port Solutions</title>
+    <title>HarborLink Partners | Bureau of Digital Identity</title>
     <style>
-        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; color: #333; }
-        header { background: linear-gradient(135deg, #0a3d62, #1e90ff); color: white; padding: 2rem 0; text-align: center; }
-        nav { background: #222; padding: 1rem; }
-        nav a { color: white; margin: 0 1rem; text-decoration: none; font-weight: 500; }
-        .hero { background: url('https://via.placeholder.com/1920x600?text=PhilaPort+Cruise+Terminal') center/cover no-repeat; color: white; padding: 6rem 2rem; text-align: center; }
-        .section { padding: 4rem 2rem; max-width: 1200px; margin: auto; }
-        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
-        .card { background: #f8f9fa; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-        footer { background: #222; color: white; text-align: center; padding: 2rem; }
-        .btn { background: #1e90ff; color: white; padding: 1rem 2rem; border: none; border-radius: 6px; font-size: 1.1rem; cursor: pointer; text-decoration: none; display: inline-block; }
+        :root {
+            --navy: #002366;
+            --light-blue: #00a8e8;
+            --white: #ffffff;
+            --bg-gray: #f4f7f6;
+            --text-dark: #2d3436;
+        }
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.7; color: var(--text-dark); margin: 0; background-color: var(--bg-gray); }
+        
+        /* Header */
+        header { background: var(--navy); color: var(--white); padding: 1.5rem 5%; position: sticky; top: 0; z-index: 1000; border-bottom: 3px solid var(--light-blue); display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.8rem; font-weight: bold; letter-spacing: -1px; }
+        nav a { color: var(--white); text-decoration: none; margin-left: 20px; font-weight: 500; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; }
+        
+        /* Hero Section */
+        .hero { background: var(--navy); color: var(--white); padding: 80px 10%; text-align: center; }
+        .hero h1 { font-size: 3rem; margin-bottom: 20px; }
+        
+        /* Main Container */
+        .container { width: 80%; margin: 60px auto; background: var(--white); padding: 60px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        h2 { color: var(--navy); border-left: 5px solid var(--light-blue); padding-left: 15px; margin-top: 40px; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 30px; }
+        .card { padding: 25px; border: 1px solid #eee; }
+        
+        /* Footer */
+        footer { background: var(--navy); color: var(--white); padding: 60px 5% 30px; border-top: 5px solid var(--light-blue); margin-top: 80px; }
+        .footer-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; font-size: 0.8rem; }
+        .footer-grid h4 { color: var(--light-blue); text-transform: uppercase; margin-bottom: 15px; }
+        .footer-grid ul { list-style: none; padding: 0; }
+        .footer-grid li { margin-bottom: 8px; }
+        .footer-grid a { color: #ccc; text-decoration: none; }
     </style>
 </head>
 <body>
 
-    <!-- Navigation -->
+<header>
+    <div class="logo"><img src="HarborLinkPartners.png" alt="HarborLink Partners" style="height: 40px; vertical-align: middle;"></div>
     <nav>
         <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="services.html">Solutions</a>
-        <a href="philaport.html">PhilaPort Project</a>
-        <a href="capabilities.html">Capabilities</a>
+        <a href="services.html">Services</a>
+        <a href="bureau.html">Bureau</a>
+        <a href="logistics.html">Logistics</a>
         <a href="contact.html">Contact</a>
     </nav>
+</header>
 
-    <!-- Header -->
-    <header>
-        <h1>HarborLink Partners</h1>
-        <p><strong>Port Solutions by Solomon Kin LLC &amp; REALAiiD, Inc.</strong></p>
-    </header>
+<div class="hero">
+    <h1>Securing Global Maritime Sovereignty</h1>
+    <p>The authoritative framework for forensic identity and infrastructure hardening.</p>
+</div>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h2>Secure • Efficient • Passenger-Centric</h2>
-        <h3>IT &amp; Maritime Operations Solutions for the PhilaPort Cruise Terminal</h3>
-        <p style="font-size:1.3rem; max-width:800px; margin:2rem auto;">
-            Supporting Norwegian Cruise Line's new Philadelphia homeport with advanced Identity &amp; Access Management, 
-            IT Infrastructure, Security Systems, and Passenger Processing technology.
-        </p>
-        <a href="contact.html" class="btn">Request Site Assessment</a>
-        <a href="philaport.html" class="btn" style="background:#fff; color:#0a3d62; margin-left:1rem;">View PhilaPort Opportunity</a>
-    </section>
+<div class="container">
+    <h2>Our Bureau Focus</h2>
+    <p>HarborLink Partners is the operational backbone for modern maritime security. We specialize in the **Bureau of Digital Identity**, a zero-trust forensic ecosystem that bridges the gap between physical cargo movement and digital authority.</p>
 
-    <!-- Overview -->
-    <section class="section" style="background:#f8f9fa;">
-        <h2 style="text-align:center;">Our Expertise</h2>
-        <div class="services-grid">
-            <div class="card">
-                <h3>Identity &amp; Access Management</h3>
-                <p>Biometrics, TWIC integration, badging, and seamless CBP/NCL system connectivity.</p>
-            </div>
-            <div class="card">
-                <h3>Security &amp; Surveillance</h3>
-                <p>CCTV, perimeter protection, cybersecurity, and maritime compliance (33 CFR Part 105).</p>
-            </div>
-            <div class="card">
-                <h3>Network Infrastructure</h3>
-                <p>High-speed Wi-Fi, structured cabling, temporary construction networks, and BMS/IoT.</p>
-            </div>
-            <div class="card">
-                <h3>Passenger Experience</h3>
-                <p>Digital kiosks, dynamic signage, baggage tracking, and intelligent crowd flow solutions.</p>
-            </div>
+    <h2>The Power of the REALAiiD Ecosystem</h2>
+    <p>When personnel and assets load their "Bridges" into the REALAiiD Wallet, they gain:</p>
+    <ul>
+        <li><strong>Cryptographic Authority:</strong> Perform secure, air-gapped handshakes with port readers.</li>
+        <li><strong>Forensic Non-Repudiation:</strong> Every interaction generates an immutable log entry.</li>
+        <li><strong>Dynamic Compliance:</strong> Instant validation of maritime certificates and access credentials.</li>
+    </ul>
+
+    <div class="grid">
+        <div class="card">
+            <h3>History & Provenance</h3>
+            <p>Built upon 15 years of technical leadership in airport security and critical infrastructure, our team has pioneered the protocols now defining the security architecture of the Philadelphia and Miami ports, ensuring operational resilience.</p>
         </div>
-    </section>
+        <div class="card">
+            <h3>Global Expansion</h3>
+            <p>From the Port of Philadelphia to the Port of Miami and beyond, our architecture is built for international scalability. We are deploying a unified digital standard for ports worldwide.</p>
+        </div>
+    </div>
+</div>
 
-    <!-- PhilaPort Focus -->
-    <section class="section">
-        <h2 style="text-align:center;">PhilaPort Cruise Terminal — Philadelphia, PA</h2>
-        <p style="text-align:center; max-width:900px; margin:auto; font-size:1.1rem;">
-            We are actively supporting the new 16-acre Norwegian Cruise Line homeport at 4 Atlantic Avenue. 
-            Our solutions are designed for the unique challenges of live cruise operations during ongoing construction.
-        </p>
-    </section>
-
-    <!-- Call to Action -->
-    <section class="section" style="background:#0a3d62; color:white; text-align:center;">
-        <h2>Ready to Partner?</h2>
-        <p>Let’s deliver reliable, innovative technology solutions that enhance operations and passenger experience at PhilaPort.</p>
-        <a href="contact.html" class="btn" style="background:white; color:#0a3d62;">Contact Procurement Team</a>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 HarborLink Partners — Port Solutions by Solomon Kin LLC &amp; REALAiiD, Inc.</p>
-        <p>Philadelphia, PA | procurement@harborlinkpartners.com</p>
-    </footer>
+<footer>
+    <div class="footer-grid">
+        <div><h4>Bureau Core</h4><ul><li><a href="bureau.html">Bureau Charter</a></li><li><a href="protocol.html">The Protocol</a></li><li><a href="iam.html">IAM</a></li><li><a href="wallet.html">REALAiiD</a></li><li><a href="bridge-vault.html">Bridge Vault</a></li></ul></div>
+        <div><h4>Port Ops</h4><ul><li><a href="philaport.html">PhilaPort</a></li><li><a href="miami.html">Port of Miami</a></li><li><a href="terminal.html">Terminal Mgmt</a></li><li><a href="logistics.html">Logistics</a></li><li><a href="transit.html">Transit</a></li></ul></div>
+        <div><h4>Security/MARSEC</h4><ul><li><a href="marsec.html">MARSEC Gov</a></li><li><a href="threat.html">Threat Intel</a></li><li><a href="vessel.html">Vessel Auth</a></li><li><a href="safety.html">Safety Zones</a></li><li><a href="audit.html">Forensic Audit</a></li></ul></div>
+        <div><h4>Enterprise</h4><ul><li><a href="about.html">Executive Vision</a></li><li><a href="contact.html">Procurement</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="sitemap.html">Sitemap</a></li><li><a href="compliance.html">Compliance</a></li></ul></div>
+        <div><h4>Contact</h4><ul><li>Email: solomonkinllc@gmail.com</li><li><a href="contact.html">Procurement</a></li><li><a href="support.html">Tech Support</a></li><li><a href="faq.html">FAQs</a></li><li><a href="careers.html">Career Path</a></li></ul></div>
+    </div>
+    <div style="text-align: center; margin-top: 40px; font-size: 0.7rem; color: #888;">
+        &copy; 2026 HarborLink Partners - Solomon Kin LLC & REALAiiD, Inc. | Global Maritime Forensic Sovereignty.
+    </div>
+</footer>
 
 </body>
 </html>
