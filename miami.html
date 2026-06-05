@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Port of Miami | HarborLink Partners</title>
+    <style>
+        :root { --navy: #002366; --light-blue: #00a8e8; --white: #ffffff; --bg-gray: #f4f7f6; --text-dark: #2d3436; }
+        body { font-family: 'Segoe UI', sans-serif; line-height: 1.7; color: var(--text-dark); margin: 0; background-color: var(--bg-gray); }
+        
+        /* Shared Header */
+        header { background: var(--navy); padding: 0.5rem 5%; display: flex; align-items: center; justify-content: space-between; border-bottom: 4px solid var(--light-blue); }
+        .logo-box img { height: 240px; width: auto; display: block; }
+        nav { display: flex; gap: 20px; align-items: center; }
+        nav a { color: var(--white); text-decoration: none; font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* Miami Page Content */
+        .container { width: 85%; margin: 60px auto; background: var(--white); padding: 80px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); }
+        h1 { color: var(--navy); font-size: 3rem; margin-bottom: 20px; border-bottom: 4px solid var(--light-blue); display: inline-block; }
+        .technical-detail { background: #eef7ff; padding: 30px; border-radius: 8px; margin: 30px 0; border: 1px solid #d1e7ff; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+        .card { padding: 30px; background: #f9f9f9; border-left: 5px solid var(--light-blue); }
+        
+        /* Footer */
+        footer { background: var(--navy); color: var(--white); padding: 60px 5%; margin-top: 100px; }
+        .footer-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; }
+        .footer-grid h4 { color: var(--light-blue); font-size: 0.85rem; margin-bottom: 15px; text-transform: uppercase; }
+        .footer-grid ul { list-style: none; padding: 0; }
+        .footer-grid li { margin-bottom: 8px; font-size: 0.75rem; }
+        .footer-grid a { color: #ccc; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo-box"><img src="HarborLinkPartners1.png" alt="HarborLink"></div>
+    <nav>
+        <a href="index.html">Home</a><a href="services.html">Services</a><a href="bureau.html">Bureau</a>
+        <a href="sovereignty.html">Sovereignty</a><a href="miami.html">Port of Miami</a><a href="contact.html">Procurement</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Port of Miami: Strategic Hub</h1>
+    <p>The Port of Miami serves as a primary North American node for the REALAiiD Bureau of Digital Identity. By implementing our hardened infrastructure, Miami facilitates seamless, cryptographically verified trade flows between the Americas and global markets.</p>
+
+    <div class="technical-detail">
+        <h3>REALAiiD Wallet Integration in Miami</h3>
+        <p>Operators at the Port of Miami utilizing the REALAiiD Wallet leverage their provisioned "Bridges" to perform high-stakes maritime maneuvers:</p>
+        <ul>
+            <li><strong>Automated Gate Verification:</strong> Secure, air-gapped authentication of container manifests at terminal ingress.</li>
+            <li><strong>MARSEC Compliance Bridge:</strong> Real-time synchronization of security protocols to match Miami's specific threat environment.</li>
+            <li><strong>Compute as Currency:</strong> Use of $AII Compute Currency to settle infrastructure access fees and data packet transfers.</li>
+        </ul>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Forensic Asset Tracking</h3>
+            <p>Miami’s throughput requires total visibility. Our Bureau nodes provide forensic non-repudiation for every container movement, creating an immutable audit trail that prevents tampering and optimizes terminal velocity.</p>
+        </div>
+        <div class="card">
+            <h3>The Bridge 39 Protocol</h3>
+            <p>Miami acts as a key testbed for our "Bridge 39" identity vault, digitizing sensitive customs documentation and official identification documents into a secure, portable, and verifiable sovereign asset.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-grid">
+        <div><h4>Bureau Core</h4><ul><li><a href="bureau.html">Charter</a></li><li><a href="iam.html">IAM</a></li><li><a href="wallet.html">Wallet</a></li><li><a href="bridge-vault.html">Bridge Vault</a></li></ul></div>
+        <div><h4>Operational Nodes</h4><ul><li><a href="philaport.html">PhilaPort</a></li><li><a href="miami.html">Miami</a></li><li><a href="terminal.html">Terminal Ops</a></li><li><a href="gate-logic.html">Gate Protocols</a></li></ul></div>
+        <div><h4>Security/MARSEC</h4><ul><li><a href="marsec.html">Governance</a></li><li><a href="vessel.html">Vessel Auth</a></li><li><a href="threat.html">Threat Intel</a></li><li><a href="safety.html">Safety Zones</a></li></ul></div>
+        <div><h4>Logistics Intelligence</h4><ul><li><a href="logistics.html">Flow Forensics</a></li><li><a href="manifest.html">Manifest Integrity</a></li><li><a href="cargo-bound.html">Cargo Binding</a></li><li><a href="ais.html">AIS Verification</a></li></ul></div>
+        <div><h4>Enterprise</h4><ul><li><a href="about.html">Executive Vision</a></li><li><a href="compliance.html">Fed Standards</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="contact.html">Procurement</a></li></ul></div>
+    </div>
+</footer>
+
+</body>
+</html>
