@@ -8,32 +8,12 @@
         :root { --navy: #002366; --light-blue: #00a8e8; --white: #ffffff; --bg-gray: #f4f7f6; --text-dark: #2d3436; --gold: #c5a059; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.7; color: var(--text-dark); margin: 0; background-color: var(--bg-gray); }
         
-        /* Fixed Sophisticated Header */
-        .main-header { 
-            background: var(--navy); 
-            padding: 1.5rem 2%; 
-            display: flex; 
-            align-items: center; 
-            gap: 2rem;
-            border-bottom: 4px solid var(--gold); 
-        }
+        /* Updated Header - Two Rows */
+        .main-header { background: var(--navy); padding: 1rem 2%; border-bottom: 4px solid var(--gold); display: flex; align-items: center; gap: 2rem; }
         .logo-box img { height: 220px; width: auto; display: block; }
-        .main-nav { 
-            display: flex; 
-            flex-wrap: wrap; 
-            gap: 15px 25px; 
-            justify-content: flex-start;
-            flex-grow: 1;
-        }
-        .main-nav a { 
-            color: var(--white); 
-            text-decoration: none; 
-            font-weight: 600; 
-            font-size: 0.9rem; 
-            text-transform: uppercase; 
-            transition: color 0.3s;
-            white-space: nowrap;
-        }
+        .nav-container { display: flex; flex-direction: column; width: 100%; gap: 8px; }
+        .main-nav { display: flex; flex-wrap: wrap; gap: 15px 25px; justify-content: flex-start; }
+        .main-nav a { color: var(--white); text-decoration: none; font-weight: 600; font-size: 0.85rem; text-transform: uppercase; transition: color 0.3s; white-space: nowrap; }
         .main-nav a:hover { color: var(--light-blue); }
 
         /* Hero Carousel */
@@ -67,52 +47,26 @@
 <body>
 
 <header class="main-header">
-    <div class="logo-box">
-        <img src="HarborLinkPartners1.png" alt="HarborLink Partners">
+    <div class="logo-box"><img src="HarborLinkPartners1.png" alt="HarborLink Partners"></div>
+    <div class="nav-container">
+        <nav class="main-nav">
+            <a href="index.html">Home</a><a href="software.html">Software</a><a href="hardware.html">Hardware</a><a href="embarkation.html">Embarkation</a><a href="integration.html">Integration</a><a href="training.html">Training</a><a href="resilience.html">Resilience</a>
+        </nav>
+        <nav class="main-nav">
+            <a href="vendor-mgmt.html">Vendors</a><a href="services.html">Services</a><a href="bureau.html">Bureau</a><a href="logistics.html">Logistics</a><a href="marsec.html">MARSEC</a><a href="iam.html">IAM</a><a href="contact.html">Procurement</a>
+        </nav>
     </div>
-    <nav class="main-nav">
-        <a href="index.html">Home</a>
-        <a href="software.html">Software</a>
-        <a href="hardware.html">Hardware</a>
-        <a href="embarkation.html">Embarkation</a>
-        <a href="integration.html">Integration</a>
-        <a href="training.html">Training</a>
-        <a href="resilience.html">Resilience</a>
-        <a href="vendor-mgmt.html">Vendors</a>
-        <a href="services.html">Services</a>
-        <a href="bureau.html">Bureau</a>
-        <a href="logistics.html">Logistics</a>
-        <a href="marsec.html">MARSEC</a>
-        <a href="iam.html">IAM</a>
-        <a href="contact.html">Procurement</a>
-    </nav>
 </header>
 
 <div class="hero-container" id="heroCarousel">
-    <div class="hero-slide active" style="background: url('harborlink partners.png ') center/cover;">
-        <a href="transit.html"><div class="hero-text"><h3>Secure Passenger Transit</h3><p>Optimizing flow with REALAiiD identity bridges.</p></div></a>
-    </div>
-    <div class="hero-slide" style="background: url('harborlink partners2.png') center/cover;">
-        <a href="marsec.html"><div class="hero-text"><h3>MARSEC Governance</h3><p>Hardening vessel-to-port security protocols.</p></div></a>
-    </div>
-    <div class="hero-slide" style="background: url('harborlink partners3.png') center/cover;">
-        <a href="bureau.html"><div class="hero-text"><h3>Bureau Infrastructure</h3><p>Next-generation port operational standards.</p></div></a>
-    </div>
-    <div class="hero-slide" style="background: url('harborlink partners5.png') center/cover;">
-        <a href="iam.html"><div class="hero-text"><h3>Identity & Access</h3><p>Biometric-backed, frictionless entry control.</p></div></a>
-    </div>
-    <div class="hero-slide" style="background: url('harborlink partners6.png') center/cover;">
-        <a href="logistics.html"><div class="hero-text"><h3>Digital Embarkation</h3><p>Automated manifest verification at scale.</p></div></a>
-    </div>
-    <div class="hero-slide" style="background: url('harborlink partners7.png') center/cover;">
-        <a href="logistics.html"><div class="hero-text"><h3>Digital Embarkation</h3><p>Automated manifest verification at scale.</p></div></a>
-    </div>
-    <div class="hero-slide" style="background: url('harborlink partners55.png') center/cover;">
-        <a href="logistics.html"><div class="hero-text"><h3>Digital Embarkation</h3><p>Automated manifest verification at scale.</p></div></a>
-    </div>
-    <div class="hero-slide" style="background: url('harborlink partners5.png8.jpeg') center/cover;">
-        <a href="logistics.html"><div class="hero-text"><h3>Digital Embarkation</h3><p>Automated manifest verification at scale.</p></div></a>
-    </div>
+    <div class="hero-slide active" style="background: url('harborlink partners.png') center/cover;"><a href="transit.html"><div class="hero-text"><h3>Secure Passenger Transit</h3><p>Optimizing flow with REALAiiD identity bridges.</p></div></a></div>
+    <div class="hero-slide" style="background: url('harborlink partners2.png') center/cover;"><a href="marsec.html"><div class="hero-text"><h3>MARSEC Governance</h3><p>Hardening vessel-to-port security protocols.</p></div></a></div>
+    <div class="hero-slide" style="background: url('harborlink partners3.png') center/cover;"><a href="bureau.html"><div class="hero-text"><h3>Bureau Infrastructure</h3><p>Next-generation port operational standards.</p></div></a></div>
+    <div class="hero-slide" style="background: url('harborlink partners5.png') center/cover;"><a href="iam.html"><div class="hero-text"><h3>Identity & Access</h3><p>Biometric-backed, frictionless entry control.</p></div></a></div>
+    <div class="hero-slide" style="background: url('harborlink partners6.png') center/cover;"><a href="logistics.html"><div class="hero-text"><h3>Digital Embarkation</h3><p>Automated manifest verification at scale.</p></div></a></div>
+    <div class="hero-slide" style="background: url('harborlink partners7.png') center/cover;"><a href="logistics.html"><div class="hero-text"><h3>Digital Embarkation</h3><p>Automated manifest verification at scale.</p></div></a></div>
+    <div class="hero-slide" style="background: url('harborlink partners55.png') center/cover;"><a href="logistics.html"><div class="hero-text"><h3>Digital Embarkation</h3><p>Automated manifest verification at scale.</p></div></a></div>
+    <div class="hero-slide" style="background: url('harborlink partners5.png8.jpeg') center/cover;"><a href="logistics.html"><div class="hero-text"><h3>Digital Embarkation</h3><p>Automated manifest verification at scale.</p></div></a></div>
     <button class="nav-btn prev" onclick="moveSlide(-1)">&#10094;</button>
     <button class="nav-btn next" onclick="moveSlide(1)">&#10095;</button>
 </div>
@@ -144,9 +98,7 @@
 </div>
 
 <div class="banner-box">
-    <a href="https://www.realaiid.com/" target="_blank" rel="noopener noreferrer">
-        <img src="81Nqx.png" alt="Bureau Operational Banner - REALAiiD">
-    </a>
+    <a href="https://www.realaiid.com/" target="_blank" rel="noopener noreferrer"><img src="81Nqx.png" alt="Bureau Operational Banner - REALAiiD"></a>
 </div>
 
 <footer>
@@ -158,7 +110,7 @@
         <div><h4>Enterprise & Legal</h4><ul><li><a href="about.html">Executive Vision</a></li><li><a href="compliance.html">Fed Standards</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="contact.html">Procurement</a></li><li><a href="support.html">Support Desk</a></li></ul></div>
     </div>
     <div style="text-align: center; margin-top: 60px; font-size: 0.8rem; color: #aaa;">
-        &copy; 2026 HarborLink Partners - Solomon Kin LLC & REALAiiD, Inc. | Hardened Maritime Identity Sovereignty | Contact: 	solomonkinllc@gmail.com
+        &copy; 2026 HarborLink Partners - Solomon Kin LLC & REALAiiD, Inc. | Hardened Maritime Identity Sovereignty | Contact: solomonkinllc@gmail.com
     </div>
 </footer>
 
@@ -172,6 +124,5 @@
     }
     setInterval(() => moveSlide(1), 7000);
 </script>
-
 </body>
 </html>
