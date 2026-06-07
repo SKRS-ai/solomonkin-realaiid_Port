@@ -45,14 +45,11 @@
         .footer-grid li { margin-bottom: 12px; font-size: 0.9rem; }
         .footer-grid a { color: #ccc; text-decoration: none; transition: 0.3s; }
         .footer-grid a:hover { color: var(--white); }
-    </style>
-</head>
-<body>
-
-HTML
-<header>
-    <div class="logo-box"><img src="HarborLinkPartners1.png" alt="HarborLink Partners"></div>
-    <nav>
+<header class="main-header">
+    <div class="logo-box">
+        <img src="HarborLinkPartners1.png" alt="HarborLink Partners">
+    </div>
+    <nav class="main-nav">
         <a href="index.html">Home</a>
         <a href="software.html">Software</a>
         <a href="hardware.html">Hardware</a>
@@ -71,30 +68,43 @@ HTML
 </header>
 
 <style>
-    header { 
+    /* Scope styles specifically to .main-header to prevent leakage */
+    .main-header { 
         background: #002366; 
-        padding: 1rem 2%; 
+        padding: 1.5rem 2%; 
         display: flex; 
         align-items: center; 
-        justify-content: space-between; 
+        gap: 2rem;
         border-bottom: 4px solid #c5a059; 
     }
-    .logo-box img { height: 50px; }
-    nav { 
+    
+    .logo-box img { 
+        height: 80px; /* Restored to original, larger size */
+        width: auto;
+        display: block;
+    }
+
+    .main-nav { 
         display: flex; 
         flex-wrap: wrap; 
-        justify-content: flex-end; 
+        gap: 15px 25px; /* Vertical and Horizontal spacing */
+        justify-content: flex-start;
+        flex-grow: 1;
     }
-    nav a { 
+
+    .main-nav a { 
         color: #ffffff; 
         text-decoration: none; 
-        margin-left: 15px; 
         font-weight: 600; 
-        font-size: 0.8rem; 
+        font-size: 0.9rem; 
         text-transform: uppercase; 
-        transition: color 0.3s; 
+        transition: color 0.3s, transform 0.2s;
+        white-space: nowrap;
     }
-    nav a:hover { color: #00a8e8; }
+
+    .main-nav a:hover { 
+        color: #00a8e8; 
+    }
 </style>
 
 <div class="hero-container" id="heroCarousel">
