@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integration & Connectivity | HarborLink Partners</title>
+    <style>
+        :root { --navy: #002366; --light-blue: #00a8e8; --white: #ffffff; --bg-gray: #f4f7f6; --text-dark: #2d3436; --gold: #c5a059; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.7; color: var(--text-dark); margin: 0; background-color: var(--bg-gray); }
+        header { background: var(--navy); padding: 1.5rem 5%; display: flex; align-items: center; justify-content: space-between; border-bottom: 4px solid var(--gold); }
+        .logo-text { color: white; font-size: 1.5rem; font-weight: bold; letter-spacing: 1px; }
+        nav a { color: var(--white); text-decoration: none; margin-left: 25px; font-weight: 600; font-size: 0.9rem; text-transform: uppercase; transition: color 0.3s; }
+        nav a:hover { color: var(--light-blue); }
+        .container { width: 85%; margin: 60px auto; background: var(--white); padding: 80px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); }
+        h1 { color: var(--navy); border-bottom: 3px solid var(--gold); padding-bottom: 15px; font-size: 2.5rem; }
+        h3 { color: var(--navy); margin-top: 30px; }
+        .tech-box { background: #fdfbf7; border-left: 5px solid var(--gold); padding: 30px; margin: 40px 0; }
+        .connector-diagram { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; margin: 40px 0; }
+        .connector-node { padding: 20px; background: #eef2f7; border: 1px solid #ccd6e0; text-align: center; border-radius: 5px; }
+        footer { background: var(--navy); color: var(--white); padding: 60px 5%; margin-top: 80px; border-top: 5px solid var(--gold); }
+        .footer-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 30px; }
+        .footer-grid h4 { color: var(--gold); margin-bottom: 15px; text-transform: uppercase; font-size: 0.9rem; }
+        .footer-grid ul { list-style: none; padding: 0; }
+        .footer-grid li { margin-bottom: 10px; font-size: 0.85rem; }
+        .footer-grid a { color: #ccc; text-decoration: none; }
+        .footer-grid a:hover { color: var(--white); }
+        .footer-bottom { text-align: center; margin-top: 50px; font-size: 0.8rem; color: #888; border-top: 1px solid #333; padding-top: 20px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo-text">HARBORLINK PARTNERS</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="software.html">Software</a>
+        <a href="hardware.html">Hardware</a>
+        <a href="embarkation.html">Embarkation</a>
+        <a href="integration.html">Integration</a>
+        <a href="contact.html">Procurement</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>System Interoperability & Forensic Integration</h1>
+    <p>The HarborLink ecosystem achieves its high-security, forensically covert operational state through a unified identity-first architecture. Our <strong>REALAiiD layer</strong> serves as the secure, sovereign backbone that synchronizes cruisePAL’s operational intelligence with dcs.aero’s physical hardware transit points.</p>
+
+    <div class="tech-box">
+        <h3>The Sovereign Identity Bridge</h3>
+        <p>When guests load credentials into their REALAiiD wallet, they are not just storing data; they are anchoring sovereign identity to our physical maritime environment. The integration operates via:</p>
+        <div class="connector-diagram">
+            <div class="connector-node"><strong>REALAiiD Wallet</strong><br>Sovereign Identity Anchoring</div>
+            <div class="connector-node"><strong>Secure TLS Bridge</strong><br>Forensically Logged Handshakes</div>
+            <div class="connector-node"><strong>dcs.aero Gateway</strong><br>Physical Access/Biometric Verification</div>
+        </div>
+        <p>This flow ensures that every interaction—from the moment a mobile wallet is presented to a dcs.aero terminal—is cryptographically signed, timestamped, and reconciled against the master cruisePAL manifest in real-time.</p>
+    </div>
+
+    <h3>Technical Forensic Architecture</h3>
+    <p>By leveraging an identity-driven orchestration layer, HarborLink ensures that all data movement between vendors is minimized and protected. Key integration pillars include:</p>
+    <ul>
+        <li><strong>Immutable Ledger Reconciliation:</strong> Any discrepancy between physical arrival at a dcs.aero kiosk and the cruisePAL operational manifest triggers a silent, forensically secure alert to the Bureau.</li>
+        <li><strong>Zero-Trust Hardware Nodes:</strong> dcs.aero terminals function as isolated trust zones. Data is encrypted at the edge; only cryptographic proofs (not PII) are transmitted to the backend.</li>
+        <li><strong>Unified Cryptographic Key Management:</strong> Both cruisePAL and dcs.aero endpoints share a hardened, rotate-on-demand key infrastructure governed by the REALAiiD protocol.</li>
+    </ul>
+
+    <div style="background: #002366; color: white; padding: 30px; margin-top: 40px; border-radius: 5px;">
+        <h3>Forensically Covert Verification</h3>
+        <p>Our integration approach is designed for complete transparency in auditing while remaining invisible to the guest. The system performs over 1,000 identity integrity checks per second during peak embarkation, ensuring that identity sovereignty is maintained without degrading passenger throughput.</p>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-grid">
+        <div><h4>HarborLink Core</h4><ul><li><a href="index.html">Mission Statement</a></li><li><a href="about.html">Executive Leadership</a></li><li><a href="strategy.html">Operational Strategy</a></li></ul></div>
+        <div><h4>Identity & IAM</h4><ul><li><a href="iam.html">Identity Access Mgmt</a></li><li><a href="forensics.html">Forensic Audit Log</a></li><li><a href="sovereignty.html">Digital Sovereignty</a></li><li><a href="encryption.html">Cryptographic Pillars</a></li></ul></div>
+        <div><h4>Solutions</h4><ul><li><a href="software.html">Software Ecosystem</a></li><li><a href="hardware.html">Maritime Hardware</a></li><li><a href="embarkation.html">Embarkation Protocols</a></li><li><a href="integration.html">Connector Architecture</a></li></ul></div>
+        <div><h4>Bureau Partners</h4><ul><li><a href="https://cruisepal.com" target="_blank">cruisePAL Intelligence</a></li><li><a href="https://dcs.aero" target="_blank">dcs.aero Infrastructure</a></li><li><a href="aeah.org" target="_blank">AEAH Literacy</a></li><li><a href="realaiid.com" target="_blank">REALAiiD Bureau</a></li></ul></div>
+        <div><h4>Procurement</h4><ul><li><a href="contact.html">Government Sales</a></li><li><a href="support.html">Enterprise Support</a></li><li><a href="training.html">Staff Certification</a></li><li><a href="resilience.html">Disaster Continuity</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2026 HarborLink Partners - Solomon Kin LLC. | Secure Maritime Identity Infrastructure | Philadelphia, PA
+    </div>
+</footer>
+
+</body>
+</html>
