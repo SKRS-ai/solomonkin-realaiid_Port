@@ -49,13 +49,53 @@
 </head>
 <body>
 
+HTML
 <header>
     <div class="logo-box"><img src="HarborLinkPartners1.png" alt="HarborLink Partners"></div>
     <nav>
-        <a href="index.html">Home</a><a href="services.html">Services</a><a href="bureau.html">Bureau</a>
-        <a href="logistics.html">Logistics</a><a href="marsec.html">MARSEC</a><a href="iam.html">IAM</a><a href="contact.html">Procurement</a>
+        <a href="index.html">Home</a>
+        <a href="software.html">Software</a>
+        <a href="hardware.html">Hardware</a>
+        <a href="embarkation.html">Embarkation</a>
+        <a href="integration.html">Integration</a>
+        <a href="training.html">Training</a>
+        <a href="resilience.html">Resilience</a>
+        <a href="vendor-mgmt.html">Vendors</a>
+        <a href="services.html">Services</a>
+        <a href="bureau.html">Bureau</a>
+        <a href="logistics.html">Logistics</a>
+        <a href="marsec.html">MARSEC</a>
+        <a href="iam.html">IAM</a>
+        <a href="contact.html">Procurement</a>
     </nav>
 </header>
+
+<style>
+    header { 
+        background: #002366; 
+        padding: 1rem 2%; 
+        display: flex; 
+        align-items: center; 
+        justify-content: space-between; 
+        border-bottom: 4px solid #c5a059; 
+    }
+    .logo-box img { height: 50px; }
+    nav { 
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: flex-end; 
+    }
+    nav a { 
+        color: #ffffff; 
+        text-decoration: none; 
+        margin-left: 15px; 
+        font-weight: 600; 
+        font-size: 0.8rem; 
+        text-transform: uppercase; 
+        transition: color 0.3s; 
+    }
+    nav a:hover { color: #00a8e8; }
+</style>
 
 <div class="hero-container" id="heroCarousel">
     <div class="hero-slide active" style="background: url('harborlink partners.png ') center/cover;">
