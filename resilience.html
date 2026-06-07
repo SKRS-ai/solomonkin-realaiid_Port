@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Uptime & Disaster Continuity | HarborLink Partners</title>
+    <style>
+        :root { --navy: #002366; --light-blue: #00a8e8; --white: #ffffff; --bg-gray: #f4f7f6; --text-dark: #2d3436; --gold: #c5a059; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.7; color: var(--text-dark); margin: 0; background-color: var(--bg-gray); }
+        header { background: var(--navy); padding: 1.5rem 5%; display: flex; align-items: center; justify-content: space-between; border-bottom: 4px solid var(--gold); }
+        .logo-text { color: white; font-size: 1.5rem; font-weight: bold; letter-spacing: 1px; }
+        nav a { color: var(--white); text-decoration: none; margin-left: 25px; font-weight: 600; font-size: 0.9rem; text-transform: uppercase; transition: color 0.3s; }
+        nav a:hover { color: var(--light-blue); }
+        .container { width: 85%; margin: 60px auto; background: var(--white); padding: 80px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); }
+        h1 { color: var(--navy); border-bottom: 3px solid var(--gold); padding-bottom: 15px; font-size: 2.5rem; }
+        h3 { color: var(--navy); margin-top: 30px; }
+        .tech-box { background: #fdfbf7; border-left: 5px solid var(--gold); padding: 30px; margin: 40px 0; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px; }
+        .card { padding: 40px; background: #f8f9fa; border: 1px solid #e1e1e1; }
+        footer { background: var(--navy); color: var(--white); padding: 60px 5%; margin-top: 80px; border-top: 5px solid var(--gold); }
+        .footer-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 30px; }
+        .footer-grid h4 { color: var(--gold); margin-bottom: 15px; text-transform: uppercase; font-size: 0.9rem; }
+        .footer-grid ul { list-style: none; padding: 0; }
+        .footer-grid li { margin-bottom: 10px; font-size: 0.85rem; }
+        .footer-grid a { color: #ccc; text-decoration: none; }
+        .footer-grid a:hover { color: var(--white); }
+        .footer-bottom { text-align: center; margin-top: 50px; font-size: 0.8rem; color: #888; border-top: 1px solid #333; padding-top: 20px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo-text">HARBORLINK PARTNERS</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="software.html">Software</a>
+        <a href="hardware.html">Hardware</a>
+        <a href="embarkation.html">Embarkation</a>
+        <a href="integration.html">Integration</a>
+        <a href="training.html">Training</a>
+        <a href="contact.html">Procurement</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>System Uptime & Disaster Continuity</h1>
+    <p>In a critical maritime environment, downtime is not an option. HarborLink Partners engineers resilience into the foundation of our infrastructure. Our <strong>"Always-On"</strong> architecture ensures that even in the event of total network failure, the Bureau’s forensic identity protocols remain operational.</p>
+
+    <div class="tech-box">
+        <h3>Air-Gapped Forensic Sovereignty</h3>
+        <p>Our infrastructure utilizes an air-gapped node design. When cloud connectivity is severed, local REALAiiD verification terminals switch to <strong>Autonomous Mode</strong>. They retain the ability to verify biometric signatures and issue temporary transit tokens against a locally cached, encrypted ledger that synchronizes automatically upon network restoration.</p>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Fail-Safe Mechanisms</h3>
+            <ul>
+                <li><strong>Local Cache Ledger:</strong> Real-time identity verification without external server dependencies.</li>
+                <li><strong>Cryptographic Heartbeat:</strong> Secure, offline token validation using local HSM modules.</li>
+                <li><strong>Hardware Redundancy:</strong> Rapid-deploy dcs.aero nodes ready to replace damaged infrastructure in minutes.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Operational Continuity Pillars</h3>
+            <ul>
+                <li><strong>Zero Trust Recovery:</strong> Cryptographically proven identity verification regardless of external network state.</li>
+                <li><strong>Graceful Degradation:</strong> Seamless transition between online/offline modes without interrupting passenger flow.</li>
+                <li><strong>Auto-Reconciliation:</strong> Once restored, the system performs a forensic integrity audit, logging all offline transactions with complete accuracy.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-grid">
+        <div><h4>HarborLink Core</h4><ul><li><a href="index.html">Mission Statement</a></li><li><a href="about.html">Executive Leadership</a></li><li><a href="strategy.html">Operational Strategy</a></li></ul></div>
+        <div><h4>Identity & IAM</h4><ul><li><a href="iam.html">Identity Access Mgmt</a></li><li><a href="forensics.html">Forensic Audit Log</a></li><li><a href="sovereignty.html">Digital Sovereignty</a></li><li><a href="encryption.html">Cryptographic Pillars</a></li></ul></div>
+        <div><h4>Solutions</h4><ul><li><a href="software.html">Software Ecosystem</a></li><li><a href="hardware.html">Maritime Hardware</a></li><li><a href="embarkation.html">Embarkation Protocols</a></li><li><a href="integration.html">Connector Architecture</a></li></ul></div>
+        <div><h4>Bureau Partners</h4><ul><li><a href="https://cruisepal.com" target="_blank">cruisePAL Intelligence</a></li><li><a href="https://dcs.aero" target="_blank">dcs.aero Infrastructure</a></li><li><a href="aeah.org" target="_blank">AEAH Literacy</a></li><li><a href="realaiid.com" target="_blank">REALAiiD Bureau</a></li></ul></div>
+        <div><h4>Procurement</h4><ul><li><a href="contact.html">Government Sales</a></li><li><a href="support.html">Enterprise Support</a></li><li><a href="training.html">Staff Certification</a></li><li><a href="resilience.html">Disaster Continuity</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2026 HarborLink Partners - Solomon Kin LLC. | Secure Maritime Identity Infrastructure | Philadelphia, PA
+    </div>
+</footer>
+
+</body>
+</html>
