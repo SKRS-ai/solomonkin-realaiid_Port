@@ -5,87 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logistics & Flow Forensics | HarborLink Partners</title>
     <style>
-        :root {
-            --navy: #002366;
-            --light-blue: #00a8e8;
-            --white: #ffffff;
-            --bg-gray: #f4f7f6;
-            --text-dark: #2d3436;
-        }
-        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.7; color: var(--text-dark); margin: 0; background-color: var(--bg-gray); }
+        :root { --navy: #002366; --light-blue: #00a8e8; --white: #ffffff; --bg-gray: #f4f7f6; --text-dark: #2d3436; --gold: #c5a059; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.7; color: var(--text-dark); margin: 0; background-color: var(--bg-gray); }
         
-        /* Header/Nav */
-        header { background: var(--navy); color: var(--white); padding: 1.5rem 5%; position: sticky; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid var(--light-blue); }
-        nav a { color: var(--white); text-decoration: none; margin-left: 25px; font-weight: 500; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
+        header { background: var(--navy); padding: 1.5rem 5%; display: flex; align-items: center; justify-content: space-between; border-bottom: 4px solid var(--gold); }
+        .logo-text { color: white; font-size: 1.5rem; font-weight: bold; letter-spacing: 1px; }
+        nav a { color: var(--white); text-decoration: none; margin-left: 25px; font-weight: 600; font-size: 0.9rem; text-transform: uppercase; transition: color 0.3s; }
+        nav a:hover { color: var(--light-blue); }
+
+        /* HD Hero Banner */
+        .hero-banner { width: 100%; height: 450px; background: url('FlowForensics.png') center/cover no-repeat; border-bottom: 4px solid var(--gold); }
+
+        .container { width: 85%; margin: 60px auto; background: var(--white); padding: 80px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); }
+        h1 { color: var(--navy); border-bottom: 3px solid var(--gold); padding-bottom: 15px; font-size: 2.5rem; }
+        h3 { color: var(--navy); margin-top: 30px; }
+        .tech-box { background: #fdfbf7; border-left: 5px solid var(--gold); padding: 30px; margin: 40px 0; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px; }
+        .card { padding: 40px; background: #f8f9fa; border: 1px solid #e1e1e1; }
         
-        /* Main Content */
-        .container { width: 85%; margin: 50px auto; background: var(--white); padding: 60px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-radius: 4px; }
-        h1 { color: var(--navy); font-size: 2.5rem; border-bottom: 2px solid var(--light-blue); display: inline-block; padding-bottom: 10px; }
-        .hero-tech { background: var(--navy); color: var(--white); padding: 40px; margin: 40px 0; border-radius: 4px; }
-        .grid-ops { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px; }
-        .card { padding: 30px; background: #f9f9f9; border-left: 5px solid var(--light-blue); }
-        
-        /* Footer */
-        footer { background: var(--navy); color: var(--white); padding: 60px 5% 30px; margin-top: 80px; border-top: 5px solid var(--light-blue); }
-        .footer-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; font-size: 0.85rem; }
-        .footer-grid h4 { color: var(--light-blue); text-transform: uppercase; margin-bottom: 15px; }
+        /* CTA Button Section */
+        .cta-container { text-align: center; padding: 60px 0; }
+        .cta-btn { background: var(--navy); color: var(--white); padding: 25px 50px; font-size: 1.5rem; font-weight: bold; text-decoration: none; border-radius: 8px; border: 2px solid var(--gold); transition: 0.3s; display: inline-block; }
+        .cta-btn:hover { background: var(--light-blue); color: var(--white); transform: scale(1.05); }
+
+        footer { background: var(--navy); color: var(--white); padding: 60px 5%; margin-top: 80px; border-top: 5px solid var(--gold); }
+        .footer-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 30px; }
+        .footer-grid h4 { color: var(--gold); margin-bottom: 15px; text-transform: uppercase; font-size: 0.9rem; }
         .footer-grid ul { list-style: none; padding: 0; }
-        .footer-grid li { margin-bottom: 8px; }
+        .footer-grid li { margin-bottom: 10px; font-size: 0.85rem; }
         .footer-grid a { color: #ccc; text-decoration: none; }
         .footer-grid a:hover { color: var(--white); }
+        .footer-bottom { text-align: center; margin-top: 50px; font-size: 0.8rem; color: #888; border-top: 1px solid #333; padding-top: 20px; }
     </style>
 </head>
 <body>
 
 <header>
-    <div style="font-size: 1.5rem; font-weight: bold; letter-spacing: -1px;">HARBORLINK PARTNERS</div>
+    <div class="logo-text">HARBORLINK PARTNERS</div>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="capabilities.html">Capabilities</a>
-        <a href="iam.html">IAM</a>
-        <a href="logistics.html" style="color: var(--light-blue);">Logistics</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html">Home</a><a href="software.html">Software</a><a href="hardware.html">Hardware</a><a href="embarkation.html">Embarkation</a><a href="integration.html">Integration</a><a href="logistics.html">Logistics</a><a href="contact.html">Procurement</a>
     </nav>
 </header>
 
+<div class="hero-banner"></div>
+
 <div class="container">
     <h1>Logistics & Flow Forensics</h1>
-    <p>In modern maritime logistics, data is the most critical cargo. HarborLink Partners utilizes the <strong>Bureau of Digital Identity</strong> to turn global supply chains into forensically secure, transparent channels. By leveraging Bridge-Nodes, we ensure that every movement—from the ship to the warehouse—is verifiable, immutable, and optimized.</p>
+    <p>In modern maritime logistics, data is the most critical cargo. HarborLink Partners utilizes the Bureau of Digital Identity to turn global supply chains into forensically secure, transparent channels. By leveraging Bridge-Nodes, we ensure that every movement—from the ship to the warehouse—is verifiable, immutable, and optimized.</p>
 
-    <div class="hero-tech">
+    <div class="tech-box">
         <h3>Bridge-Node Operational Capabilities</h3>
         <p>When freight assets, transport vehicles, and cargo containers are provisioned with REALAiiD Bridge-Nodes, the supply chain gains the following capabilities:</p>
         <ul>
             <li><strong>Automated Hand-off Verification:</strong> Eliminate manual manifest checking; Bridges perform cryptographic hand-offs at every gate and checkpoint.</li>
-            <li><strong>Asset-Level Chain-of-Custody:</strong> Every container is cryptographically bound to its authorized carrier, ensuring absolute cargo integrity.</li>
+            <li><strong>Asset-Level Chain-of-Custody:</strong> Every container is cryptographically bound to its authorized carrier, ensuring absolute cargo integrity from berth to destination.</li>
             <li><strong>Velocity Forensics:</strong> Real-time logging of movement data into an immutable ledger, allowing for precise, second-by-second supply chain auditing.</li>
-            <li><strong>Dynamic Rerouting Authority:</strong> Bureau-verified command signals can securely reroute assets in response to port congestion or security alerts.</li>
+            <li><strong>Dynamic Rerouting Authority:</strong> Bureau-verified command signals can securely reroute assets in response to port congestion, climate disruptions, or security alerts.</li>
         </ul>
     </div>
 
-    <div class="grid-ops">
+    <div class="grid">
         <div class="card">
             <h3>Frictionless Throughput</h3>
-            <p>Our platform removes the bureaucratic bottlenecks of international logistics. By shifting from paper-based or database-reliant tracking to cryptographically signed identity Bridges, we ensure that cargo flows without human-interdiction delays.</p>
+            <p>Our platform removes the bureaucratic bottlenecks of international logistics. By shifting from paper-based or database-reliant tracking to cryptographically signed identity Bridges, we ensure that cargo flows without human-interdiction delays, maximizing port capacity and operational efficiency.</p>
         </div>
         <div class="card">
             <h3>Forensic Asset Oversight</h3>
-            <p>With HarborLink, "Logistics" is renamed to "Forensic Flow." We provide stakeholders with a comprehensive view of cargo state, authorization, and history, ensuring that every link in the supply chain is hardened against interference.</p>
+            <p>With HarborLink, "Logistics" is renamed to "Forensic Flow." We provide stakeholders with a comprehensive, real-time view of cargo state, authorization, and history, ensuring that every link in the supply chain is hardened against interference, fraud, and systemic loss.</p>
         </div>
+    </div>
+
+    <div class="cta-container">
+        <a href="contact.html" class="cta-btn">Request Logistics Consultation</a>
     </div>
 </div>
 
 <footer>
     <div class="footer-grid">
-        <div><h4>Supply Chain</h4><ul><li><a href="logistics.html">Flow Forensics</a></li><li><a href="manifest-audit.html">Manifest Integrity</a></li><li><a href="cargo-bound.html">Cargo Binding</a></li><li><a href="transit-logic.html">Transit Metrics</a></li><li><a href="port-velocity.html">Velocity Analysis</a></li></ul></div>
-        <div><h4>Bureau Identity</h4><ul><li><a href="bureau.html">Bureau Charter</a></li><li><a href="iam.html">IAM Protocol</a></li><li><a href="wallet.html">REALAiiD Wallet</a></li><li><a href="bridge-vault.html">Bridge Registry</a></li><li><a href="biometrics.html">Bio-Binding</a></li></ul></div>
-        <div><h4>Maritime Intel</h4><ul><li><a href="philaport.html">PhilaPort Hub</a></li><li><a href="terminal.html">Terminal Ops</a></li><li><a href="infrastructure.html">Hardened Ops</a></li><li><a href="transit.html">Secure Transit</a></li><li><a href="marsec.html">MARSEC Governance</a></li></ul></div>
-        <div><h4>Forensic Audit</h4><ul><li><a href="audit.html">Immutable Ledger</a></li><li><a href="incident.html">Incident Response</a></li><li><a href="threat.html">Threat Mitigation</a></li><li><a href="anomaly.html">Anomaly Logic</a></li><li><a href="reporting.html">Audit Dashboards</a></li></ul></div>
-        <div><h4>Enterprise/Legal</h4><ul><li><a href="terms.html">Legal Framework</a></li><li><a href="compliance.html">Fed Standards</a></li><li><a href="contact.html">Procurement</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="sitemap.html">Sitemap</a></li><li><a href="resources.html">Knowledge Base</a></li></ul></div>
+        <div><h4>HarborLink Core</h4><ul><li><a href="index.html">Mission Statement</a></li><li><a href="about.html">Executive Leadership</a></li></ul></div>
+        <div><h4>Solutions</h4><ul><li><a href="software.html">Software Ecosystem</a></li><li><a href="hardware.html">Maritime Hardware</a></li></ul></div>
+        <div><h4>Bureau</h4><ul><li><a href="iam.html">IAM Protocol</a></li><li><a href="forensics.html">Forensic Audit</a></li></ul></div>
+        <div><h4>Partners</h4><ul><li><a href="https://cruisepal.com" target="_blank">cruisePAL</a></li><li><a href="https://dcs.aero" target="_blank">dcs.aero</a></li></ul></div>
+        <div><h4>Procurement</h4><ul><li><a href="contact.html">Contact Sales</a></li><li><a href="support.html">Support</a></li></ul></div>
     </div>
-    <div style="text-align: center; margin-top: 40px; font-size: 0.75rem; color: #666;">
-        &copy; 2026 HarborLink Partners - Solomon Kin LLC & REALAiiD, Inc. | Hardened Logistics Infrastructure.
+    <div class="footer-bottom">
+        &copy; 2026 HarborLink Partners - Solomon Kin LLC. | Secure Maritime Identity Infrastructure | Philadelphia, PA
     </div>
 </footer>
 
