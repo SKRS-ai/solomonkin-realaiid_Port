@@ -3,89 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MARSEC Governance & Maritime Security | HarborLink Partners</title>
+    <title>MARSEC Governance & Security | HarborLink Partners</title>
     <style>
-        :root {
-            --navy: #002366;
-            --light-blue: #00a8e8;
-            --white: #ffffff;
-            --bg-gray: #f4f7f6;
-            --text-dark: #2d3436;
-        }
-        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.7; color: var(--text-dark); margin: 0; background-color: var(--bg-gray); }
+        :root { --navy: #002366; --light-blue: #00a8e8; --white: #ffffff; --bg-gray: #f4f7f6; --text-dark: #2d3436; --gold: #c5a059; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.7; color: var(--text-dark); margin: 0; background-color: var(--bg-gray); }
         
-        /* Header/Nav */
-        header { background: var(--navy); color: var(--white); padding: 1.5rem 5%; position: sticky; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid var(--light-blue); }
-        nav a { color: var(--white); text-decoration: none; margin-left: 25px; font-weight: 500; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
+        header { background: var(--navy); padding: 1.5rem 5%; display: flex; align-items: center; justify-content: space-between; border-bottom: 4px solid var(--gold); }
+        .logo-text { color: white; font-size: 1.5rem; font-weight: bold; letter-spacing: 1px; }
+        nav a { color: var(--white); text-decoration: none; margin-left: 25px; font-weight: 600; font-size: 0.9rem; text-transform: uppercase; transition: color 0.3s; }
+        nav a:hover { color: var(--light-blue); }
+
+        /* HD Hero Banner */
+        .hero-banner { width: 100%; height: 450px; background: url('MARSECGov.png') center/cover no-repeat; border-bottom: 4px solid var(--gold); }
+
+        .container { width: 85%; margin: 60px auto; background: var(--white); padding: 80px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); }
+        h1 { color: var(--navy); border-bottom: 3px solid var(--gold); padding-bottom: 15px; font-size: 2.5rem; }
+        h3 { color: var(--navy); margin-top: 30px; }
+        .tech-box { background: #fdfbf7; border-left: 5px solid var(--gold); padding: 30px; margin: 40px 0; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px; }
+        .card { padding: 40px; background: #f8f9fa; border: 1px solid #e1e1e1; }
         
-        /* Main Content */
-        .container { width: 85%; margin: 50px auto; background: var(--white); padding: 60px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-radius: 4px; }
-        h1 { color: var(--navy); font-size: 2.5rem; border-bottom: 2px solid var(--light-blue); display: inline-block; padding-bottom: 10px; }
-        .hero-section { background: var(--navy); color: var(--white); padding: 40px; margin: 40px 0; border-radius: 4px; }
-        .grid-tech { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
-        .card { padding: 30px; background: #f9f9f9; border-left: 5px solid var(--light-blue); }
-        
-        /* Footer */
-        footer { background: var(--navy); color: var(--white); padding: 60px 5% 30px; margin-top: 80px; border-top: 5px solid var(--light-blue); }
-        .footer-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; font-size: 0.85rem; }
-        .footer-grid h4 { color: var(--light-blue); text-transform: uppercase; margin-bottom: 15px; }
+        /* CTA Button Section */
+        .cta-container { text-align: center; padding: 60px 0; }
+        .cta-btn { background: var(--navy); color: var(--white); padding: 25px 50px; font-size: 1.5rem; font-weight: bold; text-decoration: none; border-radius: 8px; border: 2px solid var(--gold); transition: 0.3s; display: inline-block; }
+        .cta-btn:hover { background: var(--light-blue); color: var(--white); transform: scale(1.05); }
+
+        footer { background: var(--navy); color: var(--white); padding: 60px 5%; margin-top: 80px; border-top: 5px solid var(--gold); }
+        .footer-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 30px; }
+        .footer-grid h4 { color: var(--gold); margin-bottom: 15px; text-transform: uppercase; font-size: 0.9rem; }
         .footer-grid ul { list-style: none; padding: 0; }
-        .footer-grid li { margin-bottom: 8px; }
+        .footer-grid li { margin-bottom: 10px; font-size: 0.85rem; }
         .footer-grid a { color: #ccc; text-decoration: none; }
         .footer-grid a:hover { color: var(--white); }
+        .footer-bottom { text-align: center; margin-top: 50px; font-size: 0.8rem; color: #888; border-top: 1px solid #333; padding-top: 20px; }
     </style>
 </head>
 <body>
 
 <header>
-    <div style="font-size: 1.5rem; font-weight: bold; letter-spacing: -1px;">HARBORLINK PARTNERS</div>
+    <div class="logo-text">HARBORLINK PARTNERS</div>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="capabilities.html">Capabilities</a>
-        <a href="iam.html">IAM</a>
-        <a href="marsec.html" style="color: var(--light-blue);">MARSEC</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html">Home</a><a href="software.html">Software</a><a href="hardware.html">Hardware</a><a href="embarkation.html">Embarkation</a><a href="marsec.html">MARSEC</a><a href="contact.html">Procurement</a>
     </nav>
 </header>
+
+<div class="hero-banner"></div>
 
 <div class="container">
     <h1>MARSEC Governance & Security</h1>
     <p>HarborLink Partners integrates seamlessly with MARSEC (Maritime Security) levels, providing an automated, forensically hardened framework for port ingress and operational integrity. We ensure that your facility remains compliant with USCG standards while optimizing for modern, high-threat-vector environments.</p>
 
-    <div class="hero-section">
+    <div class="tech-box">
         <h3>Bridge-Node Integration for MARSEC</h3>
         <p>By loading official MARSEC credential "Bridges" into the REALAiiD Wallet, authorized personnel and assets gain immediate, cryptographically secured capabilities:</p>
         <ul>
             <li><strong>MARSEC-Adjustable Access Logic:</strong> Automatically adjust security posture (from Level 1 to Level 3) in real-time across the entire port-wide node network.</li>
-            <li><strong>Automated Credential Rotation:</strong> Cryptographically expire and re-issue facility-access tokens as threat-level mandates shift.</li>
+            <li><strong>Automated Credential Rotation:</strong> Cryptographically expire and re-issue facility-access tokens as threat-level mandates shift, ensuring zero stale access.</li>
             <li><strong>Forensic Perimeter Hardening:</strong> Every interaction with a gate or vessel is logged in an immutable, timestamped record, establishing a 100% auditable chain-of-custody.</li>
             <li><strong>Biometric Identity Validation:</strong> Ensure that every Bridge interaction is tied to a verified biometric signature, preventing credential spoofing or physical key-sharing.</li>
         </ul>
     </div>
 
-    <div class="grid-tech">
+    <div class="grid">
         <div class="card">
             <h3>Compliance & Oversight</h3>
-            <p>Our platform provides comprehensive reporting tools designed for USCG audits. By centralizing the Bureau’s forensic data, terminal operators gain a single pane of glass for all security-related access events.</p>
+            <p>Our platform provides comprehensive reporting tools designed for USCG audits. By centralizing the Bureau’s forensic data, terminal operators gain a single pane of glass for all security-related access events, streamlining regulatory reporting and enhancing internal security visibility.</p>
         </div>
         <div class="card">
             <h3>Hardened Infrastructure</h3>
-            <p>We believe in "Security by Design." The Bureau Protocol operates on an air-gapped-ready, zero-trust foundation, ensuring your MARSEC integrity isn't dependent on potentially vulnerable network backbones.</p>
+            <p>We believe in "Security by Design." The Bureau Protocol operates on an air-gapped-ready, zero-trust foundation, ensuring your MARSEC integrity isn't dependent on potentially vulnerable network backbones or external dependencies.</p>
         </div>
+    </div>
+
+    <div class="cta-container">
+        <a href="contact.html" class="cta-btn">Consult on MARSEC Security</a>
     </div>
 </div>
 
 <footer>
     <div class="footer-grid">
-        <div><h4>Maritime Security</h4><ul><li><a href="marsec.html">USCG Compliance</a></li><li><a href="threat-matrix.html">Threat Matrix</a></li><li><a href="perimeter.html">Perimeter Hardening</a></li><li><a href="vessel-auth.html">Vessel Authentication</a></li><li><a href="maritime-governance.html">Maritime Governance</a></li></ul></div>
-        <div><h4>Bureau Identity</h4><ul><li><a href="bureau.html">Bureau Charter</a></li><li><a href="iam.html">IAM Protocol</a></li><li><a href="wallet.html">REALAiiD Wallet</a></li><li><a href="bridge-vault.html">Bridge Registry</a></li><li><a href="biometrics.html">Bio-Binding</a></li></ul></div>
-        <div><h4>Operational</h4><ul><li><a href="philaport.html">PhilaPort Strategy</a></li><li><a href="logistics.html">Flow Forensics</a></li><li><a href="infrastructure.html">Hardened Ops</a></li><li><a href="transit.html">Secure Transit</a></li><li><a href="safety.html">Worker Safety</a></li></ul></div>
-        <div><h4>Forensic Audit</h4><ul><li><a href="audit.html">Immutable Ledger</a></li><li><a href="incident.html">Incident Response</a></li><li><a href="anomaly.html">Anomaly Reports</a></li><li><a href="reporting.html">Audit Dashboards</a></li><li><a href="forensic-arch.html">Forensic Data-Vault</a></li></ul></div>
-        <div><h4>Enterprise/Legal</h4><ul><li><a href="terms.html">Legal Framework</a></li><li><a href="compliance.html">Fed Standards</a></li><li><a href="contact.html">Procurement</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="sitemap.html">Sitemap</a></li><li><a href="resources.html">Knowledge Base</a></li></ul></div>
+        <div><h4>HarborLink Core</h4><ul><li><a href="index.html">Mission Statement</a></li><li><a href="about.html">Executive Leadership</a></li></ul></div>
+        <div><h4>Solutions</h4><ul><li><a href="software.html">Software Ecosystem</a></li><li><a href="hardware.html">Maritime Hardware</a></li></ul></div>
+        <div><h4>Bureau</h4><ul><li><a href="iam.html">IAM Protocol</a></li><li><a href="forensics.html">Forensic Audit</a></li></ul></div>
+        <div><h4>Partners</h4><ul><li><a href="https://cruisepal.com" target="_blank">cruisePAL</a></li><li><a href="https://dcs.aero" target="_blank">dcs.aero</a></li></ul></div>
+        <div><h4>Procurement</h4><ul><li><a href="contact.html">Contact Sales</a></li><li><a href="support.html">Support</a></li></ul></div>
     </div>
-    <div style="text-align: center; margin-top: 40px; font-size: 0.75rem; color: #666;">
-        &copy; 2026 HarborLink Partners - Solomon Kin LLC & REALAiiD, Inc. | Certified Secure Maritime Infrastructure.
+    <div class="footer-bottom">
+        &copy; 2026 HarborLink Partners - Solomon Kin LLC. | Secure Maritime Identity Infrastructure | Philadelphia, PA
     </div>
 </footer>
 
