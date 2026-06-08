@@ -3,89 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bridge Vault Protocol | HarborLink Partners</title>
+    <title>BridgeVault Security | HarborLink Partners</title>
     <style>
-        :root {
-            --navy: #002366;
-            --light-blue: #00a8e8;
-            --white: #ffffff;
-            --bg-gray: #f4f7f6;
-            --text-dark: #2d3436;
-        }
-        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.7; color: var(--text-dark); margin: 0; background-color: var(--bg-gray); }
+        :root { --navy: #002366; --light-blue: #00a8e8; --white: #ffffff; --bg-gray: #f4f7f6; --text-dark: #2d3436; --gold: #c5a059; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.7; color: var(--text-dark); margin: 0; background-color: var(--bg-gray); }
         
-        /* Header/Nav */
-        header { background: var(--navy); color: var(--white); padding: 1.5rem 5%; position: sticky; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid var(--light-blue); }
-        nav a { color: var(--white); text-decoration: none; margin-left: 25px; font-weight: 500; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
+        header { background: var(--navy); padding: 1.5rem 5%; display: flex; align-items: center; justify-content: space-between; border-bottom: 4px solid var(--gold); }
+        .logo-text { color: white; font-size: 1.5rem; font-weight: bold; letter-spacing: 1px; }
+        nav a { color: var(--white); text-decoration: none; margin-left: 25px; font-weight: 600; font-size: 0.9rem; text-transform: uppercase; transition: color 0.3s; }
+        nav a:hover { color: var(--light-blue); }
+
+        /* HD Hero Banner */
+        .hero-banner { width: 100%; height: 450px; background: url('BridgeVault.png') center/cover no-repeat; border-bottom: 4px solid var(--gold); }
+
+        .container { width: 85%; margin: 60px auto; background: var(--white); padding: 80px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); }
+        h1 { color: var(--navy); border-bottom: 3px solid var(--gold); padding-bottom: 15px; font-size: 2.5rem; }
+        h3 { color: var(--navy); margin-top: 30px; }
+        .tech-box { background: #fdfbf7; border-left: 5px solid var(--gold); padding: 30px; margin: 40px 0; }
         
-        /* Main Content */
-        .container { width: 85%; margin: 50px auto; background: var(--white); padding: 60px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-radius: 4px; }
-        h1 { color: var(--navy); font-size: 2.5rem; border-bottom: 2px solid var(--light-blue); display: inline-block; padding-bottom: 10px; }
-        .vault-box { background: var(--navy); color: var(--white); padding: 40px; margin: 40px 0; border-radius: 4px; }
-        .grid-capabilities { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
-        .card { padding: 25px; background: #f9f9f9; border-left: 4px solid var(--light-blue); }
-        
-        /* Footer */
-        footer { background: var(--navy); color: var(--white); padding: 60px 5% 30px; margin-top: 80px; border-top: 5px solid var(--light-blue); }
-        .footer-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; font-size: 0.85rem; }
-        .footer-grid h4 { color: var(--light-blue); text-transform: uppercase; margin-bottom: 15px; }
+        /* CTA Button Section */
+        .cta-container { text-align: center; padding: 60px 0; }
+        .cta-btn { background: var(--navy); color: var(--white); padding: 25px 50px; font-size: 1.5rem; font-weight: bold; text-decoration: none; border-radius: 8px; border: 2px solid var(--gold); transition: 0.3s; display: inline-block; }
+        .cta-btn:hover { background: var(--light-blue); color: var(--white); transform: scale(1.05); }
+
+        footer { background: var(--navy); color: var(--white); padding: 60px 5%; margin-top: 80px; border-top: 5px solid var(--gold); }
+        .footer-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 30px; }
+        .footer-grid h4 { color: var(--gold); margin-bottom: 15px; text-transform: uppercase; font-size: 0.9rem; }
         .footer-grid ul { list-style: none; padding: 0; }
-        .footer-grid li { margin-bottom: 8px; }
+        .footer-grid li { margin-bottom: 10px; font-size: 0.85rem; }
         .footer-grid a { color: #ccc; text-decoration: none; }
         .footer-grid a:hover { color: var(--white); }
+        .footer-bottom { text-align: center; margin-top: 50px; font-size: 0.8rem; color: #888; border-top: 1px solid #333; padding-top: 20px; }
     </style>
 </head>
 <body>
 
 <header>
-    <div style="font-size: 1.5rem; font-weight: bold; letter-spacing: -1px;">HARBORLINK PARTNERS</div>
+    <div class="logo-text">HARBORLINK PARTNERS</div>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="capabilities.html">Capabilities</a>
-        <a href="iam.html">IAM</a>
-        <a href="bridge-vault.html" style="color: var(--light-blue);">Bridge Vault</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html">Home</a><a href="software.html">Software</a><a href="hardware.html">Hardware</a><a href="embarkation.html">Embarkation</a><a href="bridge-vault.html">BridgeVault</a><a href="contact.html">Procurement</a>
     </nav>
 </header>
 
-<div class="container">
-    <h1>The Bridge Vault Protocol</h1>
-    <p>The Bridge Vault is the hardened repository within the Bureau of Digital Identity where high-assurance credentials are provisioned. Once a Bridge is loaded into a REALAiiD Wallet, it acts as a cryptographically signed key that synchronizes the individual with the port’s infrastructure.</p>
+<div class="hero-banner"></div>
 
-    <div class="vault-box">
-        <h3>Bridge Wallet Activation</h3>
-        <p>By loading these Bridges, personnel gain instant, automated capability across the port ecosystem:</p>
+<div class="container">
+    <h1>BridgeVault: Cryptographic Asset Protection</h1>
+    <p>BridgeVault represents the apex of secure credential management within the HarborLink ecosystem. It is the centralized yet cryptographically decentralized repository for the high-value "Bridges" that govern port access, vessel manifest integrity, and sovereign identity verification.</p>
+
+    <div class="tech-box">
+        <h3>Institutional-Grade Security</h3>
+        <p>BridgeVault is engineered to protect the most sensitive logical assets of a maritime operation. By isolating cryptographic keys in hardened, HSM-backed (Hardware Security Module) environments, we ensure that identity-governance assets remain invisible to traditional cyber-threat vectors.</p>
         <ul>
-            <li><strong>Biometric Asset Binding:</strong> The Bridge is physically bound to the user via biometric hardware signatures, ensuring non-repudiation.</li>
-            <li><strong>Automated Forensic Handshaking:</strong> Bridges perform instantaneous authorization checks at gates, loading bays, and server room access points with zero-latency.</li>
-            <li><strong>Cryptographic Revocation:</strong> The Vault allows the Bureau to push global revocation signals to any Bridge, neutralizing credentials the moment access is terminated.</li>
-            <li><strong>Sovereign Interaction:</strong> Each Bridge allows the wallet to provide necessary credentials to authorized sensors without transmitting the user's master identity profile.</li>
+            <li><strong>Hardened Key Isolation:</strong> Cryptographic keys never reside in software-accessible memory; they are signed within physically isolated, temper-evident hardware modules.</li>
+            <li><strong>Distributed Authority:</strong> No single entity possesses the ability to unilaterally issue or revoke a Bridge; authority is distributed via multi-signature consensus protocols.</li>
+            <li><strong>Policy-Driven Governance:</strong> Access to BridgeVault is governed by real-time behavioral analytics, ensuring that administrative actions align with established port security policy.</li>
         </ul>
     </div>
 
-    <div class="grid-capabilities">
-        <div class="card">
-            <h3>Forensic Integrity</h3>
-            <p>Every interaction involving a Bridge-Node generates an immutable, forensic-grade record. This provides auditors with a perfect reconstruction of every digital movement within the harbor.</p>
-        </div>
-        <div class="card">
-            <h3>Hardened Security</h3>
-            <p>The Vault operates under a Zero-Trust architecture. Bridges are never stored in the clear and are dynamically rotated to prevent potential signal-interception or replay attacks.</p>
-        </div>
+    <h3>Capabilities for Port Authorities</h3>
+    <p>BridgeVault enables port operators to maintain a "Single Source of Truth" regarding authorization and access, while simultaneously protecting the privacy of all involved stakeholders:</p>
+    <ul>
+        <li><strong>Immutable Governance Trails:</strong> Every issuance, rotation, or revocation event is recorded to an immutable ledger, providing 100% auditable clarity for USCG and internal compliance.</li>
+        <li><strong>Rapid Crisis Response:</strong> In the event of a security compromise, BridgeVault allows for the instantaneous, global revocation of compromised credentials across the entire terminal network.</li>
+        <li><strong>Credential Lifecycle Management:</strong> Automated management of Bridge lifecycles ensures that expired or unauthorized credentials never remain active in the operational ecosystem.</li>
+    </ul>
+
+    <div class="cta-container">
+        <a href="contact.html" class="cta-btn">Consult on BridgeVault Security</a>
     </div>
 </div>
 
 <footer>
     <div class="footer-grid">
-        <div><h4>Vault Core</h4><ul><li><a href="bridge-vault.html">Vault Specs</a></li><li><a href="bureau.html">Bureau Auth</a></li><li><a href="iam.html">IAM Protocol</a></li><li><a href="wallet.html">Wallet Interface</a></li><li><a href="biometrics.html">Bio-Sync</a></li></ul></div>
-        <div><h4>Operational</h4><ul><li><a href="philaport.html">PhilaPort Strategy</a></li><li><a href="logistics.html">Flow Analysis</a></li><li><a href="infrastructure.html">Hardened Ops</a></li><li><a href="transit.html">Secure Transit</a></li><li><a href="safety.html">Worker Safety</a></li></ul></div>
-        <div><h4>Compliance</h4><ul><li><a href="compliance.html">Fed Standards</a></li><li><a href="terms.html">Legal Framework</a></li><li><a href="governance.html">Policy</a></li><li><a href="audit.html">Audit Readiness</a></li><li><a href="ethics.html">Ethics</a></li></ul></div>
-        <div><h4>Forensics</h4><ul><li><a href="audit.html">Immutable Ledger</a></li><li><a href="incident.html">Incident Response</a></li><li><a href="threat.html">Threat Mitigation</a></li><li><a href="anomaly.html">Anomaly Logic</a></li><li><a href="forensic-data.html">Data Vault</a></li></ul></div>
-        <div><h4>Enterprise</h4><ul><li><a href="about.html">Executive Vision</a></li><li><a href="contact.html">Procurement</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="sitemap.html">Sitemap</a></li><li><a href="resources.html">Knowledge Base</a></li></ul></div>
+        <div><h4>HarborLink Core</h4><ul><li><a href="index.html">Mission Statement</a></li><li><a href="about.html">Executive Leadership</a></li></ul></div>
+        <div><h4>Solutions</h4><ul><li><a href="software.html">Software Ecosystem</a></li><li><a href="hardware.html">Maritime Hardware</a></li></ul></div>
+        <div><h4>Bureau</h4><ul><li><a href="iam.html">IAM Protocol</a></li><li><a href="forensics.html">Forensic Audit</a></li></ul></div>
+        <div><h4>Partners</h4><ul><li><a href="https://cruisepal.com" target="_blank">cruisePAL</a></li><li><a href="https://dcs.aero" target="_blank">dcs.aero</a></li></ul></div>
+        <div><h4>Procurement</h4><ul><li><a href="contact.html">Contact Sales</a></li><li><a href="support.html">Support</a></li></ul></div>
     </div>
-    <div style="text-align: center; margin-top: 40px; font-size: 0.75rem; color: #666;">
-        &copy; 2026 HarborLink Partners - Solomon Kin LLC & REALAiiD, Inc. | Hardened Infrastructure.
+    <div class="footer-bottom">
+        &copy; 2026 HarborLink Partners - Solomon Kin LLC. | Secure Maritime Identity Infrastructure | Philadelphia, PA
     </div>
 </footer>
 
