@@ -3,20 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Operational Training & Human-in-the-Loop | HarborLink Partners</title>
+    <title>Training & Operational Excellence | HarborLink Partners</title>
     <style>
         :root { --navy: #002366; --light-blue: #00a8e8; --white: #ffffff; --bg-gray: #f4f7f6; --text-dark: #2d3436; --gold: #c5a059; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.7; color: var(--text-dark); margin: 0; background-color: var(--bg-gray); }
+        
         header { background: var(--navy); padding: 1.5rem 5%; display: flex; align-items: center; justify-content: space-between; border-bottom: 4px solid var(--gold); }
         .logo-text { color: white; font-size: 1.5rem; font-weight: bold; letter-spacing: 1px; }
         nav a { color: var(--white); text-decoration: none; margin-left: 25px; font-weight: 600; font-size: 0.9rem; text-transform: uppercase; transition: color 0.3s; }
         nav a:hover { color: var(--light-blue); }
+
+        /* HD Hero Banner */
+        .hero-banner { width: 100%; height: 450px; background: url('OperationalExcellence.png') center/cover no-repeat; border-bottom: 4px solid var(--gold); }
+
         .container { width: 85%; margin: 60px auto; background: var(--white); padding: 80px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); }
         h1 { color: var(--navy); border-bottom: 3px solid var(--gold); padding-bottom: 15px; font-size: 2.5rem; }
         h3 { color: var(--navy); margin-top: 30px; }
         .tech-box { background: #fdfbf7; border-left: 5px solid var(--gold); padding: 30px; margin: 40px 0; }
-        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px; }
-        .card { padding: 40px; background: #f8f9fa; border: 1px solid #e1e1e1; }
+        
+        /* CTA Button Section */
+        .cta-container { text-align: center; padding: 60px 0; }
+        .cta-btn { background: var(--navy); color: var(--white); padding: 25px 50px; font-size: 1.5rem; font-weight: bold; text-decoration: none; border-radius: 8px; border: 2px solid var(--gold); transition: 0.3s; display: inline-block; }
+        .cta-btn:hover { background: var(--light-blue); color: var(--white); transform: scale(1.05); }
+
         footer { background: var(--navy); color: var(--white); padding: 60px 5%; margin-top: 80px; border-top: 5px solid var(--gold); }
         .footer-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 30px; }
         .footer-grid h4 { color: var(--gold); margin-bottom: 15px; text-transform: uppercase; font-size: 0.9rem; }
@@ -32,64 +41,59 @@
 <header>
     <div class="logo-text">HARBORLINK PARTNERS</div>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="software.html">Software</a>
-        <a href="hardware.html">Hardware</a>
-        <a href="embarkation.html">Embarkation</a>
-        <a href="integration.html">Integration</a>
-        <a href="training.html">Training</a>
-        <a href="contact.html">Procurement</a>
+        <a href="index.html">Home</a><a href="software.html">Software</a><a href="hardware.html">Hardware</a><a href="embarkation.html">Embarkation</a><a href="integration.html">Integration</a><a href="contact.html">Procurement</a>
     </nav>
 </header>
 
+<div class="hero-banner"></div>
+
 <div class="container">
     <h1>Operational Excellence: Human-in-the-Loop</h1>
-    <p>Technology is only as effective as the professionals who operate it. At HarborLink, our <strong>Human-in-the-Loop (HITL)</strong> strategy ensures that port staff transition seamlessly from legacy processes to the REALAiiD digital identity ecosystem. We transform frontline operators into skilled guardians of sovereign identity.</p>
+    <p>Technology is only as effective as the professionals who operate it. At HarborLink, our Human-in-the-Loop (HITL) strategy ensures that port staff transition seamlessly from legacy processes to the REALAiiD digital identity ecosystem. We transform frontline operators into skilled guardians of sovereign identity, ensuring high-fidelity security and human-centric service.</p>
 
     <div class="tech-box">
         <h3>The Operator Empowerment Model</h3>
         <p>Our training goes beyond basic device operation. We provide staff with the cognitive tools and operational framework to handle forensic identity verification confidently. Staff equipped with our training protocols become the primary line of defense in the Bureau’s security theater.</p>
+        
+        <h4>Phased Training Modules</h4>
+        <ul>
+            <li><strong>Cryptographic Literacy:</strong> Demystifying the REALAiiD protocol for frontline staff to enhance system trust.</li>
+            <li><strong>Forensic Exception Handling:</strong> Identifying and resolving identity mismatches with precision, ensuring security without obstruction.</li>
+            <li><strong>Hardware Proficiency:</strong> Hands-on dcs.aero equipment management and rapid recovery procedures for continuous uptime.</li>
+        </ul>
     </div>
 
-    <div class="grid">
-        <div class="card">
-            <h3>Phased Training Modules</h3>
-            <ul>
-                <li><strong>Cryptographic Literacy:</strong> Demystifying the REALAiiD protocol for frontline staff.</li>
-                <li><strong>Forensic Exception Handling:</strong> Identifying and resolving identity mismatches with precision.</li>
-                <li><strong>Hardware Proficiency:</strong> Hands-on dcs.aero equipment management and rapid recovery procedures.</li>
-            </ul>
-        </div>
-        <div class="card">
-            <h3>The Transition Roadmap</h3>
-            <p>Our "shadow-support" model ensures zero operational disruption during deployment:</p>
-            <ul>
-                <li><strong>Phase 1:</strong> Parallel system runs (Legacy + REALAiiD).</li>
-                <li><strong>Phase 2:</strong> Targeted staff mastery workshops.</li>
-                <li><strong>Phase 3:</strong> Full sovereign identity integration.</li>
-            </ul>
-        </div>
-    </div>
+    <h3>The Transition Roadmap</h3>
+    <p>Our "shadow-support" model ensures zero operational disruption during deployment:</p>
+    <ul>
+        <li><strong>Phase 1: Parallel System Runs:</strong> Operating legacy systems alongside REALAiiD to build confidence and muscle memory.</li>
+        <li><strong>Phase 2: Targeted Staff Mastery:</strong> Focused workshops for leadership, security, and administrative personnel.</li>
+        <li><strong>Phase 3: Full Sovereignty Integration:</strong> Complete shift to decentralized identity verification as the primary protocol.</li>
+    </ul>
 
     <h3>Capabilities for Staff & Passengers</h3>
     <p>By leveraging the REALAiiD wallet integrated with our infrastructure, staff and passengers gain:</p>
     <ul>
-        <li><strong>Frictionless Embarkation:</strong> Passengers move through gates in seconds; staff only intervene for positive anomaly alerts.</li>
-        <li><strong>Real-Time Manifest Reconciliation:</strong> Staff dashboard visibility into passenger status, ensuring total vessel security.</li>
-        <li><strong>Sovereign Control:</strong> Staff can guide passengers through the self-sovereign identity recovery process if a credential is lost during transit.</li>
+        <li><strong>Frictionless Embarkation:</strong> Passengers move through gates in seconds; staff only intervene for positive, verified anomaly alerts.</li>
+        <li><strong>Real-Time Manifest Reconciliation:</strong> Staff dashboard visibility into passenger status, ensuring total vessel security from first scan to departure.</li>
+        <li><strong>Sovereign Control:</strong> Staff can guide passengers through the self-sovereign identity recovery process if a credential is lost during transit, maintaining passenger peace of mind.</li>
     </ul>
+
+    <div class="cta-container">
+        <a href="contact.html" class="cta-btn">Request Training Consultation</a>
+    </div>
 </div>
 
 <footer>
     <div class="footer-grid">
-        <div><h4>HarborLink Core</h4><ul><li><a href="index.html">Mission Statement</a></li><li><a href="about.html">Executive Leadership</a></li><li><a href="strategy.html">Operational Strategy</a></li></ul></div>
-        <div><h4>Identity & IAM</h4><ul><li><a href="iam.html">Identity Access Mgmt</a></li><li><a href="forensics.html">Forensic Audit Log</a></li><li><a href="sovereignty.html">Digital Sovereignty</a></li><li><a href="encryption.html">Cryptographic Pillars</a></li></ul></div>
-        <div><h4>Solutions</h4><ul><li><a href="software.html">Software Ecosystem</a></li><li><a href="hardware.html">Maritime Hardware</a></li><li><a href="embarkation.html">Embarkation Protocols</a></li><li><a href="integration.html">Connector Architecture</a></li></ul></div>
-        <div><h4>Bureau Partners</h4><ul><li><a href="https://cruisepal.com" target="_blank">cruisePAL Intelligence</a></li><li><a href="https://dcs.aero" target="_blank">dcs.aero Infrastructure</a></li><li><a href="aeah.org" target="_blank">AEAH Literacy</a></li><li><a href="realaiid.com" target="_blank">REALAiiD Bureau</a></li></ul></div>
-        <div><h4>Procurement</h4><ul><li><a href="contact.html">Government Sales</a></li><li><a href="support.html">Enterprise Support</a></li><li><a href="training.html">Staff Certification</a></li><li><a href="resilience.html">Disaster Continuity</a></li></ul></div>
+        <div><h4>HarborLink Core</h4><ul><li><a href="index.html">Mission Statement</a></li><li><a href="about.html">Executive Leadership</a></li></ul></div>
+        <div><h4>Solutions</h4><ul><li><a href="software.html">Software Ecosystem</a></li><li><a href="hardware.html">Maritime Hardware</a></li><li><a href="embarkation.html">Embarkation</a></li></ul></div>
+        <div><h4>Identity & IAM</h4><ul><li><a href="iam.html">IAM Protocol</a></li><li><a href="forensics.html">Forensic Audit</a></li></ul></div>
+        <div><h4>Bureau Partners</h4><ul><li><a href="https://cruisepal.com">cruisePAL</a></li><li><a href="https://dcs.aero">dcs.aero</a></li></ul></div>
+        <div><h4>Procurement</h4><ul><li><a href="contact.html">Contact Sales</a></li><li><a href="support.html">Support</a></li></ul></div>
     </div>
     <div class="footer-bottom">
-        &copy; 2026 HarborLink Partners - Solomon Kin LLC. | Secure Maritime Identity Infrastructure | Philadelphia, PA
+        &copy; 2026 HarborLink Partners - Solomon Kin LLC. | Secure Maritime Infrastructure | Philadelphia, PA
     </div>
 </footer>
 
