@@ -3,89 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bureau of Digital Identity | HarborLink Partners</title>
+    <title>The Bureau of Digital Identity | HarborLink Partners</title>
     <style>
-        :root {
-            --navy: #002366;
-            --light-blue: #00a8e8;
-            --white: #ffffff;
-            --bg-gray: #f4f7f6;
-            --text-dark: #2d3436;
-        }
-        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.7; color: var(--text-dark); margin: 0; background-color: var(--bg-gray); }
+        :root { --navy: #002366; --light-blue: #00a8e8; --white: #ffffff; --bg-gray: #f4f7f6; --text-dark: #2d3436; --gold: #c5a059; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.7; color: var(--text-dark); margin: 0; background-color: var(--bg-gray); }
         
-        /* Header/Nav */
-        header { background: var(--navy); color: var(--white); padding: 1.5rem 5%; position: sticky; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid var(--light-blue); }
-        nav a { color: var(--white); text-decoration: none; margin-left: 25px; font-weight: 500; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
+        header { background: var(--navy); padding: 1.5rem 5%; display: flex; align-items: center; justify-content: space-between; border-bottom: 4px solid var(--gold); }
+        .logo-text { color: white; font-size: 1.5rem; font-weight: bold; letter-spacing: 1px; }
+        nav a { color: var(--white); text-decoration: none; margin-left: 25px; font-weight: 600; font-size: 0.9rem; text-transform: uppercase; transition: color 0.3s; }
+        nav a:hover { color: var(--light-blue); }
+
+        /* HD Hero Banner */
+        .hero-banner { width: 100%; height: 450px; background: url('DigitalIdentity.png') center/cover no-repeat; border-bottom: 4px solid var(--gold); }
+
+        .container { width: 85%; margin: 60px auto; background: var(--white); padding: 80px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); }
+        h1 { color: var(--navy); border-bottom: 3px solid var(--gold); padding-bottom: 15px; font-size: 2.5rem; }
+        h2 { color: var(--navy); margin-top: 40px; }
+        .tech-box { background: #fdfbf7; border-left: 5px solid var(--gold); padding: 30px; margin: 40px 0; }
         
-        /* Main Content */
-        .container { width: 85%; margin: 50px auto; background: var(--white); padding: 60px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-radius: 4px; }
-        h1 { color: var(--navy); font-size: 2.5rem; border-bottom: 2px solid var(--light-blue); display: inline-block; padding-bottom: 10px; }
-        .intro-text { font-size: 1.1rem; margin-bottom: 30px; }
-        .bridge-functionality { background: var(--navy); color: var(--white); padding: 40px; border-radius: 4px; margin: 40px 0; }
-        .grid-standards { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
-        
-        /* Footer */
-        footer { background: var(--navy); color: var(--white); padding: 60px 5% 30px; margin-top: 80px; border-top: 5px solid var(--light-blue); }
-        .footer-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; font-size: 0.85rem; }
-        .footer-grid h4 { color: var(--light-blue); text-transform: uppercase; margin-bottom: 15px; }
+        /* CTA Button Section */
+        .cta-container { text-align: center; padding: 60px 0; }
+        .cta-btn { background: var(--navy); color: var(--white); padding: 25px 50px; font-size: 1.5rem; font-weight: bold; text-decoration: none; border-radius: 8px; border: 2px solid var(--gold); transition: 0.3s; display: inline-block; }
+        .cta-btn:hover { background: var(--light-blue); color: var(--white); transform: scale(1.05); }
+
+        footer { background: var(--navy); color: var(--white); padding: 60px 5%; margin-top: 80px; border-top: 5px solid var(--gold); }
+        .footer-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 30px; }
+        .footer-grid h4 { color: var(--gold); margin-bottom: 15px; text-transform: uppercase; font-size: 0.9rem; }
         .footer-grid ul { list-style: none; padding: 0; }
-        .footer-grid li { margin-bottom: 8px; }
+        .footer-grid li { margin-bottom: 10px; font-size: 0.85rem; }
         .footer-grid a { color: #ccc; text-decoration: none; }
         .footer-grid a:hover { color: var(--white); }
+        .footer-bottom { text-align: center; margin-top: 50px; font-size: 0.8rem; color: #888; border-top: 1px solid #333; padding-top: 20px; }
     </style>
 </head>
 <body>
 
 <header>
-    <div style="font-size: 1.5rem; font-weight: bold; letter-spacing: -1px;">HARBORLINK PARTNERS</div>
+    <div class="logo-text">HARBORLINK PARTNERS</div>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="capabilities.html">Capabilities</a>
-        <a href="iam.html">IAM</a>
-        <a href="bureau.html" style="color: var(--light-blue);">Bureau</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html">Home</a><a href="software.html">Software</a><a href="hardware.html">Hardware</a><a href="embarkation.html">Embarkation</a><a href="bureau.html">Bureau</a><a href="contact.html">Procurement</a>
     </nav>
 </header>
 
-<div class="container">
-    <h1>Bureau of Digital Identity</h1>
-    <p class="intro-text">The Bureau serves as the centralized regulatory and operational engine for HarborLink Partners. We define the protocols for <strong>digital sovereignty</strong> and provide the forensic framework required for high-stakes maritime and infrastructure security.</p>
+<div class="hero-banner"></div>
 
-    <div class="bridge-functionality">
-        <h3>The Wallet-Bridge Interface</h3>
-        <p>When users load their specialized "Bridges" into the REALAiiD Wallet, the device transforms into an active node within the Bureau’s architecture. This enables the following capabilities:</p>
+<div class="container">
+    <h1>The Bureau of Digital Identity</h1>
+    <p>The Bureau serves as the sovereign architectural authority for all identity-first operations within the HarborLink ecosystem. By decoupling identity from centralized databases and moving toward a <strong>Self-Sovereign Identity (SSI)</strong> model, we provide a foundation of absolute cryptographic trust.</p>
+
+    <div class="tech-box">
+        <h3>Sovereign Architecture</h3>
+        <p>The Bureau functions as the governing layer for the REALAiiD protocol. Unlike legacy systems that rely on identity providers (IdP) to verify a user, the Bureau enables individuals to hold their own identity credentials, which are verifiable cryptographically without exposing the underlying PII.</p>
         <ul>
-            <li><strong>Cryptographic Authority:</strong> Executes secure, localized handshakes with port readers without requiring live network access (Air-Gapped Ready).</li>
-            <li><strong>Attribute-Based Access:</strong> Allows users to prove authorization status (e.g., clearance level or role) without revealing underlying identity data (PII).</li>
-            <li><strong>Forensic Telemetry:</strong> Automatically generates cryptographically signed event records that are pushed to the Bureau's immutable ledger upon next connection.</li>
-            <li><strong>Emergency Revocation:</strong> Instantaneous, global propagation of revocation signals to all Bridge-Nodes if security parameters are compromised.</li>
+            <li><strong>Decentralized Identifiers (DIDs):</strong> Globally unique, cryptographically verifiable identifiers that remain under the user's complete control.</li>
+            <li><strong>Verifiable Credentials (VCs):</strong> Digitally signed attestations that allow passengers and crew to prove attributes (e.g., citizenship, medical status, clearance) without sharing raw data.</li>
+            <li><strong>Zero-Knowledge Proofs (ZKPs):</strong> The Bureau enables verification of attributes (like age or clearance level) without revealing any additional information, ensuring maximum privacy.</li>
         </ul>
     </div>
 
-    <div class="grid-standards">
-        <div>
-            <h3>Regulatory Standards</h3>
-            <p>The Bureau enforces compliance with federal maritime mandates, NIST zero-trust frameworks, and international data standards, ensuring every digital interaction meets forensic scrutiny.</p>
-        </div>
-        <div>
-            <h3>Ecosystem Sovereignty</h3>
-            <p>Our goal is to digitize identity while maintaining physical ownership. The Bureau provides the protocols to ensure that digital credentials remain as secure and controlled as paper documentation.</p>
-        </div>
+    <h2>Forensic Governance</h2>
+    <p>At the Bureau, we believe transparency and auditability are the cornerstones of maritime security. Every interaction within the network is governed by an immutable, time-stamped policy framework:</p>
+    <ul>
+        <li><strong>Forensic Audit Logging:</strong> Every attempt to access a terminal or vessel is logged to a distributed ledger, creating a tamper-evident chain of custody for all movement.</li>
+        <li><strong>Policy-Driven Access Control:</strong> Access to physical and digital assets is granted based on real-time evaluation of a user's VC status, ensuring that credentials have not been revoked or expired.</li>
+        <li><strong>Automated Compliance:</strong> The Bureau automatically reconciles cross-border security requirements, ensuring that every participant meets current IMO, MTSA, and Port Authority standards.</li>
+    </ul>
+
+    <div class="cta-container">
+        <a href="contact.html" class="cta-btn">Connect with the Bureau</a>
     </div>
 </div>
 
 <footer>
     <div class="footer-grid">
-        <div><h4>Governance</h4><ul><li><a href="bureau.html">Bureau Charter</a></li><li><a href="standards.html">Federal Compliance</a></li><li><a href="policy.html">Regulatory Policy</a></li><li><a href="ethics.html">Code of Ethics</a></li><li><a href="governance.html">Ops Governance</a></li></ul></div>
-        <div><h4>Identity Bridges</h4><ul><li><a href="wallet.html">REALAiiD Wallet</a></li><li><a href="bridge-vault.html">Bridge Vaulting</a></li><li><a href="biometrics.html">Biometric Sync</a></li><li><a href="iam.html">IAM Protocol</a></li><li><a href="sovereignty.html">Sovereignty Logic</a></li></ul></div>
-        <div><h4>Maritime Intel</h4><ul><li><a href="philaport.html">PhilaPort Hub</a></li><li><a href="logistics.html">Flow Forensics</a></li><li><a href="infrastructure.html">Hardened Ops</a></li><li><a href="transit.html">Secure Transit</a></li><li><a href="safety.html">Worker Safety</a></li></ul></div>
-        <div><h4>Forensic Audit</h4><ul><li><a href="audit.html">Immutable Logs</a></li><li><a href="incident.html">Incident Archives</a></li><li><a href="threat.html">Threat Vectors</a></li><li><a href="anomaly.html">Anomaly Reports</a></li><li><a href="reporting.html">Audit Dashboards</a></li></ul></div>
-        <div><h4>Resource/Legal</h4><ul><li><a href="terms.html">Legal Framework</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="contact.html">Procurement</a></li><li><a href="about.html">Executive Summary</a></li><li><a href="sitemap.html">Ecosystem Map</a></li></ul></div>
+        <div><h4>HarborLink Core</h4><ul><li><a href="index.html">Mission</a></li><li><a href="about.html">Executive Vision</a></li></ul></div>
+        <div><h4>Solutions</h4><ul><li><a href="software.html">Software</a></li><li><a href="hardware.html">Hardware</a></li></ul></div>
+        <div><h4>Bureau</h4><ul><li><a href="iam.html">IAM Protocol</a></li><li><a href="forensics.html">Forensic Audit</a></li></ul></div>
+        <div><h4>Partners</h4><ul><li><a href="https://cruisepal.com">cruisePAL</a></li><li><a href="https://dcs.aero">dcs.aero</a></li></ul></div>
+        <div><h4>Procurement</h4><ul><li><a href="contact.html">Contact Sales</a></li></ul></div>
     </div>
-    <div style="text-align: center; margin-top: 40px; font-size: 0.75rem; color: #666;">
-        &copy; 2026 HarborLink Partners - Solomon Kin LLC & REALAiiD, Inc. | The Bureau of Digital Identity.
+    <div class="footer-bottom">
+        &copy; 2026 HarborLink Partners - Solomon Kin LLC. | Secure Maritime Identity Infrastructure | Philadelphia, PA
     </div>
 </footer>
 
