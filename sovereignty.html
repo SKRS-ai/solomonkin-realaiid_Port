@@ -5,72 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sovereignty Logic | HarborLink Partners</title>
     <style>
-        :root { --navy: #002366; --light-blue: #00a8e8; --white: #ffffff; --bg-gray: #f4f7f6; --text-dark: #2d3436; }
-        body { font-family: 'Segoe UI', sans-serif; line-height: 1.7; color: var(--text-dark); margin: 0; background-color: var(--bg-gray); }
+        :root { --navy: #002366; --light-blue: #00a8e8; --white: #ffffff; --bg-gray: #f4f7f6; --text-dark: #2d3436; --gold: #c5a059; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.7; color: var(--text-dark); margin: 0; background-color: var(--bg-gray); }
         
-        /* Shared Header */
-        header { background: var(--navy); padding: 0.5rem 5%; display: flex; align-items: center; justify-content: space-between; border-bottom: 4px solid var(--light-blue); }
-        .logo-box img { height: 240px; width: auto; display: block; }
-        nav { display: flex; gap: 20px; align-items: center; }
-        nav a { color: var(--white); text-decoration: none; font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; }
+        header { background: var(--navy); padding: 1.5rem 5%; display: flex; align-items: center; justify-content: space-between; border-bottom: 4px solid var(--gold); }
+        .logo-text { color: white; font-size: 1.5rem; font-weight: bold; letter-spacing: 1px; }
+        nav a { color: var(--white); text-decoration: none; margin-left: 25px; font-weight: 600; font-size: 0.9rem; text-transform: uppercase; transition: color 0.3s; }
+        nav a:hover { color: var(--light-blue); }
 
-        /* Sovereignty Page Content */
+        /* HD Hero Banner */
+        .hero-banner { width: 100%; height: 450px; background: url('TheSovereigntyLogic.png') center/cover no-repeat; border-bottom: 4px solid var(--gold); }
+
         .container { width: 85%; margin: 60px auto; background: var(--white); padding: 80px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); }
-        h1 { color: var(--navy); font-size: 3rem; margin-bottom: 20px; }
-        h2 { color: var(--navy); border-bottom: 3px solid var(--light-blue); padding-bottom: 15px; margin-top: 50px; }
-        .bridge-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px; }
-        .feature-card { padding: 30px; background: #f9f9f9; border-left: 5px solid var(--light-blue); }
+        h1 { color: var(--navy); border-bottom: 3px solid var(--gold); padding-bottom: 15px; font-size: 2.5rem; }
+        h3 { color: var(--navy); margin-top: 30px; }
+        .tech-box { background: #fdfbf7; border-left: 5px solid var(--gold); padding: 30px; margin: 40px 0; }
         
-        /* Footer */
-        footer { background: var(--navy); color: var(--white); padding: 60px 5%; margin-top: 100px; }
+        /* CTA Button Section */
+        .cta-container { text-align: center; padding: 60px 0; }
+        .cta-btn { background: var(--navy); color: var(--white); padding: 25px 50px; font-size: 1.5rem; font-weight: bold; text-decoration: none; border-radius: 8px; border: 2px solid var(--gold); transition: 0.3s; display: inline-block; }
+        .cta-btn:hover { background: var(--light-blue); color: var(--white); transform: scale(1.05); }
+
+        footer { background: var(--navy); color: var(--white); padding: 60px 5%; margin-top: 80px; border-top: 5px solid var(--gold); }
         .footer-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 30px; }
-        .footer-grid h4 { color: var(--light-blue); font-size: 0.9rem; margin-bottom: 15px; text-transform: uppercase; }
+        .footer-grid h4 { color: var(--gold); margin-bottom: 15px; text-transform: uppercase; font-size: 0.9rem; }
         .footer-grid ul { list-style: none; padding: 0; }
-        .footer-grid li { margin-bottom: 8px; font-size: 0.8rem; }
+        .footer-grid li { margin-bottom: 10px; font-size: 0.85rem; }
         .footer-grid a { color: #ccc; text-decoration: none; }
+        .footer-grid a:hover { color: var(--white); }
+        .footer-bottom { text-align: center; margin-top: 50px; font-size: 0.8rem; color: #888; border-top: 1px solid #333; padding-top: 20px; }
     </style>
 </head>
 <body>
 
 <header>
-    <div class="logo-box"><img src="HarborLinkPartners1.png" alt="HarborLink"></div>
+    <div class="logo-text">HARBORLINK PARTNERS</div>
     <nav>
-        <a href="index.html">Home</a><a href="bureau.html">Bureau</a><a href="sovereignty.html">Sovereignty</a>
-        <a href="wallet.html">Wallet</a><a href="bridge-vault.html">Bridge</a><a href="contact.html">Procurement</a>
+        <a href="index.html">Home</a><a href="software.html">Software</a><a href="hardware.html">Hardware</a><a href="embarkation.html">Embarkation</a><a href="sovereignty.html">Sovereignty</a><a href="contact.html">Procurement</a>
     </nav>
 </header>
 
+<div class="hero-banner"></div>
+
 <div class="container">
     <h1>The Sovereignty Logic</h1>
-    <p>At HarborLink Partners, sovereignty is not a policy—it is a physical requirement of the digital age. By utilizing the <strong>REALAiiD Wallet</strong>, participants transition from data silos to a Self-Sovereign Identity (SSI) architecture where trust is mathematically enforced.</p>
+    <p>At HarborLink Partners, sovereignty is not a policy—it is a physical requirement of the digital age. By utilizing the REALAiiD Wallet, participants transition from vulnerable data silos to a Self-Sovereign Identity (SSI) architecture where trust is mathematically enforced, providing the highest standard of maritime operational security.</p>
 
-    <div class="bridge-grid">
-        <div class="feature-card">
-            <h3>Cryptographic Autonomy</h3>
-            <p>Your REALAiiD Bridge contains your forensic keys. You maintain local control of your identity attributes. When you interact with a port or terminal, you provide <strong>Zero-Knowledge Proofs</strong>: you prove authorization status without ever revealing the underlying sensitive documentation.</p>
-        </div>
-        <div class="feature-card">
-            <h3>Immutable Chain of Custody</h3>
-            <p>Every "Bridge" movement—from vessel boarding to terminal ingress—is signed to the decentralized ledger. Sovereignty means you control the timeline, the audit, and the verification of your own assets.</p>
-        </div>
+    <div class="tech-box">
+        <h3>Cryptographic Autonomy</h3>
+        <p>Your REALAiiD Bridge contains your forensic keys, putting you in absolute control of your digital presence. When you interact with a port or terminal, you provide <strong>Zero-Knowledge Proofs (ZKPs)</strong>:</p>
+        <ul>
+            <li><strong>Privacy-Preserving Verification:</strong> Prove authorization status without ever revealing the underlying sensitive documentation (like specific medical records or raw passport data).</li>
+            <li><strong>Local Control:</strong> Maintain local authority over your identity attributes, ensuring that you—not a centralized database—are the arbiter of your information.</li>
+            <li><strong>Hardware-Bound Security:</strong> Your keys are anchored to secure hardware modules, ensuring that identity theft via digital cloning is fundamentally impossible.</li>
+        </ul>
     </div>
 
-    <h2>What Can You Do With Your Bridge?</h2>
+    <h3>Immutable Chain of Custody</h3>
+    <p>Every "Bridge" movement—from vessel boarding to terminal ingress—is cryptographically signed to the decentralized ledger. Sovereignty means you control the timeline, the audit, and the verification of your own assets, creating a 100% auditable environment.</p>
+
+    <h3>What Can You Do With Your Bridge?</h3>
     <ul>
-        <li><strong>Automated Ingress:</strong> Instant, biometric-backed clearance at secure facilities without manual paper checks.</li>
-        <li><strong>Privileged Access:</strong> Securely grant specific third-party auditors time-bound, limited access to your shipping manifests.</li>
-        <li><strong>Document Vaulting:</strong> Convert physical identification and trade licenses into tamper-proof, legally recognized digital credentials.</li>
-        <li><strong>Real-Time Compliance:</strong> Automatically update your global standing in response to evolving maritime security protocols (MARSEC levels).</li>
+        <li><strong>Automated Ingress:</strong> Experience instant, biometric-backed clearance at secure facilities without the need for manual, error-prone paper checks.</li>
+        <li><strong>Privileged Access Management:</strong> Securely grant specific third-party auditors or contractors time-bound, limited access to your shipping manifests, with automated revocation after the window closes.</li>
+        <li><strong>Document Vaulting:</strong> Convert physical identification, maritime certifications, and trade licenses into tamper-proof, legally recognized digital credentials that travel with you.</li>
+        <li><strong>Real-Time Compliance:</strong> Automatically update your global standing and access permissions in response to evolving maritime security protocols (e.g., shifts in MARSEC levels).</li>
     </ul>
+
+    <div class="cta-container">
+        <a href="contact.html" class="cta-btn">Consult on Sovereignty Logic</a>
+    </div>
 </div>
 
 <footer>
     <div class="footer-grid">
-        <div><h4>Bureau Protocol</h4><ul><li><a href="bureau.html">Charter</a></li><li><a href="iam.html">IAM</a></li><li><a href="wallet.html">Wallet</a></li><li><a href="bridge-vault.html">Bridge Vault</a></li></ul></div>
-        <div><h4>Operational Nodes</h4><ul><li><a href="philaport.html">PhilaPort</a></li><li><a href="miami.html">Miami</a></li><li><a href="terminal.html">Terminal Ops</a></li><li><a href="gate.html">Gate Logic</a></li></ul></div>
-        <div><h4>Security & MARSEC</h4><ul><li><a href="marsec.html">Governance</a></li><li><a href="vessel.html">Auth</a></li><li><a href="threat.html">Intel</a></li><li><a href="safety.html">Safety</a></li></ul></div>
-        <div><h4>Logistics Intelligence</h4><ul><li><a href="logistics.html">Forensics</a></li><li><a href="manifest.html">Integrity</a></li><li><a href="cargo.html">Binding</a></li><li><a href="ais.html">AIS</a></li></ul></div>
-        <div><h4>Corporate</h4><ul><li><a href="about.html">Vision</a></li><li><a href="compliance.html">Standards</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="support.html">Support</a></li></ul></div>
+        <div><h4>HarborLink Core</h4><ul><li><a href="index.html">Mission Statement</a></li><li><a href="about.html">Executive Leadership</a></li></ul></div>
+        <div><h4>Solutions</h4><ul><li><a href="software.html">Software Ecosystem</a></li><li><a href="hardware.html">Maritime Hardware</a></li></ul></div>
+        <div><h4>Bureau</h4><ul><li><a href="iam.html">IAM Protocol</a></li><li><a href="forensics.html">Forensic Audit</a></li></ul></div>
+        <div><h4>Partners</h4><ul><li><a href="https://cruisepal.com" target="_blank">cruisePAL</a></li><li><a href="https://dcs.aero" target="_blank">dcs.aero</a></li></ul></div>
+        <div><h4>Procurement</h4><ul><li><a href="contact.html">Contact Sales</a></li><li><a href="support.html">Support</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2026 HarborLink Partners - Solomon Kin LLC. | Secure Maritime Identity Infrastructure | Philadelphia, PA
     </div>
 </footer>
 
