@@ -8,7 +8,6 @@
         :root { --navy: #002366; --light-blue: #00a8e8; --white: #ffffff; --bg-gray: #f4f7f6; --text-dark: #2d3436; --gold: #c5a059; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.7; color: var(--text-dark); margin: 0; background-color: var(--bg-gray); }
         
-        /* Updated Header */
         .main-header { background: var(--navy); padding: 1rem 2%; border-bottom: 4px solid var(--gold); display: flex; align-items: center; gap: 2rem; }
         .logo-box img { height: 120px; width: auto; display: block; }
         .nav-container { display: flex; flex-direction: column; width: 100%; gap: 8px; }
@@ -16,26 +15,20 @@
         .main-nav a { color: var(--white); text-decoration: none; font-weight: 600; font-size: 0.85rem; text-transform: uppercase; transition: color 0.3s; }
         .main-nav a:hover { color: var(--light-blue); }
 
-        /* Hero Carousel */
         .hero-container { position: relative; height: 500px; width: 100%; overflow: hidden; background: var(--navy); }
         .hero-slide { position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; transition: opacity 1s ease-in-out; display: flex; align-items: flex-end; }
         .hero-slide.active { opacity: 1; z-index: 1; }
         .hero-text { background: rgba(0, 35, 102, 0.85); color: #fff; padding: 20px; width: 100%; text-align: center; }
-        .nav-btn { position: absolute; top: 50%; z-index: 10; background: rgba(0,0,0,0.3); border: none; color: white; padding: 20px; cursor: pointer; }
-
-        /* Mission & Content Area */
+        
         .mission-wrap { width: 85%; margin: 60px auto; background: var(--white); padding: 60px; box-shadow: 0 5px 25px rgba(0,0,0,0.05); }
         .technical-detail { background: #fdfbf7; padding: 30px; border-left: 5px solid var(--gold); margin: 30px 0; }
+        .ops-section { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
         h2 { color: var(--navy); border-bottom: 3px solid var(--gold); padding-bottom: 15px; }
 
-        /* 3D Grid Presentation */
-        .grid-container { width: 85%; margin: 0 auto 60px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; perspective: 1000px; }
-        .card { background: white; padding: 40px; border-left: 5px solid var(--gold); box-shadow: 0 15px 30px rgba(0,0,0,0.1); transition: transform 0.4s; text-align: center; }
-        .card:hover { transform: rotateY(10deg) scale(1.05); }
-        .card h3 { color: var(--navy); }
-        .card a { display: inline-block; margin-top: 20px; padding: 10px 20px; background: var(--navy); color: white; text-decoration: none; border-radius: 4px; }
-
-        /* Footer */
+        .grid-container { width: 85%; margin: 0 auto 60px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+        .card { background: white; padding: 40px; border-left: 5px solid var(--gold); box-shadow: 0 15px 30px rgba(0,0,0,0.1); transition: transform 0.4s; }
+        .card:hover { transform: translateY(-10px); }
+        
         footer { background: var(--navy); color: #ccc; padding: 80px 5% 40px; border-top: 5px solid var(--gold); }
         .footer-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 40px; font-size: 0.9rem; }
         .footer-grid h4 { color: var(--gold); margin-bottom: 20px; }
@@ -48,76 +41,51 @@
     <div class="logo-box"><img src="HarborLinkPartners1.png" alt="HarborLink Partners"></div>
     <div class="nav-container">
         <nav class="main-nav">
-            <a href="index.html">Home</a><a href="philaport.html">PhilaPort</a><a href="software.html">Software</a><a href="hardware.html">Hardware</a><a href="industries.html">Industries</a>
-        </nav>
-        <nav class="main-nav">
-            <a href="bureau.html">Bureau</a><a href="logistics.html">Logistics</a><a href="marsec.html">MARSEC</a><a href="iam.html">IAM</a><a href="contact.html">Procurement</a>
+            <a href="index.html">Home</a><a href="philaport.html">PhilaPort</a><a href="software.html">Solutions</a><a href="hardware.html">Infrastructure</a><a href="industries.html">Industries</a>
         </nav>
     </div>
 </header>
 
 <div class="hero-container">
-    <div class="hero-slide active" style="background: url('harborlink partners.png') center/cover;"><div class="hero-text"><h3>Secure Maritime Identity</h3><p>Optimizing flow with REALAiiD identity bridges.</p></div></div>
-    <div class="hero-slide" style="background: url('harborlink partners2.png') center/cover;"><div class="hero-text"><h3>MARSEC Governance</h3><p>Hardening vessel-to-port security protocols.</p></div></div>
-    <button class="nav-btn prev" style="left:10px" onclick="moveSlide(-1)">&#10094;</button>
-    <button class="nav-btn next" style="right:10px" onclick="moveSlide(1)">&#10095;</button>
+    <div class="hero-slide active" style="background: url('harborlink partners.png') center/cover;"><div class="hero-text"><h3>Bureau of Digital Identity</h3><p>End-to-end infrastructure, from physical rack-and-stack to cryptographic sovereignty.</p></div></div>
 </div>
 
 <div class="mission-wrap">
     <h2>The Bureau Mission</h2>
-    <p>HarborLink Partners establishes the global standard for maritime trust. We deliver an air-gapped, zero-trust digital identity ecosystem that bridges the physical-to-digital divide. By converting every port movement into a cryptographically signed "Bridge" event, we eliminate systemic fraud and provide total visibility into the global supply chain.</p>
+    <p>HarborLink Partners establishes the global standard for maritime trust. We deliver an air-gapped, zero-trust digital identity ecosystem that bridges the physical-to-digital divide. Beyond identity, we provide full-scale <strong>Network Room Infrastructure</strong>—designing, racking, and terminating the critical telecommunications backbone that keeps global ports operational.</p>
 
     <div class="technical-detail">
-        <h3>How the REALAiiD Bridge Wallet Works</h3>
-        <p>When cargo, vessels, and personnel are provisioned with REALAiiD Bridges, they carry a "Forensic Key" that enables:</p>
+        <h3>Operational Infrastructure & REALAiiD Integration</h3>
+        <p>We are the primary engine for port operations, handling:</p>
         <ul>
-            <li><strong>Cryptographic Ingress:</strong> Secure, frictionless authentication at all automated terminal gates.</li>
-            <li><strong>Hardened Chain-of-Custody:</strong> Immutable recording of every handover, ensuring data integrity from berth to warehouse.</li>
-            <li><strong>Dynamic Compliance Mapping:</strong> Automated, real-time synchronization with international MARSEC and trade compliance protocols.</li>
+            <li><strong>Infrastructure Build-out:</strong> Full network room construction, including 116-block terminations, switch/router deployment, and port-wide connectivity.</li>
+            <li><strong>Hardware & Software Synthesis:</strong> Seamless integration of biometric gates and AI-driven identity capture systems.</li>
+            <li><strong>Forensic Key Deployment:</strong> Cryptographic ingress, hardened chain-of-custody, and real-time MARSEC synchronization.</li>
         </ul>
+    </div>
+
+    <h2>Industry Verticals</h2>
+    <div class="ops-section">
+        <div><p><strong>Financial & Fiscal:</strong> Biometric handshake authorizations for secure escrow and tax compliance.</p></div>
+        <div><p><strong>Travel & Logistics:</strong> Automating Entry/Exit movements via AI-driven BORDERGUARD™ Lane integration.</p></div>
+        <div><p><strong>Civic & Government:</strong> Cryptographically anonymous proof-of-personhood for vital records and vital registers.</p></div>
+        <div><p><strong>Corporate & Industrial:</strong> Proximity-based, unalterable identity rails for employee and credential management.</p></div>
     </div>
 </div>
 
 <div class="grid-container">
-    <div class="card">
-        <h3>Technical Provenance</h3>
-        <p>Built upon 15 years of leadership in critical infrastructure. Protocols refined at Philadelphia and Miami.</p>
-        <a href="philaport.html">Explore</a>
-    </div>
-    <div class="card">
-        <h3>Global Integration</h3>
-        <p>Unifying fragmented maritime trade into a transparent, high-speed identity network.</p>
-        <a href="industries.html">Explore</a>
-    </div>
-    <div class="card">
-        <h3>PhilaPort Terminal</h3>
-        <p>Strategic maritime gateway infrastructure for 2026.</p>
-        <a href="philaport.html">Explore</a>
-    </div>
-    <div class="card">
-        <h3>Maritime Security</h3>
-        <p>33 CFR Part 105 & MTSA compliant air-gap systems.</p>
-        <a href="philaport-sec.html">Explore</a>
-    </div>
-    <div class="card">
-        <h3>Compliance Governance</h3>
-        <p>Forensic audit readiness & Bureau oversight.</p>
-        <a href="philaport-compliance.html">Explore</a>
-    </div>
-    <div class="card">
-        <h3>Identity Vault</h3>
-        <p>REALAiiD Bridge & Wallet architecture.</p>
-        <a href="iam.html">Explore</a>
-    </div>
+    <div class="card"><h3>Technical Provenance</h3><p>15 years of leadership in critical infrastructure and manufacturing systems engineering.</p><a href="philaport.html">Explore</a></div>
+    <div class="card"><h3>Global Integration</h3><p>Standardizing maritime trade into a transparent, high-speed identity network.</p><a href="industries.html">Explore</a></div>
+    <div class="card"><h3>Maritime Security</h3><p>33 CFR Part 105 & MTSA compliant, air-gapped security governance.</p><a href="philaport-sec.html">Explore</a></div>
 </div>
 
 <footer>
     <div class="footer-grid">
-        <div><h4>Bureau</h4><a href="bureau.html">Charter</a><a href="iam.html">IAM Protocol</a><a href="wallet.html">Wallet</a></div>
-        <div><h4>PhilaPort</h4><a href="philaport.html">Overview</a><a href="philaport-tech.html">Net Stack</a><a href="philaport-sec.html">Security</a></div>
-        <div><h4>Logistics</h4><a href="logistics.html">Flow Forensics</a><a href="manifest.html">Manifest</a><a href="velocity.html">Velocity</a></div>
-        <div><h4>Industries</h4><a href="industries.html">Financial</a><a href="industries.html">Transport</a><a href="industries.html">Gov</a></div>
-        <div><h4>Corporate</h4><a href="about.html">Mission</a><a href="contact.html">Procurement</a><a href="support.html">Support</a></div>
+        <div><h4>Bureau</h4><a href="bureau.html">Charter</a><a href="iam.html">IAM Protocol</a></div>
+        <div><h4>Operations</h4><a href="philaport.html">PhilaPort</a><a href="logistics.html">Flow Forensics</a></div>
+        <div><h4>Infrastructure</h4><a href="hardware.html">Network Rooms</a><a href="integration.html">Systems Integration</a></div>
+        <div><h4>Industries</h4><a href="industries.html">Financial</a><a href="industries.html">Travel</a></div>
+        <div><h4>Corporate</h4><a href="about.html">Mission</a><a href="contact.html">Procurement</a></div>
     </div>
 </footer>
 
