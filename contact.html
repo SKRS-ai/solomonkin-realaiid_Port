@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact & Procurement Outreach | HarborLink Partners</title>
+    <title>Contact Us | HarborLink Partners</title>
     <style>
         :root {
             --navy: #002366;
@@ -14,18 +14,16 @@
         }
         body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.7; color: var(--text-dark); margin: 0; background-color: var(--bg-gray); }
         
-        /* Header/Nav - Persistent */
         header { background: var(--navy); color: var(--white); padding: 1.5rem 5%; position: sticky; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid var(--light-blue); }
         nav a { color: var(--white); text-decoration: none; margin-left: 25px; font-weight: 500; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
         
-        /* Main Content */
         .container { width: 85%; margin: 50px auto; background: var(--white); padding: 60px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-radius: 4px; }
         h1 { color: var(--navy); font-size: 2.5rem; border-bottom: 2px solid var(--light-blue); display: inline-block; padding-bottom: 10px; }
         .form-section { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; margin-top: 40px; }
-        input, textarea, select { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px; }
-        button { background: var(--navy); color: var(--white); padding: 15px 30px; border: none; cursor: pointer; font-weight: bold; text-transform: uppercase; }
+        input, textarea, select { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px; font-family: inherit; }
+        button { background: var(--navy); color: var(--white); padding: 15px 30px; border: none; cursor: pointer; font-weight: bold; text-transform: uppercase; margin-top: 10px; transition: background 0.3s; }
+        button:hover { background: var(--light-blue); }
         
-        /* Footer - Persistent */
         footer { background: var(--navy); color: var(--white); padding: 60px 5% 30px; margin-top: 80px; border-top: 5px solid var(--light-blue); }
         .footer-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; font-size: 0.85rem; }
         .footer-grid h4 { color: var(--light-blue); text-transform: uppercase; margin-bottom: 15px; }
@@ -50,31 +48,34 @@
 </header>
 
 <div class="container">
-    <h1>Procurement & Partnership Outreach</h1>
-    <p>HarborLink Partners (Solomon Kin LLC & REALAiiD, Inc.) welcomes formal inquiries from municipal authorities, maritime logistics providers, and security procurement teams. Please utilize the channels below to request briefings, technical specifications, or vendor verification documentation.</p>
+    <h1>Contact HarborLink Partners</h1>
+    <p>HarborLink Partners (Solomon Kin LLC & REALAiiD, Inc.) is engineering the future of digital identity and secure maritime infrastructure. Whether you are looking to integrate our zero-trust identity bridges, deploy biometric intake systems, or discuss high-level port operational standards, we invite you to connect with our team.</p>
 
     <div class="form-section">
         <div>
-            <h2>Direct Outreach</h2>
-            <p><strong>Office of the CEO</strong><br>Solomon Kin LLC / REALAiiD, Inc.<br>Philadelphia, PA Operations Center</p>
-            <p>For urgent inquiries regarding Bureau of Digital Identity onboarding or Wallet Bridge integration, please specify your agency or organization clearly to ensure routing to the appropriate engineering lead.</p>
+            <h2>Start a Conversation</h2>
+            <p><strong>Operations Center</strong><br>Philadelphia, PA</p>
+            <p>We work at the intersection of physical infrastructure and digital trust. Our team is available to discuss how our air-gapped, biometric-backed solutions can secure your environment and streamline your operational flow.</p>
+            <p>Please provide your organization’s details so we can best prepare for our initial briefing.</p>
         </div>
+        
         <form action="https://formspree.io/f/xzdqgzld" method="POST">
-    <input type="text" name="full_name" placeholder="Full Name" required>
-    
-    <input type="email" name="email" placeholder="Official Email Address" required>
-    
-    <select name="inquiry_type">
-        <option value="Procurement Inquiry">Procurement Inquiry</option>
-        <option value="Technical Integration/Bridge Request">Technical Integration/Bridge Request</option>
-        <option value="Security/Compliance Briefing">Security/Compliance Briefing</option>
-        <option value="General Media Inquiry">General Media Inquiry</option>
-    </select>
-    
-    <textarea name="message" rows="6" placeholder="Project details, agency name, or security requirements..." required></textarea>
-    
-    <button type="submit">Submit Secure Request</button>
-</form>
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Work Email Address" required>
+            <input type="text" name="organization" placeholder="Organization / Agency" required>
+            
+            <select name="inquiry_type">
+                <option value="General Inquiry">General Inquiry</option>
+                <option value="Identity Integration">Identity & Bridge Integration</option>
+                <option value="Infrastructure Build">Infrastructure & Network Build-out</option>
+                <option value="Security Governance">Security & Compliance Consultation</option>
+                <option value="Partnership">Partnership Opportunities</option>
+            </select>
+            
+            <textarea name="message" rows="6" placeholder="How can we assist you?" required></textarea>
+            
+            <button type="submit">Submit Request</button>
+        </form>
     </div>
 </div>
 
