@@ -35,13 +35,22 @@
         /* Banner & Footer */
         .banner-box { width: 85%; margin: 40px auto; text-align: center; }
         .banner-box img { max-width: 100%; height: auto; display: block; }
-        footer { background: var(--navy); color: var(--white); padding: 80px 5%; margin-top: 40px; }
+        
+        /* 3D Grid Presentation */
+        .grid-container { width: 90%; margin: 60px auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; perspective: 1000px; }
+        .grid-container .card { background: white; padding: 40px; border: 1px solid #ddd; box-shadow: 0 15px 30px rgba(0,0,0,0.1); transition: transform 0.4s; text-align: center; border-bottom: 5px solid var(--gold); border-left: none; }
+        .grid-container .card:hover { transform: rotateY(10deg) scale(1.05); cursor: pointer; }
+        .grid-container .card h3 { color: var(--navy); }
+        .grid-container .card a { display: inline-block; margin-top: 20px; padding: 10px 20px; background: var(--navy); color: white; text-decoration: none; border-radius: 4px; }
+
+        footer { background: var(--navy); color: #ccc; padding: 50px 5%; margin-top: 80px; border-top: 5px solid var(--gold); font-size: 0.8rem; }
         .footer-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 40px; }
         .footer-grid h4 { color: var(--light-blue); margin-bottom: 20px; text-transform: uppercase; font-size: 1rem; }
         .footer-grid ul { list-style: none; padding: 0; }
         .footer-grid li { margin-bottom: 12px; font-size: 0.9rem; }
         .footer-grid a { color: #ccc; text-decoration: none; transition: 0.3s; }
         .footer-grid a:hover { color: var(--white); }
+        .footer-bottom { text-align: center; margin-top: 40px; border-top: 1px solid #333; padding-top: 20px; }
     </style>
 </head>
 <body>
@@ -69,6 +78,8 @@
     <div class="hero-slide" style="background: url('harborlink partners5.png8.jpeg') center/cover;"><a href="logistics.html"><div class="hero-text"><h3>Digital Embarkation</h3><p>Automated manifest verification at scale.</p></div></a></div>
     <button class="nav-btn prev" onclick="moveSlide(-1)">&#10094;</button>
     <button class="nav-btn next" onclick="moveSlide(1)">&#10095;</button>
+</div>
+
 <div class="container">
     <h2>The Bureau Mission</h2>
     <p>HarborLink Partners establishes the global standard for maritime trust. We deliver an air-gapped, zero-trust digital identity ecosystem that bridges the physical-to-digital divide. By converting every port movement into a cryptographically signed "Bridge" event, we eliminate systemic fraud and provide total visibility into the global supply chain.</p>
@@ -104,24 +115,10 @@
         <p>We are unifying the fragmented landscape of international maritime trade. By deploying the Bureau's standardized identity language, we allow assets to traverse international borders with continuous, verifiable security—turning global logistics into a transparent, high-speed network for the next century of maritime commerce.</p>
     </div>
 </div>
+
 <div class="banner-box">
     <a href="https://www.realaiid.com/" target="_blank" rel="noopener noreferrer"><img src="81Nqx.png" alt="Bureau Operational Banner - REALAiiD"></a>
 </div>
-/* 3D Grid Presentation */
-        .grid-container { width: 90%; margin: 60px auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; perspective: 1000px; }
-        .card { background: white; padding: 40px; border: 1px solid #ddd; box-shadow: 0 15px 30px rgba(0,0,0,0.1); transition: transform 0.4s; text-align: center; border-bottom: 5px solid var(--gold); }
-        .card:hover { transform: rotateY(10deg) scale(1.05); cursor: pointer; }
-        .card h3 { color: var(--navy); }
-        .card a { display: inline-block; margin-top: 20px; padding: 10px 20px; background: var(--navy); color: white; text-decoration: none; border-radius: 4px; }
-
-        footer { background: var(--navy); color: #ccc; padding: 50px 5%; margin-top: 80px; border-top: 5px solid var(--gold); font-size: 0.8rem; }
-        .footer-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 20px; }
-        .footer-grid h4 { color: var(--gold); }
-        .footer-grid a { color: #ccc; text-decoration: none; display: block; margin-bottom: 5px; }
-        .footer-bottom { text-align: center; margin-top: 40px; border-top: 1px solid #333; padding-top: 20px; }
-    </style>
-</head>
-<body>
 
 <footer>
     <div class="footer-grid">
@@ -131,9 +128,7 @@
         <div><h4>Logistics Intelligence</h4><ul><li><a href="logistics.html">Flow Forensics</a></li><li><a href="manifest.html">Manifest Integrity</a></li><li><a href="cargo-bound.html">Cargo Binding</a></li><li><a href="ais.html">AIS Verification</a></li><li><a href="velocity.html">Velocity Analysis</a></li></ul></div>
         <div><h4>Enterprise & Legal</h4><ul><li><a href="about.html">Executive Vision</a></li><li><a href="compliance.html">Fed Standards</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="contact.html">Procurement</a></li><li><a href="support.html">Support Desk</a></li></ul></div>
     </div>
-    <div style="text-align: center; margin-top: 60px; font-size: 0.8rem; color: #aaa;">
-        &copy; 2026 HarborLink Partners - Solomon Kin LLC & REALAiiD, Inc. | Hardened Maritime Identity Sovereignty | Contact: solomonkinllc@gmail.com
-    </div>
+    <div class="footer-bottom">&copy; 2026 HarborLink Partners - Solomon Kin LLC & REALAiiD, Inc. | Hardened Maritime Identity Sovereignty | Contact: solomonkinllc@gmail.com</div>
 </footer>
 
 <script>
