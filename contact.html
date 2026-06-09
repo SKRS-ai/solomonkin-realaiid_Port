@@ -59,18 +59,22 @@
             <p><strong>Office of the CEO</strong><br>Solomon Kin LLC / REALAiiD, Inc.<br>Philadelphia, PA Operations Center</p>
             <p>For urgent inquiries regarding Bureau of Digital Identity onboarding or Wallet Bridge integration, please specify your agency or organization clearly to ensure routing to the appropriate engineering lead.</p>
         </div>
-        <form>
-            <input type="text" placeholder="Full Name" required>
-            <input type="email" placeholder="Official Email Address" required>
-            <select>
-                <option>Procurement Inquiry</option>
-                <option>Technical Integration/Bridge Request</option>
-                <option>Security/Compliance Briefing</option>
-                <option>General Media Inquiry</option>
-            </select>
-            <textarea rows="6" placeholder="Project details or security requirements..."></textarea>
-            <button type="submit">Submit Secure Request</button>
-        </form>
+        <form action="https://formspree.io/f/xzdqgzld" method="POST">
+    <input type="text" name="full_name" placeholder="Full Name" required>
+    
+    <input type="email" name="email" placeholder="Official Email Address" required>
+    
+    <select name="inquiry_type">
+        <option value="Procurement Inquiry">Procurement Inquiry</option>
+        <option value="Technical Integration/Bridge Request">Technical Integration/Bridge Request</option>
+        <option value="Security/Compliance Briefing">Security/Compliance Briefing</option>
+        <option value="General Media Inquiry">General Media Inquiry</option>
+    </select>
+    
+    <textarea name="message" rows="6" placeholder="Project details, agency name, or security requirements..." required></textarea>
+    
+    <button type="submit">Submit Secure Request</button>
+</form>
     </div>
 </div>
 
