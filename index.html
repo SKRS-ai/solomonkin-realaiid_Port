@@ -23,8 +23,13 @@
         .hero-text { background: rgba(0, 35, 102, 0.85); color: #fff; padding: 20px; width: 100%; text-align: center; }
         .nav-btn { position: absolute; top: 50%; z-index: 10; background: rgba(0,0,0,0.3); border: none; color: white; padding: 20px; cursor: pointer; }
 
+        /* Mission & Content Area */
+        .mission-wrap { width: 85%; margin: 60px auto; background: var(--white); padding: 60px; box-shadow: 0 5px 25px rgba(0,0,0,0.05); }
+        .technical-detail { background: #fdfbf7; padding: 30px; border-left: 5px solid var(--gold); margin: 30px 0; }
+        h2 { color: var(--navy); border-bottom: 3px solid var(--gold); padding-bottom: 15px; }
+
         /* 3D Grid Presentation */
-        .grid-container { width: 90%; margin: 60px auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; perspective: 1000px; }
+        .grid-container { width: 85%; margin: 0 auto 60px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; perspective: 1000px; }
         .card { background: white; padding: 40px; border-left: 5px solid var(--gold); box-shadow: 0 15px 30px rgba(0,0,0,0.1); transition: transform 0.4s; text-align: center; }
         .card:hover { transform: rotateY(10deg) scale(1.05); }
         .card h3 { color: var(--navy); }
@@ -58,13 +63,52 @@
     <button class="nav-btn next" style="right:10px" onclick="moveSlide(1)">&#10095;</button>
 </div>
 
+<div class="mission-wrap">
+    <h2>The Bureau Mission</h2>
+    <p>HarborLink Partners establishes the global standard for maritime trust. We deliver an air-gapped, zero-trust digital identity ecosystem that bridges the physical-to-digital divide. By converting every port movement into a cryptographically signed "Bridge" event, we eliminate systemic fraud and provide total visibility into the global supply chain.</p>
+
+    <div class="technical-detail">
+        <h3>How the REALAiiD Bridge Wallet Works</h3>
+        <p>When cargo, vessels, and personnel are provisioned with REALAiiD Bridges, they carry a "Forensic Key" that enables:</p>
+        <ul>
+            <li><strong>Cryptographic Ingress:</strong> Secure, frictionless authentication at all automated terminal gates.</li>
+            <li><strong>Hardened Chain-of-Custody:</strong> Immutable recording of every handover, ensuring data integrity from berth to warehouse.</li>
+            <li><strong>Dynamic Compliance Mapping:</strong> Automated, real-time synchronization with international MARSEC and trade compliance protocols.</li>
+        </ul>
+    </div>
+</div>
+
 <div class="grid-container">
-    <div class="card"><h3>PhilaPort Terminal</h3><p>Strategic maritime gateway infrastructure.</p><a href="philaport.html">Explore</a></div>
-    <div class="card"><h3>Digital Embarkation</h3><p>Automated manifest verification at scale.</p><a href="logistics.html">Explore</a></div>
-    <div class="card"><h3>Bureau Compliance</h3><p>Forensic audit readiness & oversight.</p><a href="philaport-compliance.html">Explore</a></div>
-    <div class="card"><h3>Maritime Security</h3><p>33 CFR Part 105 & MTSA systems.</p><a href="philaport-sec.html">Explore</a></div>
-    <div class="card"><h3>Global Industries</h3><p>Sovereign presence across all sectors.</p><a href="industries.html">Explore</a></div>
-    <div class="card"><h3>Identity Vault</h3><p>REALAiiD Bridge & Wallet architecture.</p><a href="iam.html">Explore</a></div>
+    <div class="card">
+        <h3>Technical Provenance</h3>
+        <p>Built upon 15 years of leadership in critical infrastructure. Protocols refined at Philadelphia and Miami.</p>
+        <a href="philaport.html">Explore</a>
+    </div>
+    <div class="card">
+        <h3>Global Integration</h3>
+        <p>Unifying fragmented maritime trade into a transparent, high-speed identity network.</p>
+        <a href="industries.html">Explore</a>
+    </div>
+    <div class="card">
+        <h3>PhilaPort Terminal</h3>
+        <p>Strategic maritime gateway infrastructure for 2026.</p>
+        <a href="philaport.html">Explore</a>
+    </div>
+    <div class="card">
+        <h3>Maritime Security</h3>
+        <p>33 CFR Part 105 & MTSA compliant air-gap systems.</p>
+        <a href="philaport-sec.html">Explore</a>
+    </div>
+    <div class="card">
+        <h3>Compliance Governance</h3>
+        <p>Forensic audit readiness & Bureau oversight.</p>
+        <a href="philaport-compliance.html">Explore</a>
+    </div>
+    <div class="card">
+        <h3>Identity Vault</h3>
+        <p>REALAiiD Bridge & Wallet architecture.</p>
+        <a href="iam.html">Explore</a>
+    </div>
 </div>
 
 <footer>
