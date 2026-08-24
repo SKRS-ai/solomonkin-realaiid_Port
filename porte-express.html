@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porte Express™ Vision & Concession Proposal | HarborLink Partners</title>
+    <title>Porte Express™ Vision & Terminal Proposal | HarborLink Partners</title>
     <style>
         :root { --navy: #002366; --light-blue: #00a8e8; --white: #ffffff; --bg-gray: #f4f7f6; --text-dark: #2d3436; --gold: #c5a059; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.7; color: var(--text-dark); margin: 0; background-color: var(--bg-gray); }
@@ -16,6 +16,17 @@
         .main-nav a { color: var(--white); text-decoration: none; font-weight: 600; font-size: 0.85rem; text-transform: uppercase; transition: color 0.3s; white-space: nowrap; }
         .main-nav a:hover { color: var(--light-blue); }
         .nav-highlight { background: var(--gold); color: var(--navy) !important; padding: 4px 10px; border-radius: 4px; font-weight: 700 !important; }
+
+        /* High-Definition Hero Carousel */
+        .hero-container { position: relative; height: 500px; width: 100%; overflow: hidden; background: var(--navy); border-bottom: 5px solid var(--gold); }
+        .hero-slide { position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; transition: opacity 1s ease-in-out; display: flex; align-items: flex-end; background-size: cover; background-position: center; }
+        .hero-slide.active { opacity: 1; z-index: 1; }
+        .hero-text { background: rgba(0, 35, 102, 0.85); color: #fff; padding: 25px 5%; width: 100%; text-align: center; border-top: 3px solid var(--light-blue); }
+        .hero-text h3 { margin: 0 0 5px 0; font-size: 1.5rem; color: var(--white); }
+        .hero-text p { margin: 0; font-size: 1rem; color: #d1e7ff; }
+        .nav-btn { position: absolute; top: 45%; z-index: 10; background: rgba(0,35,102,0.7); border: 2px solid var(--gold); color: white; padding: 15px 20px; cursor: pointer; font-size: 22px; border-radius: 4px; transition: background 0.3s; }
+        .nav-btn:hover { background: var(--navy); }
+        .prev { left: 20px; } .next { right: 20px; }
 
         /* Page Container */
         .container { width: 80%; max-width: 1200px; margin: 50px auto; background: var(--white); padding: 60px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); border-radius: 6px; }
@@ -83,6 +94,42 @@
     </div>
 </header>
 
+<!-- High-Definition Hero Image Carousel -->
+<div class="hero-container" id="heroCarousel">
+    <div class="hero-slide active" style="background-image: url('philaport_cruise_terminal.png');">
+        <div class="hero-text">
+            <h3>PhilaPort Cruise Terminal Gateway</h3>
+            <p>Modern architectural integration welcoming guests to the Philadelphia homeport.</p>
+        </div>
+    </div>
+    <div class="hero-slide" style="background-image: url('document_verification_hall.png');">
+        <div class="hero-text">
+            <h3>Document Verification Hall</h3>
+            <p>Efficient queuing and processing pathways designed for smooth security flow.</p>
+        </div>
+    </div>
+    <div class="hero-slide" style="background-image: url('porte_express_kiosk.png');">
+        <div class="hero-text">
+            <h3>Porte Express™ Automated Kiosk</h3>
+            <p>Frictionless, self-service retail stations featuring exclusive co-branded merchandise.</p>
+        </div>
+    </div>
+    <div class="hero-slide" style="background-image: url('bon_voyage_postcard_station.png');">
+        <div class="hero-text">
+            <h3>"Bon Voyage" Memory Station</h3>
+            <p>Interactive postcard and instant-print service capturing sentimental departure milestones.</p>
+        </div>
+    </div>
+    <div class="hero-slide" style="background-image: url('phila_port_debarkation.png');">
+        <div class="hero-text">
+            <h3>Debarkation & Transit Flow</h3>
+            <p>Optimized pathways ensuring seamless movement for returning passengers.</p>
+        </div>
+    </div>
+    <button class="nav-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="nav-btn next" onclick="moveSlide(1)">&#10095;</button>
+</div>
+
 <div class="container">
     <h1>Porte Express™ Vision & Terminal Enhancement</h1>
     <p class="subtitle">Elevating the PhilaPort Passenger Experience through World-Class Retail, Automated Convenience, and Sentimental Journey-Mapping.</p>
@@ -94,38 +141,34 @@
     </div>
 
     <h2>1. The Passenger Experience Journey</h2>
-    <p>We believe every touchpoint in the terminal should build excitement and pride in the Philadelphia homeport. Our operational concept integrates seamlessly into passenger foot traffic without ever disturbing security or document verification flows.</p>
-    
-    <div class="grid-2">
+    <div class="grid-2" style="margin-top: 20px;">
         <div class="card">
             <h3>Anticipation & Wayfinding (Zones A & B)</h3>
-            <p><strong>Queuing & Security Approach:</strong> Utilizing high-impact digital display boards and vibrant terminal graphics along the security check-in queues to build vacation excitement, highlight current seasonal destinations (such as Bermuda, Canada, and New England), and showcase future cruise itineraries.</p>
+            <p>Utilizing high-impact digital display boards and vibrant terminal graphics along security check-in queues to build vacation excitement, highlight seasonal itineraries (Bermuda, Canada, New England), and showcase future cruise options.</p>
         </div>
         <div class="card">
             <h3>The Final Departure Concourse (Zone C)</h3>
-            <p><strong>The Retail & Memory Hub:</strong> Positioned right before passengers step onto the ship gangway. This high-dwell space serves as an elegant, frictionless retail and sentiment touchpoint, offering travelers a final opportunity to capture their vacation milestone.</p>
+            <p>Positioned right before passengers step onto the ship gangway. This high-dwell space serves as an elegant, frictionless retail and sentiment touchpoint, offering travelers a final opportunity to capture their vacation milestone.</p>
         </div>
     </div>
 
     <div class="highlight-box">
         <h3>Curated Offerings & The "Bon Voyage" Service</h3>
-        <p>Porte Express bridges convenience with emotional resonance, featuring:</p>
         <ul>
             <li><strong>Exclusive Commemorative Memorabilia:</strong> Co-branded Philadelphia Cruise Terminal and cruise line souvenirs, premium apparel, and seasonal travel accessories.</li>
-            <li><strong>The "Bon Voyage" Postcard & Memory Station:</strong> An interactive service allowing guests to write and mail physical physical postcards to loved ones back home or instantly print digital smartphone snapshots into physical keepsakes before boarding.</li>
-            <li><strong>Frictionless Automated Retail:</strong> Modern, airport-grade self-service checkouts that ensure lightning-fast transactions with zero boarding bottlenecks.</li>
+            <li><strong>The "Bon Voyage" Postcard & Memory Station:</strong> An interactive service allowing guests to write physical postcards or instantly print smartphone snapshots into physical keepsakes before boarding.</li>
+            <li><strong>Frictionless Automated Retail:</strong> Modern, airport-grade self-service checkouts ensuring lightning-fast transactions with zero boarding bottlenecks.</li>
         </ul>
     </div>
 
     <h2>2. A Turnkey, Zero-Risk Partnership Model for PhilaPort</h2>
-    <p>Porte Express is structured as a fully self-funded proposition designed to make collaboration effortless for port authorities:</p>
     <ul>
         <li><strong>Zero Capital Outlay:</strong> Harbor Link Partners fully finances, deploys, and manages the modular kiosk hardware, automated POS software, and exclusive merchandise inventory.</li>
-        <li><strong>Passive Revenue Stream:</strong> Operates under a standard concession percentage or space-lease agreement, turning underutilized architectural terminal space into an ongoing revenue source for the port.</li>
-        <li><strong>Seamless Operational Harmony:</strong> Built by maritime security and IT professionals who understand terminal safety requirements, ensuring complete alignment with port operational standards.</li>
+        <li><strong>Passive Revenue Stream:</strong> Operates under a standard concession percentage or space-lease agreement, turning underutilized architectural terminal space into an ongoing revenue source.</li>
+        <li><strong>Seamless Operational Harmony:</strong> Built by maritime security and IT professionals who understand terminal safety regulations and compliance.</li>
     </ul>
 
-    <!-- Call to Action Section for the Proposal Link -->
+    <!-- Call to Action Section -->
     <div class="cta-container">
         <h3>Ready to Explore a Terminal Partnership?</h3>
         <p>We invite port directors, business development teams, and maritime stakeholders to connect with us for a formal briefing or to discuss a low-risk pilot program for an upcoming Thursday turnaround.</p>
@@ -144,6 +187,18 @@
     </div>
     <div class="footer-bottom">&copy; 2026 HarborLink Partners - Solomon Kin LLC & REALAiiD, Inc. | Hardened Maritime Identity Sovereignty | Contact: solomonkinllc@gmail.com</div>
 </footer>
+
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.hero-slide');
+    function moveSlide(n) {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + n + slides.length) % slides.length;
+        slides[currentSlide].classList.add('active');
+    }
+    // Auto-advance hero slides every 6 seconds
+    setInterval(() => moveSlide(1), 6000);
+</script>
 
 </body>
 </html>
