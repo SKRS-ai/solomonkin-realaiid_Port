@@ -8,13 +8,17 @@
         :root { --navy: #002366; --light-blue: #00a8e8; --white: #ffffff; --bg-gray: #f4f7f6; --text-dark: #2d3436; --gold: #c5a059; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.7; color: var(--text-dark); margin: 0; background-color: var(--bg-gray); }
         
-        /* Updated Header - Two Rows */
-        .main-header { background: var(--navy); padding: 1rem 2%; border-bottom: 4px solid var(--gold); display: flex; align-items: center; gap: 2rem; }
-        .logo-box img { height: 220px; width: auto; display: block; }
-        .nav-container { display: flex; flex-direction: column; width: 100%; gap: 8px; }
-        .main-nav { display: flex; flex-wrap: wrap; gap: 15px 25px; justify-content: flex-start; }
+        /* Updated Header - Two Rows + Retail Highlight */
+        .main-header { background: var(--navy); padding: 1rem 2%; border-bottom: 4px solid var(--gold); display: flex; align-items: center; gap: 2rem; justify-content: space-between; flex-wrap: wrap; }
+        .logo-box img { height: 180px; width: auto; display: block; }
+        .nav-container { display: flex; flex-direction: column; gap: 8px; flex-grow: 1; max-width: 900px; }
+        .main-nav { display: flex; flex-wrap: wrap; gap: 12px 20px; justify-content: flex-start; align-items: center; }
         .main-nav a { color: var(--white); text-decoration: none; font-weight: 600; font-size: 0.85rem; text-transform: uppercase; transition: color 0.3s; white-space: nowrap; }
         .main-nav a:hover { color: var(--light-blue); }
+        
+        /* Special Highlight Link for the Porte Express Project */
+        .nav-highlight { background: var(--gold); color: var(--navy) !important; padding: 4px 10px; border-radius: 4px; font-weight: 700 !important; box-shadow: 0 2px 5px rgba(0,0,0,0.2); transition: transform 0.2s, background 0.2s !important; }
+        .nav-highlight:hover { background: #d4af37 !important; transform: translateY(-1px); color: var(--navy) !important; }
 
         /* Hero Carousel */
         .hero-container { position: relative; height: 550px; width: 100%; overflow: hidden; background: var(--navy); }
@@ -60,15 +64,29 @@
     
     <div class="nav-container">
         <nav class="main-nav">
-            <a href="index.html">Home</a><a href="software.html">Software</a><a href="hardware.html">Hardware</a><a href="embarkation.html">Embarkation</a><a href="integration.html">Integration</a><a href="training.html">Training</a><a href="resilience.html">Resilience</a>
+            <a href="index.html">Home</a>
+            <a href="software.html">Software</a>
+            <a href="hardware.html">Hardware</a>
+            <a href="embarkation.html">Embarkation</a>
+            <a href="integration.html">Integration</a>
+            <a href="training.html">Training</a>
+            <a href="resilience.html">Resilience</a>
         </nav>
         <nav class="main-nav">
-            <a href="vendor-mgmt.html">Vendors</a><a href="services.html">Services</a><a href="bureau.html">Bureau</a><a href="logistics.html">Logistics</a><a href="marsec.html">MARSEC</a><a href="iam.html">IAM</a><a href="contact.html">Contact Us</a>
+            <a href="vendor-mgmt.html">Vendors</a>
+            <a href="services.html">Services</a>
+            <a href="bureau.html">Bureau</a>
+            <a href="logistics.html">Logistics</a>
+            <a href="marsec.html">MARSEC</a>
+            <a href="iam.html">IAM</a>
+            <a href="contact.html">Contact Us</a>
+            <!-- Added New Project Navigation Link -->
+            <a href="porte-express.html" class="nav-highlight">🛍️ Porte Express Retail</a>
         </nav>
     </div>
 
-    <div class="banner-box">
-        <img src="kinsense.png" alt="KinSense AI" style="height: 120px; width: auto;">
+    <div class="banner-box" style="width: auto; margin: 0;">
+        <img src="kinsense.png" alt="KinSense AI" style="height: 100px; width: auto;">
     </div>
 </header>
 
@@ -103,7 +121,7 @@
     <div class="grid" style="grid-template-columns: 1fr 1fr 1fr; margin-top: 20px;">
         <div class="card">
             <h3>US Gateways</h3>
-            <p><strong>PhilaPort:</strong> Foundation for the new $33M terminal. <strong>Miami:</strong> Expansion of Cruise Terminal G. <strong>LA/Buffalo:</strong> Scaling mega-ship and Great Lakes infrastructure.</p>
+            <p><strong>PhilaPort:</strong> Foundation for the new terminal. <strong>Miami:</strong> Expansion of Cruise Terminal G. <strong>LA/Buffalo:</strong> Scaling mega-ship and Great Lakes infrastructure.</p>
         </div>
         <div class="card">
             <h3>International Expansion</h3>
